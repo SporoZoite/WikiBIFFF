@@ -1,11 +1,12 @@
-
-
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
   .edition-container {
     padding-top: 6rem;
     .mb-3.rounded.bg-light {
       margin-left: 3rem;
       margin-right: 3rem;
+    }
+    .mb-3 .col-md-4 {
+      width: 50%;
     }
     .col-md-3 {
       width: 100% !important;
