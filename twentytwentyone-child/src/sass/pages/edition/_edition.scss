@@ -65,6 +65,9 @@ ul {
   font-size: 1rem;
   cursor: pointer;
   margin-bottom: 0.5rem;
+  a {
+    color: white;
+  }
 }
 
 .app {
@@ -140,6 +143,14 @@ ul {
 .channel h4 {
   margin: 0;
 }
+
+.badge {
+  background-color: #333;
+  float: right;
+  margin-left: 5px;
+  margin-bottom: 8px;
+}
+
 
 #edition-movies {
   font-family: "RobotoBold";

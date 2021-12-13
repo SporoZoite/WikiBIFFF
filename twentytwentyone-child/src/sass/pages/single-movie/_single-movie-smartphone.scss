@@ -1,0 +1,60 @@
+@media screen and (max-width: 47rem) {
+  .single-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    p {
+      margin-bottom: 2rem;
+      margin: 1rem 1rem;
+    }
+    h3 {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    h4 {
+      margin: 1rem 1rem;
+    }
+    .labelTitle {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.8rem;
+      --val: 2vw;
+      --max: 1.125rem;
+    }
+    .labelContent {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.8rem;
+      --val: 2vw;
+      --max: 1.125rem;
+    }
+    #single-infos {
+      padding: 1.5rem;
+    }
+    #single-infos {
+      background-size: 70%;
+      background-position-x: 160%;
+      background-position-y: 100%;
+    }
+    .row.single-infos {
+      background-size: 70%;
+      background-position-x: 160%;
+      background-position-y: 100%;
+      padding: 1.5rem;
+    }
+    .col-md-3.rounded {
+      margin: 0.3rem 0rem;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.8rem;
+      --val: 2vw;
+      --max: 1.125rem;
+      width: 80%;
+    }
+    .mb-1.row {
+      margin: 0rem 2rem;
+    }
+    .singleFilmButton {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.8rem;
+      --val: 1.5vw;
+      --max: 2rem;
+    }
+  }
+}

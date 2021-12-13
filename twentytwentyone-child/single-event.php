@@ -1,7 +1,7 @@
 <?php get_header() ?>
 
 
-<div class="container">
+<div class="single-container">
 
     <div class="mb-2 row">
 
@@ -20,10 +20,10 @@
 		<div class="col-md-9 ">
 
 
-            <h1><?php the_title();?></h1>
+            <h3><?php the_title();?></h3>
             <p> <?php the_content();?></p>
             
-            <div class="row">
+            <div class="row single-infos rounded bg-dark">
 	            <div class="col-md-4">
 
 					<div>
@@ -61,13 +61,6 @@
 						<label class="labelTitle">Dates:</label>
 						<label class="labelContent"><?php the_field('date');?></label>
 					</div>	
-
-					<div>
-						<label class="labelTitle">Gallery:</label>
-						<label class="labelContent"><?php the_field('audio');?></label>
-					</div>	
-					
-
 	            </div>
 	            
 	           
@@ -80,31 +73,33 @@
 	            </div>	            
 
             </div>
+            <div><h4>Gallery</h4></div>
+            <div class="mb-1 row">
+            	<label class="labelContent"><?php the_field('audio');?></label>
+			</div>
 
+            <div><h4>Guests</h4></div>
 
-		</div>
-	</div>
-	
-    <div class="mb-2 row">
-
-    	<div class="col-md-12"><h3>Guests</h3></div>
-    </div>
-    <div class="mb-2 row">
-
-		<?php 
+            <div class="mb-1 row">
+            <?php 
 			$guests = get_field('guests');
 			if( $guests ):
 				foreach( $guests as $guest ): ?>
 				
-		<div class="col-md-3">
-		<?php
+		     <div class="col-md-3">
+		     <?php
 				echo("<a href='".get_post_permalink($guest->ID)."'>".$guest->post_title."</a> ");
-		?>
-		</div>
-		<?php
+		     ?>
+		     </div>
+		     <?php
 				endforeach;
 			endif;
-		?>
+		     ?>
+
+		    </div>
+	        </div>
+	
+
 
     </div>	
 	

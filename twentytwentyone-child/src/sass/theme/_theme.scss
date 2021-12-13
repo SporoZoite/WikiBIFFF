@@ -117,7 +117,7 @@ body {
 }
 
 .juryGuestListBar {
-  background-color: #d60606;
+  background-color: $darkrouge;
   border: none;
   width: 100%;
   color: white;
@@ -140,7 +140,7 @@ body {
   line-height: 50px;
   text-align: center;
   vertical-align: middle;
-  background: red;
+  background: $rouge;
   color: white;
   text-decoration: none;
   float: left;
@@ -152,7 +152,7 @@ body {
 }
 
 .bouton a:hover {
-  background: darkred;
+  background: $bordeau;
 }
 
 /* nav taxonomy compétition */
@@ -170,27 +170,7 @@ body {
 }
 
 
-/* film */
-.labelTitle {
-  font-size: 16px;
-}
-
-.labelContent {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-/* netflix movie */
-:root {
-  --gutter: 20px;
-}
 
 
 
 
-.badge {
-  background-color: #333;
-  float: right;
-  margin-left: 5px;
-  margin-bottom: 8px;
-}

@@ -14707,7 +14707,7 @@ body a {
 }
 
 .juryGuestListBar {
-  background-color: #d60606;
+  background-color: #be1b17;
   border: none;
   width: 100%;
   color: white;
@@ -14729,7 +14729,7 @@ body a {
   line-height: 50px;
   text-align: center;
   vertical-align: middle;
-  background: red;
+  background: #D00019;
   color: white;
   text-decoration: none;
   float: left;
@@ -14741,7 +14741,7 @@ body a {
 }
 
 .bouton a:hover {
-  background: darkred;
+  background: #751715;
 }
 
 /* nav taxonomy compétition */
@@ -14756,28 +14756,6 @@ body a {
 
 .nav-item a:hover {
   color: darkred;
-}
-
-/* film */
-.labelTitle {
-  font-size: 16px;
-}
-
-.labelContent {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-/* netflix movie */
-:root {
-  --gutter: 20px;
-}
-
-.badge {
-  background-color: #333;
-  float: right;
-  margin-left: 5px;
-  margin-bottom: 8px;
 }
 
 .woocommerce-input-wrapper {
@@ -15092,13 +15070,14 @@ label {
   --form--label-weight: unset;
   --form--font-size: unset;
   --global--line-height-body: unset;
-  --button--padding-vertical:unset;
-  --global--spacing-unit:unset;
-  --button--padding-horizontal:unset;
-  --form--label-weight:0px;
-  --button--border-width:unset;
-  --list--font-family:unset;
-  --widget--line-height-list:unset;
+  --button--padding-vertical: unset;
+  --global--spacing-unit: unset;
+  --button--padding-horizontal: unset;
+  --form--label-weight: 0px;
+  --button--border-width: unset;
+  --list--font-family: unset;
+  --widget--line-height-list: unset;
+  --gutter: 20px;
   margin-top: 0px !important;
   --text-multiplier: 1;
 }
@@ -17237,6 +17216,9 @@ ul {
   cursor: pointer;
   margin-bottom: 0.5rem;
 }
+.singleFilmButton a {
+  color: white;
+}
 
 .app {
   width: 100%;
@@ -17314,6 +17296,13 @@ ul {
 .channel h4,
 .channel .h4 {
   margin: 0;
+}
+
+.badge {
+  background-color: #333;
+  float: right;
+  margin-left: 5px;
+  margin-bottom: 8px;
 }
 
 #edition-movies {
@@ -17442,6 +17431,199 @@ ul {
   #edition-movies .mb-2 a {
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
+    --val: 1.5vw;
+    --max: 2rem;
+  }
+}
+.single-container {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1320px;
+  overflow: hidden;
+}
+.single-container a {
+  color: white;
+}
+.single-container p {
+  margin: 1rem 0rem;
+}
+.single-container h4, .single-container .h4 {
+  margin: 1rem 0rem;
+}
+.single-container .labelTitle {
+  text-transform: uppercase;
+  font-family: "RobotoBold";
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 1rem;
+  --val: 2vw;
+  --max: 1.125rem;
+  color: #be1b17;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+.single-container .labelContent {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 1rem;
+  --val: 2vw;
+  --max: 1.125rem;
+  font-family: "RobotoMedium";
+  text-transform: uppercase;
+}
+.single-container #single-infos {
+  padding: 1rem;
+}
+.single-container .col-md-9 {
+  padding: 0rem 1rem;
+}
+.single-container #single-infos {
+  background-image: url(../images/drips.svg);
+  background-size: 40%;
+  background-position-x: 117%;
+  background-position-y: 35%;
+  background-repeat: no-repeat;
+}
+.single-container .row.single-infos {
+  background-image: url(../images/drips.svg);
+  background-size: 40%;
+  background-position-x: 117%;
+  background-position-y: 35%;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+.single-container .col-md-3.rounded {
+  background-color: #D00019;
+  margin: 0rem 1rem;
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .single-container {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+  .single-container p {
+    margin-bottom: 2rem !important;
+    margin: 1rem 1rem;
+  }
+  .single-container h3, .single-container .h3 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .single-container h4, .single-container .h4 {
+    margin: 1rem 2rem;
+    margin-top: 2rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 3.5vw;
+    --max: 2rem;
+  }
+  .single-container .labelTitle {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.8rem;
+    --val: 2vw;
+    --max: 1.125rem;
+  }
+  .single-container .labelContent {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.8rem;
+    --val: 2vw;
+    --max: 1.125rem;
+  }
+  .single-container #single-infos {
+    padding: 1.5rem;
+  }
+  .single-container #single-infos {
+    background-size: 70%;
+    background-position-x: 160%;
+    background-position-y: 100%;
+  }
+  .single-container .row.single-infos {
+    background-size: 70%;
+    background-position-x: 160%;
+    background-position-y: 100%;
+    padding: 1.5rem;
+  }
+  .single-container .col-md-3.rounded {
+    margin: 0rem 1rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 2.5vw;
+    --max: 2rem;
+    width: 35%;
+  }
+  .single-container .col-md-3 {
+    width: 100%;
+  }
+  .single-container .col-md-9 {
+    width: 100%;
+  }
+  .single-container .mb-1.row {
+    margin: 0rem 2rem;
+  }
+  .single-container .singleFilmButton {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 2.5vw;
+    --max: 2rem;
+  }
+}
+@media screen and (max-width: 47rem) {
+  .single-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .single-container p {
+    margin-bottom: 2rem;
+    margin: 1rem 1rem;
+  }
+  .single-container h3, .single-container .h3 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .single-container h4, .single-container .h4 {
+    margin: 1rem 1rem;
+  }
+  .single-container .labelTitle {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.8rem;
+    --val: 2vw;
+    --max: 1.125rem;
+  }
+  .single-container .labelContent {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.8rem;
+    --val: 2vw;
+    --max: 1.125rem;
+  }
+  .single-container #single-infos {
+    padding: 1.5rem;
+  }
+  .single-container #single-infos {
+    background-size: 70%;
+    background-position-x: 160%;
+    background-position-y: 100%;
+  }
+  .single-container .row.single-infos {
+    background-size: 70%;
+    background-position-x: 160%;
+    background-position-y: 100%;
+    padding: 1.5rem;
+  }
+  .single-container .col-md-3.rounded {
+    margin: 0.3rem 0rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.8rem;
+    --val: 2vw;
+    --max: 1.125rem;
+    width: 80%;
+  }
+  .single-container .mb-1.row {
+    margin: 0rem 2rem;
+  }
+  .single-container .singleFilmButton {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.8rem;
     --val: 1.5vw;
     --max: 2rem;
   }

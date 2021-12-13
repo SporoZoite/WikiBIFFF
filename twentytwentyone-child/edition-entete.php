@@ -158,8 +158,10 @@
         <div class="col-md-3">
             <div id="edition-infos" class="p-4 mb-3 rounded bg-dark">
                     <ul>
-                        <li><span style="color: #BE1B17; font-family: 'RobotoBold'">DATES : <br></span><?php echo get_field("dates"); ?></li>
-                        <li><span style="color: #BE1B17; font-family: 'RobotoBold'">LOCATION :</span> <?php
+                        <li><span style="color: #BE1B17; font-family: 'RobotoBold';  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+      -1px -1px 0 #000;">DATES : <br></span><?php echo get_field("dates"); ?></li>
+                        <li><span style="color: #BE1B17; font-family: 'RobotoBold';  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+      -1px -1px 0 #000;">LOCATION :</span> <?php
 	                        $loc=get_field("locations");
 	                        $loctxt=array();
 	                        foreach ($loc as $l){
@@ -168,10 +170,14 @@
 	              
 	                         echo implode(", ",$loctxt); 
 	                         ?></li>
-                        <li><span style="color: #BE1B17; font-family: 'RobotoBold'"># movies : </span><?php echo $cp_movies; ?></li>
-                        <li><span style="color: #BE1B17; font-family: 'RobotoBold'"># short : </span><?php echo $cp_short; ?></li>   
-                        <li><span style="color: #BE1B17; font-family: 'RobotoBold'"># previews : </span><?php echo $cp_premiere; ?></li>
-                        <li><span style="color: #BE1B17; font-family: 'RobotoBold'"># tickets : </span><?php echo get_field("nbtickets"); ?></li>
+                        <li><span style="color: #BE1B17; font-family: 'RobotoBold';  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+      -1px -1px 0 #000;"># movies : </span><?php echo $cp_movies; ?></li>
+                        <li><span style="color: #BE1B17; font-family: 'RobotoBold';  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+      -1px -1px 0 #000;"># short : </span><?php echo $cp_short; ?></li>   
+                        <li><span style="color: #BE1B17; font-family: 'RobotoBold';  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+      -1px -1px 0 #000;"># previews : </span><?php echo $cp_premiere; ?></li>
+                        <li><span style="color: #BE1B17; font-family: 'RobotoBold';  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+      -1px -1px 0 #000;"># tickets : </span><?php echo get_field("nbtickets"); ?></li>
                     </ul>
             </div>
 

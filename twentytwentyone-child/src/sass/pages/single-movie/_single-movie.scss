@@ -1,0 +1,62 @@
+.single-container {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1320px;
+  overflow: hidden;
+  a {
+    color: white;
+  }
+  p {
+    margin: 1rem 0rem;
+  }
+  h4 {
+    margin: 1rem 0rem;
+  }
+  .labelTitle {
+    text-transform: uppercase;
+    font-family: "RobotoBold";
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 2vw;
+    --max: 1.125rem;
+    color: $darkrouge;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+      -1px -1px 0 #000;
+  }
+  .labelContent {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 2vw;
+    --max: 1.125rem;
+    font-family: "RobotoMedium";
+    text-transform: uppercase;
+  }
+  #single-infos {
+    padding: 1rem;
+  }
+  .col-md-9 {
+    padding: 0rem 1rem;
+  }
+  #single-infos {
+    background-image: url(../images/drips.svg);
+    background-size: 40%;
+    background-position-x: 117%;
+    background-position-y: 35%;
+    background-repeat: no-repeat;
+  }
+  .row.single-infos {
+    background-image: url(../images/drips.svg);
+    background-size: 40%;
+    background-position-x: 117%;
+    background-position-y: 35%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+  }
+  .col-md-3.rounded {
+    background-color: $rouge;
+    margin: 0rem 1rem;
+  }
+}
