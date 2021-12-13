@@ -1,0 +1,196 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  color: white!important;
+  background-color: black!important;
+  max-width: 100%;
+  width: 100vw;
+  font-family: "RobotoMedium";
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline;
+  }
+}
+
+.bg-light,
+.bg-light a {
+  color: #000;
+}
+
+.englobe {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-wrap {
+  width: 100%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100;
+  backface-visibility: hidden;
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
+.customPrevBtn {
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+.customNextBtn {
+  position: absolute;
+  z-index: 999;
+  right: 0;
+}
+
+.filmBloc {
+  max-height: 0;
+  transition: max-height 0.2s;
+  padding: 0 15px;
+  background: #eeeeee;
+}
+
+
+.singleFilmContainer {
+  display: flex;
+  width: 100%;
+}
+
+.singleFilmLeft {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
+
+.singleFilmImg {
+  margin-bottom: 10px;
+}
+
+.singleFilmButtonBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.singleFilmRight {
+  display: flex;
+  width: 70%;
+  margin-left: 50px;
+}
+
+.singleFilmRightDesc {
+  display: flex;
+  flex-direction: column;
+}
+
+.juryGuestListBar {
+  background-color: #d60606;
+  border: none;
+  width: 100%;
+  color: white;
+  padding: 5px 16px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  /* justify-content: space-between; */
+  margin-bottom: 8px;
+}
+
+
+/* button vertical de la page film single */
+.bouton a {
+  display: flex;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  background: red;
+  color: white;
+  text-decoration: none;
+  float: left;
+  margin: 2px;
+}
+
+.bouton li {
+  list-style: none;
+}
+
+.bouton a:hover {
+  background: darkred;
+}
+
+/* nav taxonomy compétition */
+.nav-pills {
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  text-align: center;
+}
+
+.nav-item a:hover {
+  color: darkred;
+}
+
+
+/* film */
+.labelTitle {
+  font-size: 16px;
+}
+
+.labelContent {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* netflix movie */
+:root {
+  --gutter: 20px;
+}
+
+
+
+
+.badge {
+  background-color: #333;
+  float: right;
+  margin-left: 5px;
+  margin-bottom: 8px;
+}

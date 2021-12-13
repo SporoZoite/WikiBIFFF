@@ -1,0 +1,141 @@
+.widget-area {
+  border-top: 5px solid $grey;
+}
+
+.widget {
+  padding: 2rem;
+  font-family: "RobotoMedium";
+  background-color: black;
+  color: white;
+  > * {
+    width: 100%;
+  }
+
+  #cat.postform {
+    min-width: 15ch;
+    max-width: 60ch;
+    border: 0.625em solid $rouge;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 3vw;
+    --max: 1.25rem;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: white;
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    background-size: 5%;
+    color: black;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    position: relative;
+  }
+  .search-form {
+    border: 0.625em solid $rouge;
+    border-radius: 0.25em;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.widget_search {
+  border-bottom: 2px solid $rouge;
+}
+
+.widget_recent_entries {
+  border-bottom: 2px solid $rouge;
+}
+
+.widget_recent_comments {
+  border-bottom: 2px solid $rouge;
+}
+
+.widget_categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="search"] {
+  margin: 0px;
+}
+
+.widget_search > .search-form .search-submit {
+  height: 15px;
+  width: 15px;
+  font-size: 5px;
+  margin: 0.5rem;
+  position: absolute;
+  background-image: url(../images/loupe.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+label {
+  font-size: 0px;
+}
+
+.widget-title {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-family: "RobotoMedium";
+}
+
+@media only screen and (min-width: 1024px) {
+  .widget_recent_comments {
+    border-bottom: 2px solid $rouge!important;
+  }
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .widget-title {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem !important;
+    --val: 3vw !important;
+    --max: 3rem !important;
+  }
+  .widget_archive {
+    border-bottom: 2px solid #212529;
+  }
+  .widget_recent_comments {
+    border-bottom: 2px solid #212529;
+  }
+}
+
+@media screen and (max-width: 47rem) and (orientation: portrait) {
+  .widget {
+    border-bottom: 2px solid black;
+    padding: 1rem;
+    .search-form {
+      border: 0.4em solid $rouge;
+    }
+    a {
+      font-size: 12px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .widget_search {
+    border-bottom: 2px solid $rouge;
+  }
+  .widget_archive {
+    border-bottom: 2px solid $rouge;
+  }
+
+  .widget_meta {
+    background-color: $darkrouge;
+    color: black;
+  }
+}

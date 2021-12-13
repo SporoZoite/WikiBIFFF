@@ -1,0 +1,119 @@
+.site-header {
+  background-color: #ffffff;
+  font-family: "RobotoBold";
+  width: 100vw;
+  max-width: 100%;
+  position: fixed;
+  overflow: hidden;
+  z-index: 10;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+  border-bottom: 0.1rem solid black;
+}
+.site-branding {
+  margin-right: initial;
+  margin-top: 4px;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-image {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 75%;
+}
+.primary-navigation > div > .menu-wrapper {
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  max-width: none;
+  padding-left: 0;
+  position: relative;
+}
+
+.primary-navigation .primary-menu-container > ul > .menu-item > a {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color:black;
+}
+
+.primary-navigation .primary-menu-container > ul > .menu-item > a:hover {
+  color: $rouge;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 47rem) and (max-width: 62rem) {
+  .site-header {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+  .brand-image {
+    margin-top: 0rem;
+    width: 70%;
+  }
+  .primary-navigation .primary-menu-container > ul > .menu-item > a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 47rem) {
+  .site-header {
+    padding-left: 1.125rem;
+    border-bottom: 0.1rem solid black;
+  }
+  .site-branding {
+    height: 0.5rem;
+    max-width: calc(100% - 110px)!important;
+  }
+  .brand-image {
+    margin-top: 0rem;
+    width: 60%;
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  .dropdown-icon.open {
+    font-size: 0;
+    .svg-icon {
+      color: black;
+      margin: 0.2rem 0.5rem;
+    }
+  }
+  .dropdown-icon.close {
+    font-size: 0;
+    .svg-icon {
+      color: black;
+      margin: 0.2rem 0.5rem;
+    }
+  }
+  .primary-navigation-open .primary-navigation > .primary-menu-container {
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    background-color: $rouge;
+    height: 101vh;
+    width: 101vw;
+    z-index: 499;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 0.2rem solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 1rem;
+    padding-top: 3rem;
+  }
+  .primary-navigation > div > .menu-wrapper li {
+    margin-bottom: 1rem;
+  }
+}

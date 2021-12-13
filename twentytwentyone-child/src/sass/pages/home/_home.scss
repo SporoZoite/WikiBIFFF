@@ -1,0 +1,349 @@
+.page-id-1210 aside.widget-area {
+  display: none;
+}
+
+.home-container {
+  display: flex;
+  max-height: 100%;
+  height: 223.6%;
+  width: 100vw;
+  max-width: 100%;
+  background-color: $darkbordeau;
+  overflow: hidden;
+}
+
+.home-left {
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0 100%);
+  width: 55%;
+  height: 100vh;
+  display: flex;
+  border-right: 0.1rem solid black;
+  z-index: 3;
+  transition: width 0.2s ease-in-out;
+
+  .home-left-button {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+  }
+
+  .home-left-img {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    height: 34.88%;
+    width: 38.75%;
+    max-width: 100%;
+    left: 4.8%;
+    top: 31%;
+    transition: left 0.2s ease-in-out;
+    .home-logo {
+      visibility: visible;
+      opacity: 1;
+      width: 100%;
+      max-width: 100%;
+      transition: visibility 0s, opacity 0.2s linear;
+    }
+    .home-raven {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.2s linear;
+    }
+    .home-typo {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.2s linear;
+    }
+  }
+}
+
+.home-left:hover {
+  width: 65%;
+  & .home-left-img {
+    left: 9.8%;
+  }
+  & .home-left-button {
+    visibility: visible;
+    opacity: 1;
+    background-color: $lightblack;
+    position: absolute;
+    border-radius: 0.625rem;
+    width: 16%;
+    height: 5.5%;
+    max-width: 100%;
+    color: $rouge;
+    float: none;
+    font-size: 0px;
+    font-family: "RobotoBold";
+    left: 28%;
+    top: 48.5%;
+    &::after {
+      font-size: calc(1rem * var(--text-multiplier));
+      content: "BIFFF HISTORY";
+    }
+    &:hover::after {
+      content: "WELCOME!";
+    }
+    &:hover {
+      background-color: $rouge;
+      color: white !important;
+    }
+  }
+}
+
+.home-right {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 67%;
+  overflow: hidden;
+  height: 100vh;
+  left: 32.9%;
+  top: 0.0045%;
+  .home-right-top {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 79%;
+    width: 100%;
+    background-image: url(../images/84.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 10rem;
+  }
+  .home-right-middle {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    width: 100%;
+    top: 70%;
+    padding-left: 10rem;
+    transition: height 0.2s ease-in-out;
+    z-index: 2;
+    background-color: $darkbordeau;
+
+    .home-right-zombie-text {
+      position: relative;
+      font-weight: normal;
+      font-family: "Scratchies";
+      color: white;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.8rem;
+      --val: 2vw;
+      --max: 2.875rem;
+      line-height: 3.688rem;
+      margin: 0.5rem;
+      transition: font-size 0.2s ease-in-out;
+    }
+    .home-right-button {
+      background-color: $rouge;
+      border-radius: 0.4rem;
+      width: 34%;
+      height: 38%;
+      max-width: 100%;
+      color: white;
+      font-size: 0px;
+      font-family: "RobotoBold";
+      margin: 0.5rem;
+      transition: width 0.2s ease-in-out;
+      transition: height 0.2s ease-in-out;
+      &::after {
+        font-size: calc(1.1rem * var(--text-multiplier));
+        content: "BROWSE MOVIE LIST";
+        transition: font-size 0.2s ease-in-out;
+      }
+      &:hover::after {
+        content: "BRAIIINS!";
+      }
+      &:hover {
+        background-color: $bordeau;
+        color: white !important;
+      }
+    }
+  }
+  .home-right-search {
+    display: flex;
+    height: 14%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 83.5%;
+    left: -100%;
+    transition: left 0.2s ease-in-out;
+    .home-separator {
+      border-top: 0.3rem solid #ffffff;
+      width: 100%;
+      height: 0.5rem;
+      display: inline-block;
+    }
+    .home-right-search-title {
+      color: #d00019;
+      font-family: "RobotoBold";
+      margin-top: 1rem;
+      padding-left: 10rem;
+    }
+    .search-form {
+      width: 75%;
+      margin: 0;
+      margin-bottom: 1rem;
+      padding-left: 10rem;
+      .search-field {
+        border-radius: 0.4rem;
+        max-width: 100%;
+        max-height: 100%;
+        height: 3rem;
+      }
+      > label {
+        font-size: 0px;
+      }
+      .search-submit {
+        height: 30px;
+        width: 30px;
+        font-size: 5px;
+        margin: 0.5rem;
+        position: absolute;
+        background-image: url(../images/loupe.svg);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.home-right:hover {
+  .home-right-middle {
+    height: 17%;
+    top: 65.5%;
+    .home-right-zombie-text {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.8rem;
+      --val: 1.7vw;
+      --max: 1.875rem;
+    }
+    .home-right-button {
+      width: 34.4%;
+      height: 34%;
+      &::after {
+        font-size: calc(1rem * var(--text-multiplier));
+      }
+    }
+  }
+
+  .home-right-search {
+    left: 0%;
+  }
+}
+
+.home-second {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  max-height: 100%;
+  height: 64.7%;
+  width: 100vw;
+  max-width: 100%;
+  top: 100%;
+  background-color: $darkbordeau;
+  .home-second-picture {
+    position: absolute;
+    width: 40%;
+    max-width: 100%;
+    z-index: 2;
+    left: -5%;
+    top: -2%;
+  }
+  .home-second-right {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    overflow: hidden;
+    left: 42%;
+    color: white;
+    height: 100%;
+    padding-top: 2rem;
+  }
+  .home-second-title {
+    line-height: 2.938rem;
+  }
+  .home-second-text {
+    margin: 1rem 0;
+  }
+  .home-second-button {
+    background-color: #d00019;
+    border-radius: 0.4rem;
+    width: 28%;
+    height: 11%;
+    max-width: 100%;
+    color: white;
+    font-size: 0px;
+    font-family: "RobotoBold";
+    margin: 1rem 0;
+    transition: width 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out;
+    font-size: calc(1.1rem * var(--text-multiplier));
+    transition: font-size 0.2s ease-in-out;
+    align-self: flex-end;
+    &:hover {
+      background-color: $bordeau;
+      color: white !important;
+    }
+  }
+}
+
+.home-third {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+  height: 58.9%;
+  width: 100vw;
+  max-width: 100%;
+  top: 164.7%;
+  padding-top: 6rem;
+  background-color: white;
+  .home-third-title {
+    line-height: 2.938rem;
+  }
+  .home-third-text {
+    margin: 2rem 0;
+    max-width: 85vw;
+  }
+  .home-third-button {
+    font-family: "RobotoBold";
+    background-color: #272727;
+    border-radius: 0.625rem;
+    width: 17%;
+    height: 17%;
+    max-width: 100%;
+    color: $rouge;
+    float: none;
+    font-size: 0px;
+    margin: 1rem 0;
+    &::after {
+      font-size: calc(1.1rem * var(--text-multiplier));
+      content: "JOIN THE GUILD";
+    }
+    &:hover::after {
+      content: "BECOME A MEMBER";
+    }
+    &:hover {
+      background-color: $rouge;
+      color: white !important;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@media screen and (max-width: 47rem) {
+  .edition-container {
+    padding-top: 3rem;
+    .mb-3.rounded.bg-light {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .col-md-3 {
+      width: 100% !important;
+      #edition-infos {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.8rem;
+        --val: 1.5vw;
+        --max: 2rem;
+        justify-content: start;
+        background-size: 40%;
+      }
+    }
+    .mb-6.row {
+      margin: 0rem;
+    }
+    .col-md-6 {
+      width: 100% !important;
+      margin-top: 1rem;
+      #edition-title {
+        text-align: center;
+      }
+    }
+    .singleFilmButton {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.8rem;
+      --val: 1.5vw;
+      --max: 2rem;
+    }
+    h4 {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 3.5vw;
+      --max: 2rem;
+    }
+    .mb-3 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  #edition-movies {
+    h4 {
+      text-align: center;
+    }
+    p {
+      margin: 0rem 1rem;
+    }
+
+    .mb-2 {
+      margin: 0rem 0rem !important;
+      .badge {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.5vw;
+        --max: 2rem;
+        float: none;
+        margin-bottom: 0px;
+      }
+      a {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.5vw;
+        --max: 2rem;
+      }
+    }
+  }
+}

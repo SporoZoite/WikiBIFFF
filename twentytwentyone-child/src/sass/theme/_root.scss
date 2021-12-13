@@ -1,0 +1,179 @@
+:root {
+  --global--spacing-horizontal: unset;
+  --global--font-primary: "RobotoMedium", "Helvetica Neue", sans-serif;
+  --global--font-secondary: "RobotoBold", "Helvetica Neue", sans-serif;
+  --primary-nav--padding: calc(0.77 * var(--global--spacing-unit));
+  --global--color-primary: unset;
+  --global--color-background: unset;
+  --global--spacing-vertical: unset;
+  --form--label-weight: unset;
+  --form--font-size: unset;
+  --global--line-height-body: unset;
+  --button--padding-vertical:unset;
+  --global--spacing-unit:unset;
+  --button--padding-horizontal:unset;
+  --form--label-weight:0px;
+  --button--border-width:unset;
+  --list--font-family:unset;
+  --widget--line-height-list:unset;
+  margin-top: 0px !important;
+  h1 {
+    margin: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 2.4vw;
+    --max: 2.8125rem;
+  }
+  h2 {
+    margin: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.8rem;
+    --val: 1.7vw;
+    --max: 1.875rem;
+  }
+  h3 {
+    margin: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.9rem;
+    --val: 2vw;
+    --max: 2.5rem;
+    text-transform: uppercase;
+    font-family: "RobotoBold";
+  }
+  h4 {
+    margin: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 1.5vw;
+    --max: 2rem;
+    text-transform: uppercase;
+    font-family: "RobotoBold";
+  }
+  p {
+    margin: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 1.125rem;
+    text-align: justify;
+    font-family: "RobotoMedium";
+  }
+  button {
+    text-transform: uppercase;
+    font-family: "RobotoBold";
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  --text-multiplier: 1;
+}
+
+@media screen and (min-width: 85rem) {
+  :root {
+    --text-multiplier: 1.5;
+  }
+}
+
+@media screen and (min-width: 62rem) and (max-width: 85rem) {
+  :root {
+    --text-multiplier: 1;
+  }
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) {
+  :root {
+    --text-multiplier: 1.5;
+    h1 {
+      margin: 0px;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 5.3vw;
+      --max: 3rem;
+    }
+    h2 {
+      margin: 0px;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 4.5vw;
+      --max: 3rem;
+    }
+    h3 {
+      margin: 0px;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 4.5vw;
+      --max: 3rem;
+      text-transform: uppercase;
+      font-family: "RobotoBold";
+    }
+    h4 {
+      margin: 0px;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 1.5vw;
+      --max: 2rem;
+      text-transform: uppercase;
+      font-family: "RobotoBold";
+    }
+    p {
+      margin: 0px;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 2vw;
+      --max: 1.125rem;
+      text-align: justify;
+      font-family: "RobotoMedium";
+    }
+  }
+}
+
+@media screen and (max-width: 47rem) {
+  :root {
+    --text-multiplier: 1.5;
+    h1 {
+      margin: 0px;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 5.5vw;
+      --max: 3rem;
+    }
+    h2 {
+      margin: 0px;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 4.5vw;
+      --max: 3rem;
+      line-height: 1.7rem;
+      text-align: center;
+    }
+    h3 {
+      margin: 0px;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.7rem;
+      --val: 5.5vw;
+      --max: 3rem;
+      text-transform: uppercase;
+      font-family: "RobotoBold";
+      line-height: 1.5rem;
+    }
+    h4 {
+      margin: 0px;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 1.5vw;
+      --max: 2rem;
+      text-transform: uppercase;
+      font-family: "RobotoBold";
+    }
+    p {
+      margin: 0px;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.5rem;
+      --val: 3vw;
+      --max: 1.125rem;
+      text-align: justify;
+      font-family: "RobotoMedium";
+    }
+  }
+}

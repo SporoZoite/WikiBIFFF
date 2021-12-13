@@ -1,0 +1,75 @@
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation : portrait) {
+  .history-container {
+    padding-bottom: 3rem;
+    .timeline-bar {
+      padding: 1rem 2rem;
+      > h1 {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 1rem;
+        --val: 4.3vw;
+        --max: 3rem;
+      }
+      .select {
+        width: 18%;
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.5vw;
+        --max: 2rem;
+      }
+    }
+    .timeline-container {
+      padding: 0rem 2rem;
+      #timeline {
+        margin: auto;
+        padding: 0rem 0rem;
+      }
+      .timeline-item {
+        width: 50%;
+        padding-top: 1rem;
+        height: 21vh;
+        &.right {
+          float: right;
+        }
+      }
+      .timeline-box-image {
+        max-width: 40%;
+      }
+      .timeline-box-title {
+        margin-bottom: 0.5rem !important;
+        h4 {
+          font-size: clamp(var(--min), var(--val), var(--max));
+          --min: 1rem;
+          --val: 2.5vw;
+          --max: 2rem;
+        }
+      }
+      .timeline-box-text {
+        margin-left: 1rem;
+      }
+      .timeline-box-content {
+        > p {
+          font-size: clamp(var(--min), var(--val), var(--max));
+          --min: 0.5rem !important;
+          --val: 1.6vw !important;
+          --max: 1.2rem !important;
+          line-height: 13px !important;
+        }
+      }
+
+      .timeline-circle {
+        width: 1.5rem;
+        height: 1.5rem;
+        left: 51.5%;
+        margin-left: -1.438rem;
+      }
+      .timeline-line {
+        .Ligne_1 {
+          width: 40px;
+        }
+        .Ligne_2 {
+          width: 40px;
+        }
+      }
+    }
+  }
+}

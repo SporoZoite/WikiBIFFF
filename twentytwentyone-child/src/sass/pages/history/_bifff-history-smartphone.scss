@@ -1,0 +1,104 @@
+@media screen and (max-width: 47rem) {
+  .history-container {
+    padding-bottom: 3rem;
+    .timeline-bar {
+      padding: 0.5rem 1rem;
+      margin-top: 2rem;
+      .select {
+        border: 0.5em solid $rouge;
+        width: 28%;
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.2vw;
+        --max: 2rem;
+      }
+    }
+    .timeline-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+      #timeline {
+        width: 100%;
+        margin: 1.25rem auto;
+        padding: 0 0rem;
+        &:before {
+          left: 6%;
+        }
+      }
+
+      .timeline-item {
+        width: 100%;
+        float: right;
+        flex-direction: row-reverse;
+        height: 24vh;
+        &.right {
+          float: right;
+          flex-direction: row;
+        }
+      }
+
+      .timeline-box {
+        padding: 1rem;
+      }
+      .timeline-box-content {
+        > p {
+          line-height: 10px !important;
+        }
+      }
+      .timeline-box-image {
+        max-width: 40%;
+      }
+
+      .timeline-box-text {
+        width: 70%;
+        height: 80%;
+        margin-left: 1rem;
+        .timeline-box-title {
+          margin-bottom: 0.1rem;
+          > h4 {
+            text-transform: uppercase;
+          }
+        }
+      }
+      .timeline-box-content {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        > p {
+          height: 100%;
+          font-size: clamp(var(--min), var(--val), var(--max));
+          --min: 0.5rem;
+          --val: 2.7vw;
+          --max: 1.2rem;
+          line-height: 24px;
+        }
+      }
+      .timeline-box-button {
+        margin-bottom: 1rem;
+      }
+
+      .years a {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 3.5vw;
+        --max: 2rem;
+      }
+      .timeline-circle {
+        width: 1.25rem;
+        height: 1.25rem;
+        left: 9.75%;
+        margin-left: -1.438rem;
+      }
+      .timeline-line {
+        .Ligne_1 {
+          width: 30px;
+        }
+        .Ligne_2 {
+          width: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "assets/bootstrap5/bootstrap";
+@import "assets/fontawesome/font-awesome";
+
+@import "theme/theme_variables";
+@import "theme/colors";
+@import "theme/theme";
+@import "theme/woocommerce";
+@import "theme/navbar";
+@import "theme/footer";
+@import "theme/root";
+
+
+@import "pages/guests";
+@import "pages/movies";
+@import "pages/single-event";
+@import "pages/single-guest";
+@import "pages/single-movie";
+@import "pages/competition";
+
+@import "pages/home/home";
+@import "pages/home/home-tablet";
+@import "pages/home/home-smartphone";
+
+
+@import "pages/history/bifff-history";
+@import "pages/history/bifff-history-tablet";
+@import "pages/history/bifff-history-smartphone";
+
+@import "pages/edition/edition";
+@import "pages/edition/edition-tablet";
+@import "pages/edition/edition-smartphone";
+
+

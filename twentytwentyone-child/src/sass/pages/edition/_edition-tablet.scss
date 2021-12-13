@@ -1,0 +1,47 @@
+
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .edition-container {
+    padding-top: 6rem;
+    .mb-3.rounded.bg-light {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+    .col-md-3 {
+      width: 100% !important;
+      #edition-infos {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 1rem;
+        --val: 2.5vw;
+        --max: 2rem;
+        justify-content: start;
+        margin-left: 6rem;
+        margin-right: 6rem;
+        background-size: 40%;
+      }
+    }
+    .col-md-6 {
+      width: 100% !important;
+      margin-top: 1rem;
+      #edition-title {
+        text-align: center;
+      }
+    }
+    .singleFilmButton {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 2.5vw;
+      --max: 2rem;
+    }
+    h4 {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 3.5vw;
+      --max: 2rem;
+    }
+    .mb-3 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
