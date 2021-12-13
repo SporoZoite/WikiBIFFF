@@ -5,6 +5,7 @@
 + replace style.css byt the one in my folder <br>
 + add fonts, images, src, css and js files from my folder <br>
 + you can add you css style in sass/pages/theme/_theme.scss <br>
++ /!\ leave style.css empty like the one in the folder /!\
 + I will dispatch it in the different files from there<br>
 + Don't forget to compile sass to be able to see your changes => npm run watch (see installation process below)<br>
 
