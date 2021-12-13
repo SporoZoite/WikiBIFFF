@@ -10,6 +10,16 @@
 
 __________________________________________________________________________________________<br>
 
+#6- SINGLE PAGES (First Version OK/ responsive OK/ => still working on gallery part)
+
++ replace files: single-movie.php/single-event.php/single-guest.php + fonts, images, src, css and js files to add new modifications <br>
+=> they now have the same 'template'/ they have matching names and structure <br>
++ css style of all pages is based on the single-movie's one <br>
++ it's a temporary version, waiting for all the data that must be displayed on them for final version <br>
++ responsive for desktop/tablet and smartphone <br>
+
+__________________________________________________________________________________________<br>
+
 #5- EDITION PAGE (done!)
 
 + modifs css for all screen views on all of the page <br>
