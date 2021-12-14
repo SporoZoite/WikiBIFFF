@@ -6,8 +6,9 @@
     <div class="mb-2 row">
 
     	<div class="col-md-3">
-
+            <div class="mb-3 rounded bg-light">
         	<img src="<?php echo get_the_post_thumbnail_url() ?>" style="width:100%;margin-bottom:10px;">
+			</div>
 
 	        <div class="singleFilmButtonBox">
 		        <a href="#" class="singleFilmButton">WATCH TRAILER</a>

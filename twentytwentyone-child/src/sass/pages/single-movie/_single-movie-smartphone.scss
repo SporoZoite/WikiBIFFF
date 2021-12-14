@@ -47,6 +47,15 @@
       --max: 1.125rem;
       width: 80%;
     }
+    .mb-3 {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      margin: 0rem 1rem;
+      img {
+        margin-bottom: 0px;
+      }
+    }
     .mb-1.row {
       margin: 0rem 2rem;
     }

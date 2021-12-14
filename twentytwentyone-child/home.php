@@ -52,6 +52,7 @@
 
 
     <div class="home-third">
+        <div class="home-third-section">
            <h3 class="home-third-title">Become a guild member!</h3>
            <p class="home-third-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
              sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -60,8 +61,11 @@
              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
            </p>
            <button onclick="window.location.href='http://www.bifff.net/';" class="home-third-button">JOIN THE GUILD</button>
+        </div>
     </div>
 </div>
 
 
 
+</body>
+</html>

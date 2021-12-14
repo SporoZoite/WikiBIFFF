@@ -67,5 +67,13 @@
       --val: 2.5vw;
       --max: 2rem;
     }
+    .mb-3 {
+      display: flex;
+      justify-content: center;
+    }
+    .mb-3.rounded.bg-light {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
   }
 }

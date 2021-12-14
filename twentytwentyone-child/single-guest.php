@@ -6,8 +6,9 @@
     <div class="mb-2 row">
 
     	<div class="col-md-3">
-
+            <div class="mb-3 rounded bg-light">
         	<img src="<?php echo get_the_post_thumbnail_url() ?>" style="width:100%;margin-bottom:10px;">
+            </div>
 
 	        <div class="singleFilmButtonBox">
 		        <a href="#" class="singleFilmButton">WATCH TRAILER</a>
@@ -44,11 +45,6 @@
 					<div>
 						<label class="labelTitle">Sections:</label>
 						<label class="labelContent"><?php the_field('length');?></label>
-					</div>	
-					
-					<div>
-						<label class="labelTitle">Gallery:</label>
-						<label class="labelContent"><?php the_field('audio');?></label>
 					</div>	
 					
 
@@ -102,19 +98,38 @@
 
             </div>
 
+            <div><h4>Gallery</h4></div>
+            <div class="mb-1 row">
+	            <div class="col-md-12">
+						<?php
+
+							// Load value (array of ids).
+							$images = get_field('gallery');
+							$image_ids = array();
+							//print_r($images[0]);
+							foreach( $images as $image ):
+							
+							//echo $image["ID"];
+							array_push($image_ids, $image["ID"]);
+							endforeach;
+							//echo "xxx". implode( ',', $image_ids )."yyy";
+							if( $image_ids ) {
+							
+							    // Generate string of ids ("123,456,789").
+							    $images_string = implode( ',', $image_ids );
+							
+							    // Generate and do shortcode.
+							    // Note: The following string is split to simply prevent our own website from rendering the gallery shortcode.
+							    $shortcode = sprintf( '[' . 'gallery ids="%s" size="medium" link="file" columns="6"]', esc_attr($images_string) );
+							    echo do_shortcode( $shortcode );
+							    //echo do_shortcode( '[simplemasonrygallery][gallery ids="17105,17102,17099,17096,17093,17090,17087,17084,17081,17078,17075" size="medium" link="file"][/simplemasonrygallery]' );
+							}
+						?>		            
+	            </div>
+            </div>
 
 		</div>
 	</div>
-	
-    <div class="mb-2 row">
-
-    	<div class="col-md-12"><h4></h4></div>
-    </div>
-    <div class="mb-2 row">
-
-
-
-    </div>	
 	
 	
 </div>
