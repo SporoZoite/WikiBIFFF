@@ -58,5 +58,9 @@
   .col-md-3.rounded {
     background-color: $rouge;
     margin: 0rem 1rem;
+    font-family: "RobotoBold";
+    a {
+      padding-left: 0.5rem;
+    }
   }
 }

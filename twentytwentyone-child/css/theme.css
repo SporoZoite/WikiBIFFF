@@ -17498,6 +17498,10 @@ ul {
 .single-container .col-md-3.rounded {
   background-color: #D00019;
   margin: 0rem 1rem;
+  font-family: "RobotoBold";
+}
+.single-container .col-md-3.rounded a {
+  padding-left: 0.5rem;
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
