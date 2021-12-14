@@ -1,3 +1,8 @@
+ /!\LAST UPDATE/!\ 14th Decembre 2021 <br>
+ + corrections made on all pages (.php files + css files) <br>
+ => replace all files from each point below <br>
+
+
 # WikiBIFFF
 
 #WITH EACH UPDATE
