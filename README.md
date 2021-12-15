@@ -12,6 +12,7 @@
  + corrections made on all pages (.php files + css files) <br>
  => replace all files from each point below <br>
 
+__________________________________________________________________________________________<br>
 
 # WikiBIFFF
 
