@@ -1,4 +1,14 @@
- /!\LAST UPDATE/!\ 14th Decembre 2021 <br>
+ /!\LAST UPDATES/!\ <br>
+ <br>
+ 
+ 15th Decembre 2021 <br>
+  + corrections of styling made on toggle navigation (navbar/hamburger menu smartphone screen) <br>
+  + corrections of styling on single pages (css files only) <br>
+  + styling of galleries <br>
+   => made all pictures same sized on pages as previews <br>
+ <br>
+ 
+ 14th Decembre 2021 <br>
  + corrections made on all pages (.php files + css files) <br>
  => replace all files from each point below <br>
 
@@ -16,7 +26,7 @@
 
 __________________________________________________________________________________________<br>
 
-#6- SINGLE PAGES (First Version OK/ responsive OK/ => still working on gallery part)
+#6- SINGLE PAGES (First Version OK/ responsive OK/ gallery style OK )
 
 + replace files: single-movie.php/single-event.php/single-guest.php + fonts, images, src, css and js files to add new modifications <br>
 => they now have the same 'template'/ they have matching names and structure <br>
@@ -45,7 +55,7 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________<br>
 
-#3- NAVBAR
+#3- NAVBAR (done!)
 
 + added responsive logo <br>
 + changed css + added red background color on mobile hamburger's overlay <br>
@@ -67,7 +77,7 @@ ________________________________________________________________________________
 
 ____________________________________________________________________________________________<br>
 
-#1- HOMEPAGE
+#1- HOMEPAGE (done - last correction: 14th december)
 
 - /!\ /!\ /!\ remove widgets from homepage so it does not break the design! /!\ /!\ /!\ <br>
 + replace home.php with the one in my folder (added rest of the home page : next bifff + guild) <br>
