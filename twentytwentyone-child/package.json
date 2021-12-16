@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@rollup/plugin-replace": "^3.0.0",
+    "swup": "^2.0.14",
     "terser": "^5.7.1"
   }
 }

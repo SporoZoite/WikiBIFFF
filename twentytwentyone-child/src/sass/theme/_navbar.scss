@@ -42,7 +42,7 @@
 .primary-navigation .primary-menu-container > ul > .menu-item > a {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  color:black;
+  color: black;
 }
 
 .primary-navigation .primary-menu-container > ul > .menu-item > a:hover {
@@ -72,7 +72,7 @@
   }
   .site-branding {
     height: 0.5rem;
-    max-width: calc(100% - 110px)!important;
+    max-width: calc(100% - 110px) !important;
   }
   .brand-image {
     margin-top: 0rem;
@@ -80,6 +80,9 @@
   }
   .menu-button-container {
     display: flex;
+    :hover {
+      cursor: pointer;
+    }
   }
   .dropdown-icon.open {
     font-size: 0;
@@ -99,21 +102,35 @@
     position: absolute;
     visibility: visible;
     opacity: 1;
-    transform: translateY(0);
-    background-color: $rouge;
+    background-color: transparent;
     height: 101vh;
     width: 101vw;
     z-index: 499;
     overflow-x: hidden;
     overflow-y: auto;
-    border: 0.2rem solid black;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    padding-right: 1rem;
+    padding-left: 4rem;
     padding-top: 3rem;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+    border: 0px;
+    background-image: url(../images/splatter.svg);
+    background-size: 150%;
+    background-position-x: 9%;
+    background-position-y: -66%;
+    background-repeat: no-repeat;
   }
-  .primary-navigation > div > .menu-wrapper li {
-    margin-bottom: 1rem;
+
+  .primary-navigation > .primary-menu-container > .menu-wrapper {
+    li {
+      margin-bottom: 1rem;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
   }
 }

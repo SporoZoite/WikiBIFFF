@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin slice" class="hidden" id="svgContainer">
+  <filter id="liquify">
+    <feGaussianBlur in="SourceGraphic" 
+                    stdDeviation="20" 
+                    result="blur" />
+    <feColorMatrix in="blur" 
+                   type="matrix"
+                   values=".15 0 0 0 0,  0 0 0 0 0,  0 0 0 0 0,  0 0 0 100 -20"/>
+  </filter>
+  <g filter="url(#liquify)">
+  </g>
+</svg>

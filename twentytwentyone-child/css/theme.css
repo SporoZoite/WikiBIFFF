@@ -14877,6 +14877,9 @@ figure.woocommerce-product-gallery__wrapper {
   .menu-button-container {
     display: flex;
   }
+  .menu-button-container :hover {
+    cursor: pointer;
+  }
 
   .dropdown-icon.open {
     font-size: 0;
@@ -14898,23 +14901,34 @@ figure.woocommerce-product-gallery__wrapper {
     position: absolute;
     visibility: visible;
     opacity: 1;
-    transform: translateY(0);
-    background-color: #D00019;
+    background-color: transparent;
     height: 101vh;
     width: 101vw;
     z-index: 499;
     overflow-x: hidden;
     overflow-y: auto;
-    border: 0.2rem solid black;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    padding-right: 1rem;
+    padding-left: 4rem;
     padding-top: 3rem;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+    border: 0px;
+    background-image: url(../images/splatter.svg);
+    background-size: 150%;
+    background-position-x: 9%;
+    background-position-y: -66%;
+    background-repeat: no-repeat;
   }
 
-  .primary-navigation > div > .menu-wrapper li {
+  .primary-navigation > .primary-menu-container > .menu-wrapper li {
     margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .primary-navigation > .primary-menu-container > .menu-wrapper li:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
 }
 .widget-area {
@@ -15234,6 +15248,29 @@ label {
     --max: 1.125rem;
     text-align: justify;
     font-family: "RobotoMedium";
+  }
+}
+.gallery-item {
+  overflow: hidden;
+  max-width: 100%;
+}
+.gallery-item img {
+  width: 10rem !important;
+  height: 10rem !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .gallery-item img {
+    width: 7rem !important;
+    height: 6rem !important;
+  }
+}
+@media screen and (max-width: 47rem) {
+  .gallery-item img {
+    width: 4rem !important;
+    height: 3rem !important;
   }
 }
 .page-id-1210 aside.widget-area {
@@ -17199,10 +17236,10 @@ label {
   padding: 0rem 1rem;
 }
 .edition-container #edition-infos {
-  background-image: url(../images/splash1.svg);
-  background-size: 30%;
-  background-position-x: 100%;
-  background-position-y: -3%;
+  background-image: url(../images/drips.svg);
+  background-size: 183%;
+  background-position-x: -50%;
+  background-position-y: 103%;
   background-repeat: no-repeat;
 }
 
@@ -17377,8 +17414,9 @@ ul {
     --val: 2.5vw;
     --max: 2rem;
     justify-content: start;
-    background-size: 40%;
-    background-image: url(../images/drips.svg);
+    background-size: 70%;
+    background-position-x: 160%;
+    background-position-y: 100%;
   }
   .edition-container .col-md-6 {
     width: 100% !important;
@@ -17421,7 +17459,9 @@ ul {
     --val: 1.5vw;
     --max: 2rem;
     justify-content: start;
-    background-size: 40%;
+    background-size: 70%;
+    background-position-x: 160%;
+    background-position-y: 100%;
   }
   .edition-container .mb-6.row {
     margin: 0rem;
