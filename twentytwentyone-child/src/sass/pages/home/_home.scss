@@ -314,37 +314,44 @@
   width: 100vw;
   max-width: 100%;
   top: 164.7%;
-  padding-top: 6rem;
+  padding-top: 3rem;
   background-color: white;
-  color:black;
-  .home-third-title {
-    line-height: 2.938rem;
-  }
-  .home-third-text {
-    margin: 2rem 0;
-    max-width: 85vw;
-  }
-  .home-third-button {
-    font-family: "RobotoBold";
-    background-color: #272727;
-    border-radius: 0.625rem;
-    width: 17%;
-    height: 17%;
-    max-width: 100%;
-    color: $rouge;
-    float: none;
-    font-size: 0px;
-    margin: 1rem 0;
-    &::after {
-      font-size: calc(1.1rem * var(--text-multiplier));
-      content: "JOIN THE GUILD";
+  color: black;
+  .home-third-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 34rem;
+    .home-third-title {
+      line-height: 2.938rem;
     }
-    &:hover::after {
-      content: "BECOME A MEMBER";
+    .home-third-text {
+      margin: 2rem 0;
+      max-width: 85vw;
     }
-    &:hover {
-      background-color: $rouge;
-      color: white !important;
+    .home-third-button {
+      font-family: "RobotoBold";
+      background-color: #272727;
+      border-radius: 0.625rem;
+      width: 17%;
+      height: 17%;
+      max-width: 100%;
+      color: $rouge;
+      float: none;
+      font-size: 0px;
+      margin: 1rem 0;
+      &::after {
+        font-size: calc(1.1rem * var(--text-multiplier));
+        content: "JOIN THE GUILD";
+      }
+      &:hover::after {
+        content: "BECOME A MEMBER";
+      }
+      &:hover {
+        background-color: $rouge;
+        color: white !important;
+      }
     }
   }
 }

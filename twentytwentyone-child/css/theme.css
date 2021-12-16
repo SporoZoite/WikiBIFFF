@@ -14931,10 +14931,6 @@ figure.woocommerce-product-gallery__wrapper {
     text-decoration: underline;
   }
 }
-.widget-area {
-  border-top: 5px solid #212529;
-}
-
 .widget {
   padding: 2rem;
   font-family: "RobotoMedium";
@@ -15584,18 +15580,25 @@ label {
   width: 100vw;
   max-width: 100%;
   top: 164.7%;
-  padding-top: 6rem;
+  padding-top: 3rem;
   background-color: white;
   color: black;
 }
-.home-third .home-third-title {
+.home-third .home-third-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 34rem;
+}
+.home-third .home-third-section .home-third-title {
   line-height: 2.938rem;
 }
-.home-third .home-third-text {
+.home-third .home-third-section .home-third-text {
   margin: 2rem 0;
   max-width: 85vw;
 }
-.home-third .home-third-button {
+.home-third .home-third-section .home-third-button {
   font-family: "RobotoBold";
   background-color: #272727;
   border-radius: 0.625rem;
@@ -15607,14 +15610,14 @@ label {
   font-size: 0px;
   margin: 1rem 0;
 }
-.home-third .home-third-button::after {
+.home-third .home-third-section .home-third-button::after {
   font-size: calc(1.1rem * var(--text-multiplier));
   content: "JOIN THE GUILD";
 }
-.home-third .home-third-button:hover::after {
+.home-third .home-third-section .home-third-button:hover::after {
   content: "BECOME A MEMBER";
 }
-.home-third .home-third-button:hover {
+.home-third .home-third-section .home-third-button:hover {
   background-color: #D00019;
   color: white !important;
 }
@@ -17223,6 +17226,10 @@ label {
     width: 30px;
   }
 }
+.site-main {
+  border-bottom: 5px solid #212529;
+}
+
 .edition-container {
   padding-top: 8rem;
   width: 100%;
