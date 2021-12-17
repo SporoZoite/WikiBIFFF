@@ -108,6 +108,9 @@
 	//print_r(array_keys($section_array));
 	?>
 
+<<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/drop.svg" id="myBtn" title="Go to top">
+
+
 <main class="edition-container" style="overflow:hidden;">
 
     <div class="mb-2 row">

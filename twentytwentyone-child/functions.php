@@ -37,7 +37,7 @@ function theme_register_assets(){
 function theme_charger_js_web() {
 
     wp_enqueue_script( 'bootstrap-js', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), null, true );
-	wp_enqueue_script( 'child-js', get_stylesheet_directory_uri() . '/js/theme.min.js');
+	wp_enqueue_script( 'child-js', get_stylesheet_directory_uri() . '/js/theme.min.js', array(), false, true);
 } 
 
 add_action('wp_enqueue_scripts', 'theme_charger_js_web');

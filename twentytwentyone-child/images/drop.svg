@@ -1,4 +1,7 @@
-<svg id="Composant_18_1" data-name="Composant 18 – 1" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
-  <rect id="Rectangle_16" data-name="Rectangle 16" width="34" height="34" fill="#d00019"/>
-  <path id="Icon_ionic-md-arrow-dropdown" data-name="Icon ionic-md-arrow-dropdown" d="M9,13.5l9.358,9.358L27.716,13.5Z" transform="translate(-1.358 -1.179)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="drop" transform="translate(34 34) rotate(180)">
+    <rect id="Rectangle_16" data-name="Rectangle 16" width="34" height="34" fill="#d00019"/>
+    <path id="Icon_ionic-md-arrow-dropdown" data-name="Icon ionic-md-arrow-dropdown" d="M9,13.5l9.358,9.358L27.716,13.5Z" transform="translate(-1.358 -1.179)" fill="#fff"/>
+  </g>
 </svg>
+
