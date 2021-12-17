@@ -25,6 +25,14 @@
 }
 
 @font-face {
+	font-family: "RobotoBlack";
+	src: url(../fonts/Roboto-Black.ttf) format("truetype");
+	font-weight: bolder;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
 	font-family: "MrsMonster";
 	src: url(../fonts/mrsmonsterexpand.ttf) format("truetype");
 	font-weight: 500;

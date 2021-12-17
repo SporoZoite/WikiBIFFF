@@ -45,4 +45,36 @@
       justify-content: center;
     }
   }
+  .mb-2 {
+    .badge {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.5rem;
+      --val: 1.5vw;
+      --max: 2rem;
+      float: none;
+      margin-bottom: 0px;
+    }
+    a {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.5rem;
+      --val: 2.1vw;
+      --max: 2rem;
+    }
+  }
+  #edition-movies {
+    h4 {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 3vw;
+      --max: 2rem;
+    }
+  }
+  .app {
+    h4 {
+         font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 3vw;
+      --max: 2rem;
+    }
+  }
 }

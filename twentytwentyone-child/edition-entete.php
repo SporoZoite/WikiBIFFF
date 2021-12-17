@@ -267,7 +267,7 @@
                         <?php
 	                        } else {                        
 	                    ?>
-						<li class="item" style="background-color:#212529 ;height:25rem;">
+						<li class="item-2" style="background-color:#212529 ;height:25rem;">
 						<h5 style="text-align:center;"><a href="<?php echo get_permalink($mv); ?>" style="color:#ffffff!important;font-family:'RobotoBold';"><?php echo get_the_title($mv); ?></a></h5>
 						<?php 
 							}
@@ -309,7 +309,7 @@
                         <?php
 	                        } else {                        
 	                    ?>
-						<li class="item" style="background-color:#212529 ;height:25rem;">
+						<li class="item-2" style="background-color:#212529 ;height:25rem;">
 						<h5 style="text-align:center;"><a href="<?php echo get_permalink($mv); ?>" style="color:#ffffff!important;font-family:'RobotoBold';"><?php echo get_the_title($mv); ?></a></h5>
 						<?php 
 							}

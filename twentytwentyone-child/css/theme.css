@@ -14368,6 +14368,13 @@ textarea.form-control-lg {
   font-display: swap;
 }
 @font-face {
+  font-family: "RobotoBlack";
+  src: url(../fonts/Roboto-Black.ttf) format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "MrsMonster";
   src: url(../fonts/mrsmonsterexpand.ttf) format("truetype");
   font-weight: 500;
@@ -17381,9 +17388,27 @@ ul {
 
 .badge {
   background-color: #333;
+  color: whitesmoke !important;
   float: right;
   margin-left: 5px;
   margin-bottom: 8px;
+}
+
+.item-2 {
+  scroll-snap-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 300px;
+  overflow: hidden;
+  background-image: url(../images/splatters.svg);
+  background-size: 160%;
+  background-position-x: 10%;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
 }
 
 #edition-movies {
@@ -17399,6 +17424,14 @@ ul {
   padding: 1rem;
   border-radius: 0.25em;
   margin: 0rem 1rem;
+}
+#edition-movies .mb-2 a {
+  color: white !important;
+  font-family: "RobotoBlack";
+  text-transform: uppercase;
+}
+#edition-movies .mb-2 a :hover {
+  filter: invert(1);
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
@@ -17447,6 +17480,35 @@ ul {
   .edition-container .mb-3 {
     display: flex;
     justify-content: center;
+  }
+
+  .mb-2 .badge {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.5vw;
+    --max: 2rem;
+    float: none;
+    margin-bottom: 0px;
+  }
+  .mb-2 a {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 2.1vw;
+    --max: 2rem;
+  }
+
+  #edition-movies h4, #edition-movies .h4 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 3vw;
+    --max: 2rem;
+  }
+
+  .app h4, .app .h4 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 3vw;
+    --max: 2rem;
   }
 }
 @media screen and (max-width: 47rem) {
@@ -17517,7 +17579,7 @@ ul {
   #edition-movies .mb-2 a {
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
-    --val: 1.5vw;
+    --val: 2.3vw;
     --max: 2rem;
   }
 }
