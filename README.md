@@ -1,12 +1,19 @@
  /!\LAST UPDATES/!\ <br>
  <br>
  
+  16th Decembre 2021 <br>
+  + corrections of custom js path in functions.php <br>
+  + added up button on all single pages with some custom js <br>
+  + correction of list color and font weight and size + correction of titles on tablet screens <br>
+  + added custom background to movies with no posters <br>
+
+ 
  15th Decembre 2021 <br>
   + corrections of styling made on toggle navigation (navbar/hamburger menu smartphone screen) <br>
   + corrections of styling on single pages (css files only) <br>
   + styling of galleries <br>
    => made all pictures same sized on pages as previews <br>
- <br>
+
  
  14th Decembre 2021 <br>
  + corrections made on all pages (.php files + css files) <br>
