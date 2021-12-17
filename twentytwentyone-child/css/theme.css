@@ -14775,6 +14775,10 @@ body a {
   border-radius: 4px;
 }
 
+a:hover {
+  color: #212529;
+}
+
 .woocommerce-input-wrapper {
   width: 100%;
 }
