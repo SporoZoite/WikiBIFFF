@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/drop.svg" id="myBtn" title="Go to top">
 <div class="single-container">
 
     <div class="mb-2 row">
