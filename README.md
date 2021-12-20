@@ -1,8 +1,12 @@
  /!\LAST CORRECTIONS/!\ <br>
  <br>
  
+   20th Decembre 2021 <br>
+  + correction of p => font-size of timeline's boxes + select-box arrow in _bifff-history.scss <br>
+  + changed left button position in _home.scss
+
  
-  16th Decembre 2021 <br>
+  16th-17th Decembre 2021 <br>
   + corrections of custom js path in functions.php <br>
   + added up button on all single pages with some custom js <br>
   + correction of list color and font weight and size + correction of titles on tablet screens <br>
