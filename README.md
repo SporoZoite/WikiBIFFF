@@ -3,7 +3,9 @@
  
    20th Decembre 2021 <br>
   + correction of p => font-size of timeline's boxes + select-box arrow in _bifff-history.scss <br>
-  + changed left button position in _home.scss
+  + changed left button position in _home.scss <br>
+  => replace sass file
+  
 
  
   16th-17th Decembre 2021 <br>
