@@ -1,5 +1,6 @@
- /!\LAST UPDATES/!\ <br>
+ /!\LAST CORRECTIONS/!\ <br>
  <br>
+ 
  
   16th Decembre 2021 <br>
   + corrections of custom js path in functions.php <br>
