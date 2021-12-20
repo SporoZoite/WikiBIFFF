@@ -15369,7 +15369,7 @@ label {
   font-size: 0px;
   font-family: "RobotoBold";
   left: 28%;
-  top: 48.5%;
+  top: 49.2%;
 }
 .home-left:hover .home-left-button::after {
   font-size: calc(1rem * var(--text-multiplier));
@@ -16825,9 +16825,9 @@ label {
   z-index: 3;
 }
 .history-container .timeline-bar select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
   background-color: transparent;
   border: none;
   padding: 0 1em 0 0;
@@ -16841,7 +16841,7 @@ label {
   outline: none;
 }
 .history-container .timeline-bar select::-ms-expand {
-  display: none;
+  display: none !important;
 }
 .history-container .timeline-bar .select {
   display: grid;
@@ -16974,7 +16974,7 @@ label {
   font-size: clamp(var(--min), var(--val), var(--max));
   --min: 0.5rem;
   --val: 2.7vw;
-  --max: 1.2rem;
+  --max: 1rem;
   line-height: 24px;
 }
 .history-container .timeline-container .timeline-box-button {
