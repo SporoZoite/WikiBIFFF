@@ -1,30 +1,31 @@
  /!\LAST CORRECTIONS/!\ <br>
  <br>
  
+   21th Decembre 2021 <br> PRELOADER WORKINPROGRESS
+  + added sound file + temporary "welcome" sound <br>
+  + added css preloader in header.php
+  + added preloader's css in theme/_preloader.scss (added new file)
+  => add sound file + replace header.php <br>
+ 
    20th Decembre 2021 <br>
   + correction of p => font-size of timeline's boxes + select-box arrow in _bifff-history.scss <br>
   + changed left button position in _home.scss <br>
-  => replace sass file
+  => replace sass file <br>
+  => replace template-parts file => header + footer files to have corrections on navigation bar + footer <br>
+  => missing custom logo for navbar => replace site-branding.php with my version <br>
+  
   
 
- 
-  16th-17th Decembre 2021 <br>
+  *** OLD CORRECTIONS *** <br>
+ <br> 
   + corrections of custom js path in functions.php <br>
   + added up button on all single pages with some custom js <br>
   + correction of list color and font weight and size + correction of titles on tablet screens <br>
   + added custom background to movies with no posters <br>
-
- 
- 15th Decembre 2021 <br>
   + corrections of styling made on toggle navigation (navbar/hamburger menu smartphone screen) <br>
   + corrections of styling on single pages (css files only) <br>
   + styling of galleries <br>
    => made all pictures same sized on pages as previews <br>
-
- 
- 14th Decembre 2021 <br>
- + corrections made on all pages (.php files + css files) <br>
- => replace all files from each point below <br>
 
 __________________________________________________________________________________________<br>
 
