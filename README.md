@@ -1,11 +1,14 @@
  /!\LAST CORRECTIONS/!\ <br>
  <br>
  
-   21th Decembre 2021 <br> PRELOADER WORKINPROGRESS
-  + added sound file + temporary "welcome" sound <br>
-  + added css preloader in header.php
-  + added preloader's css in theme/_preloader.scss (added new file)
-  => add sound file + replace header.php <br>
+   21-22th Decembre 2021 <br> 
+  + added sound file + temporary mp3 "welcome" sound <br>
+   => add sound file <br>
+  + created favicon <br>
+  => see point #7 FAVICON to install
+  + working on footer design (work in progress)
+  + working on preloader (work in progress)
+ 
  
    20th Decembre 2021 <br>
   + correction of p => font-size of timeline's boxes + select-box arrow in _bifff-history.scss <br>
@@ -13,19 +16,6 @@
   => replace sass file <br>
   => replace template-parts file => header + footer files to have corrections on navigation bar + footer <br>
   => missing custom logo for navbar => replace site-branding.php with my version <br>
-  
-  
-
-  *** OLD CORRECTIONS *** <br>
- <br> 
-  + corrections of custom js path in functions.php <br>
-  + added up button on all single pages with some custom js <br>
-  + correction of list color and font weight and size + correction of titles on tablet screens <br>
-  + added custom background to movies with no posters <br>
-  + corrections of styling made on toggle navigation (navbar/hamburger menu smartphone screen) <br>
-  + corrections of styling on single pages (css files only) <br>
-  + styling of galleries <br>
-   => made all pictures same sized on pages as previews <br>
 
 __________________________________________________________________________________________<br>
 
@@ -42,6 +32,15 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________<br>
 
+#7- FAVICON
+
++ Add favicon files from "BIFFF_favicon_io file" to wordpress medias <br>
+=> added in "logo & autres trucs utiles"
++ Go to Appearance => customize => site identity => site icon <br>
+=> done! Now we have the raven displayed on web tabs! =)
+
+__________________________________________________________________________________________<br>
+
 #6- SINGLE PAGES (First Version OK/ responsive OK/ gallery style OK )
 
 + replace files: single-movie.php/single-event.php/single-guest.php + fonts, images, src, css and js files to add new modifications <br>
@@ -49,6 +48,11 @@ ________________________________________________________________________________
 + css style of all pages is based on the single-movie's one <br>
 + it's a temporary version, waiting for all the data that must be displayed on them for final version <br>
 + responsive for desktop/tablet and smartphone <br>
++ added custom background to movies with no posters <br>
++ styling of galleries <br>
+ => made all pictures same sized on pages as previews <br>
++ corrections of custom js path in functions.php <br>
++ added up button on all single pages with some custom js <br>
 
 __________________________________________________________________________________________<br>
 
@@ -76,6 +80,7 @@ ________________________________________________________________________________
 + added responsive logo <br>
 + changed css + added red background color on mobile hamburger's overlay <br>
 + modifs can be added when simply changing src/css/js files as usual <br>
++ corrections of styling made on toggle navigation (navbar/hamburger menu smartphone screen) <br>
 
 ___________________________________________________________________________________________<br>
 
