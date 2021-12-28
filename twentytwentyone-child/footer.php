@@ -15,8 +15,8 @@
 			</main><!-- #main -->
 		</div><!-- #primary -->
 	</div><!-- #content -->
-
 	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
+
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
@@ -39,6 +39,18 @@
 				</ul><!-- .footer-navigation-wrapper -->
 			</nav><!-- .footer-navigation -->
 		<?php endif; ?>
+
+		<div class="footer-wrapper">
+			<div class="footer-copyright">
+			<p>©BIFFF 2021 all right reserved</p>
+			</div>
+			<div class="footer-socials">
+			 <img onclick="window.location.href='https://www.facebook.com/BrusselsInternationalFantasticFilmFestival';" class="footer-social" src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.svg" alt="bifff-social">
+			 <img onclick="window.location.href='https://twitter.com/bifff_festival';" class="footer-social" src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.svg" alt="bifff-social">
+			 <img onclick="window.location.href='https://www.instagram.com/bifff_festival/';" class="footer-social" src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram.svg" alt="bifff-social">
+			 <img onclick="window.location.href='https://www.youtube.com/c/BIFFF_festival';" class="footer-social" src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube.svg" alt="bifff-social">
+			</div>
+		</div>
 		
 	</footer><!-- #colophon -->
 
