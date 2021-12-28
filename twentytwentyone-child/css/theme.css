@@ -15090,41 +15090,80 @@ label {
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
-  .widget-title {
-    font-size: clamp(var(--min), var(--val), var(--max));
-    --min: 1rem !important;
-    --val: 3vw !important;
-    --max: 3rem !important;
+  .footer-wrapper .footer-socials .footer-social {
+    width: 75%;
   }
 
-  .widget_archive {
-    border-bottom: 2px solid #212529;
+  .widget-area {
+    grid-template-columns: 2fr 1.2fr 2fr 1.5fr;
+    padding: 7% 4%;
+    justify-self: center;
+  }
+
+  .widget {
+    padding: 1rem;
+  }
+
+  .widget-title {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.8rem;
+    --val: 1.2vw;
+    --max: 1.875rem;
+  }
+
+  .widget_search {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-top: 0rem;
+    max-width: unset;
   }
 
   .widget_recent_comments {
-    border-bottom: 2px solid #212529;
+    padding-right: 1.5rem;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  .widget_media_image img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 47rem) and (orientation: portrait) {
+  .widget-area {
+    padding: 0% 0%;
+  }
+
   .footer-wrapper {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-wrapper .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .footer-wrapper .footer-socials {
     justify-self: center;
     display: grid;
-    width: 40%;
+    width: 50%;
     margin-top: 0.5rem;
   }
   .footer-wrapper .footer-socials .footer-social {
     justify-self: center;
   }
 
-  .widget {
-    border-bottom: 2px solid black;
-    padding: 1rem;
+  .widget_media_image {
+    padding: 3rem !important;
+    padding-bottom: 1rem !important;
   }
-  .widget .search-form {
-    border: 0.4em solid #D00019;
+  .widget_media_image img {
+    width: 100%;
+  }
+
+  .widget {
+    padding: 1rem;
   }
   .widget a {
     font-size: 12px;
@@ -15136,17 +15175,14 @@ label {
     justify-content: center;
   }
 
-  .widget_search {
-    border-bottom: 2px solid #D00019;
-  }
-
-  .widget_archive {
-    border-bottom: 2px solid #D00019;
-  }
-
   .widget_meta {
     background-color: #be1b17;
     color: black;
+  }
+
+  .widget_search {
+    margin-top: 0rem;
+    max-width: unset;
   }
 }
 :root {
