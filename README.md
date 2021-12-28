@@ -82,7 +82,8 @@ ________________________________________________________________________________
 => click on 'replace'
 => change 'Current media URL' by http://wiki.bifff.net/wp-content/themes/twentytwentyone-child/images/40th.png
 + add widget navigation and call it "About us" (it's temporary) select the main navigation
-=>reorganise widgets and put the image in first position, About us in second position then the comments, then meta, and finally the search bar in last position by clicking on arrows
+=>reorganise widgets and put the image in first position, About us in second position then the comments, then meta, and finally the search bar in last position by clicking on arrows<br>
+=> not responsive yet/ only ok for pc
 
 __________________________________________________________________________________________<br>
 
