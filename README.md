@@ -1,6 +1,12 @@
  /!\LAST CORRECTIONS/!\ <br>
  <br>
  
+   27-28th Decembre 2021 <br> 
+  + finished footer V2 <br>
+   => added css for responsive all supports <br>
+  => see UPDATE on footer
+  => see photos on GIT
+ 
    21-22th Decembre 2021 <br> 
   + added sound file + temporary mp3 "welcome" sound <br>
    => add sound file <br>
@@ -83,7 +89,7 @@ ________________________________________________________________________________
 => change 'Current media URL' by http://wiki.bifff.net/wp-content/themes/twentytwentyone-child/images/40th.png
 + add widget navigation and call it "About us" (it's temporary) select the main navigation
 =>reorganise widgets and put the image in first position, About us in second position then the comments, then meta, and finally the search bar in last position by clicking on arrows<br>
-=> not responsive yet/ only ok for pc
+=> ok responsive all supports
 
 __________________________________________________________________________________________<br>
 
