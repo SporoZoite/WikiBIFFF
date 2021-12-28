@@ -6,8 +6,8 @@
    => add sound file <br>
   + created favicon <br>
   => see point #7 FAVICON to install
-  + working on footer design (work in progress)
-  + working on preloader (work in progress)
+  + working on footer design (work in progress)<br>
+  + working on preloader (work in progress)<br>
   => see UPDATE on footer
  
  
