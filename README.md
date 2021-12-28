@@ -8,6 +8,7 @@
   => see point #7 FAVICON to install
   + working on footer design (work in progress)
   + working on preloader (work in progress)
+  => see UPDATE on footer
  
  
    20th Decembre 2021 <br>
