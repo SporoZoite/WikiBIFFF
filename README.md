@@ -70,8 +70,18 @@ ________________________________________________________________________________
 
 + changed widget "categories" directly in wordpress wikibifff to "dropdown" for better years display + added style to the dropdown <br>
 - /!\ could change title from "Categories" to "Years" ? /!\
+--------------------- UPDATE: ----------------------------------
 + changed footer.php <br>
-+ modifs css (searchbar/font/background color/etc) <br>
+=> replace footer.php
++ modifs css <br>
++ added images in images file
++ remove widgets archives + recents posts + cathegories
++ add widget "image" 
+=> put any image from media library at first
+=> click on 'replace'
+=> change 'Current media URL' by http://wiki.bifff.net/wp-content/themes/twentytwentyone-child/images/40th.png
++ add widget navigation and call it "About us" (it's temporary) select the main navigation
+=>reorganise widgets and put the image in first position, About us in second position then the comments, then meta, and finally the search bar in last position by clicking on arrows
 
 __________________________________________________________________________________________<br>
 
