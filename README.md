@@ -4,7 +4,7 @@
    27-28th Decembre 2021 <br> 
   + finished footer V2 <br>
    => added css for responsive all supports <br>
-  => see UPDATE on footer
+  => see UPDATE on #4 footer
   => see photos on GIT
  
    21-22th Decembre 2021 <br> 
