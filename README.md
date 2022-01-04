@@ -86,7 +86,7 @@ ________________________________________________________________________________
 + add widget "image" 
 => put any image from media library at first
 => click on 'replace'
-=> change 'Current media URL' by http://wiki.bifff.net/wp-content/themes/twentytwentyone-child/images/40th.png
+=> change 'Current media URL' by http://wiki.bifff.net/wp-content/themes/twentytwentyone-child/images/bifff-logo-footer.png
 + add widget navigation and call it "About us" (it's temporary) select the main navigation
 =>reorganise widgets and put the image in first position, About us in second position then the comments, then meta, and finally the search bar in last position by clicking on arrows<br>
 => ok responsive all supports
