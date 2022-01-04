@@ -1,23 +1,28 @@
- /!\LAST UPDATES/!\ <br>
+ /!\LAST CORRECTIONS/!\ <br>
  <br>
  
-  16th Decembre 2021 <br>
-  + corrections of custom js path in functions.php <br>
-  + added up button on all single pages with some custom js <br>
-  + correction of list color and font weight and size + correction of titles on tablet screens <br>
-  + added custom background to movies with no posters <br>
-
+   27-28th Decembre 2021 <br> 
+  + finished footer V2 <br>
+   => added css for responsive all supports <br>
+  => see UPDATE on footer
+  => see photos on GIT
  
- 15th Decembre 2021 <br>
-  + corrections of styling made on toggle navigation (navbar/hamburger menu smartphone screen) <br>
-  + corrections of styling on single pages (css files only) <br>
-  + styling of galleries <br>
-   => made all pictures same sized on pages as previews <br>
-
+   21-22th Decembre 2021 <br> 
+  + added sound file + temporary mp3 "welcome" sound <br>
+   => add sound file <br>
+  + created favicon <br>
+  => see point #7 FAVICON to install
+  + working on footer design (work in progress)<br>
+  + working on preloader (work in progress)<br>
+  => see UPDATE on footer
  
- 14th Decembre 2021 <br>
- + corrections made on all pages (.php files + css files) <br>
- => replace all files from each point below <br>
+ 
+   20th Decembre 2021 <br>
+  + correction of p => font-size of timeline's boxes + select-box arrow in _bifff-history.scss <br>
+  + changed left button position in _home.scss <br>
+  => replace sass file <br>
+  => replace template-parts file => header + footer files to have corrections on navigation bar + footer <br>
+  => missing custom logo for navbar => replace site-branding.php with my version <br>
 
 __________________________________________________________________________________________<br>
 
@@ -34,6 +39,15 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________<br>
 
+#7- FAVICON
+
++ Add favicon files from "BIFFF_favicon_io file" to wordpress medias <br>
+=> added in "logo & autres trucs utiles"
++ Go to Appearance => customize => site identity => site icon <br>
+=> done! Now we have the raven displayed on web tabs! =)
+
+__________________________________________________________________________________________<br>
+
 #6- SINGLE PAGES (First Version OK/ responsive OK/ gallery style OK )
 
 + replace files: single-movie.php/single-event.php/single-guest.php + fonts, images, src, css and js files to add new modifications <br>
@@ -41,6 +55,11 @@ ________________________________________________________________________________
 + css style of all pages is based on the single-movie's one <br>
 + it's a temporary version, waiting for all the data that must be displayed on them for final version <br>
 + responsive for desktop/tablet and smartphone <br>
++ added custom background to movies with no posters <br>
++ styling of galleries <br>
+ => made all pictures same sized on pages as previews <br>
++ corrections of custom js path in functions.php <br>
++ added up button on all single pages with some custom js <br>
 
 __________________________________________________________________________________________<br>
 
@@ -58,8 +77,19 @@ ________________________________________________________________________________
 
 + changed widget "categories" directly in wordpress wikibifff to "dropdown" for better years display + added style to the dropdown <br>
 - /!\ could change title from "Categories" to "Years" ? /!\
+--------------------- UPDATE: ----------------------------------
 + changed footer.php <br>
-+ modifs css (searchbar/font/background color/etc) <br>
+=> replace footer.php
++ modifs css <br>
++ added images in images file
++ remove widgets archives + recents posts + cathegories
++ add widget "image" 
+=> put any image from media library at first
+=> click on 'replace'
+=> change 'Current media URL' by http://wiki.bifff.net/wp-content/themes/twentytwentyone-child/images/40th.png
++ add widget navigation and call it "About us" (it's temporary) select the main navigation
+=>reorganise widgets and put the image in first position, About us in second position then the comments, then meta, and finally the search bar in last position by clicking on arrows<br>
+=> ok responsive all supports
 
 __________________________________________________________________________________________<br>
 
@@ -68,6 +98,7 @@ ________________________________________________________________________________
 + added responsive logo <br>
 + changed css + added red background color on mobile hamburger's overlay <br>
 + modifs can be added when simply changing src/css/js files as usual <br>
++ corrections of styling made on toggle navigation (navbar/hamburger menu smartphone screen) <br>
 
 ___________________________________________________________________________________________<br>
 

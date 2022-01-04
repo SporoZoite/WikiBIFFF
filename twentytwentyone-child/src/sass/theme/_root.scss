@@ -18,6 +18,9 @@
   --widget--line-height-list: unset;
   --gutter: 20px;
   margin-top: 0px !important;
+  appearance: none!important;
+  -moz-appearance: none!important;
+  -webkit-appearance: none!important;
   h1 {
     margin: 0px;
     font-size: clamp(var(--min), var(--val), var(--max));

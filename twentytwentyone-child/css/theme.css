@@ -14952,19 +14952,47 @@ figure.woocommerce-product-gallery__wrapper {
     text-decoration: underline;
   }
 }
+.footer-wrapper {
+  background-color: #D00019;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: black;
+  padding: 1.2rem 3rem;
+}
+.footer-wrapper .footer-copyright p {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.8rem;
+  --val: 1.2vw;
+  --max: 1.875rem;
+}
+.footer-wrapper .footer-socials {
+  width: 30%;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 0rem;
+}
+.footer-wrapper .footer-socials .footer-social {
+  justify-self: center;
+  width: 50%;
+}
+
+.widget-area {
+  grid-template-columns: 2.5fr 1fr 2fr 2fr;
+  padding: 8% 8%;
+  justify-self: center;
+}
+
 .widget {
-  padding: 2rem;
   font-family: "RobotoMedium";
-  background-color: black;
-  color: white;
+  color: #696969;
 }
 .widget > * {
   width: 100%;
 }
 .widget #cat.postform {
   min-width: 15ch;
-  max-width: 60ch;
-  border: 0.625em solid #D00019;
+  max-width: 25ch;
   font-size: clamp(var(--min), var(--val), var(--max));
   --min: 0.5rem;
   --val: 3vw;
@@ -14987,29 +15015,58 @@ figure.woocommerce-product-gallery__wrapper {
   position: relative;
 }
 .widget .search-form {
-  border: 0.625em solid #D00019;
   border-radius: 0.25em;
+  background-color: #212529;
 }
 .widget a {
   text-decoration: none;
 }
-
-.widget_search {
-  border-bottom: 2px solid #D00019;
+.widget .widget-title {
+  text-transform: uppercase;
+  font-family: "RobotoMedium";
+  margin-bottom: 1rem;
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.8rem;
+  --val: 1.2vw;
+  --max: 1.875rem;
+  padding-top: 0.5rem;
 }
 
-.widget_recent_entries {
-  border-bottom: 2px solid #D00019;
+.widget_search {
+  grid-column-start: 4;
+  margin-top: 3rem;
+  max-width: 25ch;
+}
+.widget_search .widget-title {
+  width: 10%;
+  padding: 0rem;
+}
+
+.widget_media_image img {
+  width: 80%;
 }
 
 .widget_recent_comments {
-  border-bottom: 2px solid #D00019;
+  padding-right: 3rem;
 }
 
 .widget_categories {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  grid-column-start: 1;
+  border-radius: 0.75em;
+  background-color: #272727;
+  color: #be1b17;
+  width: 50%;
+  padding: 1.5rem;
+}
+.widget_categories .widget-title {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.8rem;
+  --val: 1vw;
+  --max: 1.875rem;
+}
+
+#nav_menu-3 {
+  grid-column-start: 1;
 }
 
 input[type=search] {
@@ -15032,40 +15089,81 @@ label {
   font-size: 0px;
 }
 
-.widget-title {
-  text-transform: uppercase;
-  padding-bottom: 1rem;
-  font-family: "RobotoMedium";
-}
-
-@media only screen and (min-width: 1024px) {
-  .widget_recent_comments {
-    border-bottom: 2px solid #D00019 !important;
-  }
-}
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .footer-wrapper .footer-socials .footer-social {
+    width: 75%;
+  }
+
+  .widget-area {
+    grid-template-columns: 2fr 1.2fr 2fr 1.5fr;
+    padding: 7% 4%;
+    justify-self: center;
+  }
+
+  .widget {
+    padding: 1rem;
+  }
+
   .widget-title {
     font-size: clamp(var(--min), var(--val), var(--max));
-    --min: 1rem !important;
-    --val: 3vw !important;
-    --max: 3rem !important;
+    --min: 0.8rem;
+    --val: 1.2vw;
+    --max: 1.875rem;
   }
 
-  .widget_archive {
-    border-bottom: 2px solid #212529;
+  .widget_search {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-top: 0rem;
+    max-width: unset;
   }
 
   .widget_recent_comments {
-    border-bottom: 2px solid #212529;
+    padding-right: 1.5rem;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  .widget_media_image img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 47rem) and (orientation: portrait) {
-  .widget {
-    border-bottom: 2px solid black;
-    padding: 1rem;
+  .widget-area {
+    padding: 0% 0%;
   }
-  .widget .search-form {
-    border: 0.4em solid #D00019;
+
+  .footer-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-wrapper .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-wrapper .footer-socials {
+    justify-self: center;
+    display: grid;
+    width: 50%;
+    margin-top: 0.5rem;
+  }
+  .footer-wrapper .footer-socials .footer-social {
+    justify-self: center;
+  }
+
+  .widget_media_image {
+    padding: 3rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .widget_media_image img {
+    width: 100%;
+  }
+
+  .widget {
+    padding: 1rem;
   }
   .widget a {
     font-size: 12px;
@@ -15077,17 +15175,14 @@ label {
     justify-content: center;
   }
 
-  .widget_search {
-    border-bottom: 2px solid #D00019;
-  }
-
-  .widget_archive {
-    border-bottom: 2px solid #D00019;
-  }
-
   .widget_meta {
     background-color: #be1b17;
     color: black;
+  }
+
+  .widget_search {
+    margin-top: 0rem;
+    max-width: unset;
   }
 }
 :root {
@@ -15110,6 +15205,9 @@ label {
   --widget--line-height-list: unset;
   --gutter: 20px;
   margin-top: 0px !important;
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
   --text-multiplier: 1;
 }
 :root h1, :root .h1 {
@@ -15369,7 +15467,7 @@ label {
   font-size: 0px;
   font-family: "RobotoBold";
   left: 28%;
-  top: 48.5%;
+  top: 49.2%;
 }
 .home-left:hover .home-left-button::after {
   font-size: calc(1rem * var(--text-multiplier));
@@ -16825,9 +16923,9 @@ label {
   z-index: 3;
 }
 .history-container .timeline-bar select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
   background-color: transparent;
   border: none;
   padding: 0 1em 0 0;
@@ -16841,7 +16939,7 @@ label {
   outline: none;
 }
 .history-container .timeline-bar select::-ms-expand {
-  display: none;
+  display: none !important;
 }
 .history-container .timeline-bar .select {
   display: grid;
@@ -16974,7 +17072,7 @@ label {
   font-size: clamp(var(--min), var(--val), var(--max));
   --min: 0.5rem;
   --val: 2.7vw;
-  --max: 1.2rem;
+  --max: 1rem;
   line-height: 24px;
 }
 .history-container .timeline-container .timeline-box-button {

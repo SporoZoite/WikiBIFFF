@@ -21,7 +21,9 @@
     margin-top: 4.5rem;
     z-index: 3;
     select {
-      appearance: none;
+      -webkit-appearance: none!important;
+      -moz-appearance: none!important;
+      appearance: none!important;
       background-color: transparent;
       border: none;
       padding: 0 1em 0 0;
@@ -33,7 +35,7 @@
       line-height: inherit;
       z-index: 1;
       &::-ms-expand {
-        display: none;
+        display: none!important;
       }
       outline: none;
     }
@@ -171,7 +173,7 @@
           font-size: clamp(var(--min), var(--val), var(--max));
           --min: 0.5rem;
           --val: 2.7vw;
-          --max: 1.2rem;
+          --max: 1rem;
           line-height: 24px;
         }
       }
