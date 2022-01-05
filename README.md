@@ -3,7 +3,7 @@
 
   => replace sass file <br>
   => missing custom logo for navbar => replace site-branding.php with my version <br>
-  => replace template-parts file => header + footer files to have corrections on navigation bar + footer <br>
+  (replace template-parts/ header + footer entire files to have corrections on navigation bar + footer) <br>
   
   + added sound file + temporary mp3 "welcome" sound <br>
   => add sound file <br>
