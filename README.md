@@ -1,28 +1,12 @@
  /!\LAST CORRECTIONS/!\ <br>
  <br>
- 
-   27-28th Decembre 2021 <br> 
-  + finished footer V2 <br>
-   => added css for responsive all supports <br>
-  => see UPDATE on #4 footer
-  => see photos on GIT
- 
-   21-22th Decembre 2021 <br> 
-  + added sound file + temporary mp3 "welcome" sound <br>
-   => add sound file <br>
-  + created favicon <br>
-  => see point #7 FAVICON to install
-  + working on footer design (work in progress)<br>
-  + working on preloader (work in progress)<br>
-  => see UPDATE on footer
- 
- 
-   20th Decembre 2021 <br>
-  + correction of p => font-size of timeline's boxes + select-box arrow in _bifff-history.scss <br>
-  + changed left button position in _home.scss <br>
+
   => replace sass file <br>
-  => replace template-parts file => header + footer files to have corrections on navigation bar + footer <br>
   => missing custom logo for navbar => replace site-branding.php with my version <br>
+  + added sound file + temporary mp3 "welcome" sound <br>
+  => add sound file <br>
+  => replace template-parts file => header + footer files to have corrections on navigation bar + footer <br>
+
 
 __________________________________________________________________________________________<br>
 
