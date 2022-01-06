@@ -1,6 +1,6 @@
 /*!
   * Bootstrap v1.0.0 (undefined)
-  * Copyright 2011-2021 
+  * Copyright 2011-2022 
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (factory) {
