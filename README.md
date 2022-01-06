@@ -1,7 +1,9 @@
  /!\LAST ADDS/!\ <br>
  <br>
-
+  + added css for archive-movie <br>
   => replace sass file <br>
+  + modified classes names of archive-movie.php
+  => replace archive-movie.php with my version <br>
   => missing custom logo for navbar => replace site-branding.php with my version <br>
   (replace template-parts/ header + footer entire files to have corrections on navigation bar + footer) <br>
   
@@ -22,6 +24,16 @@ ________________________________________________________________________________
 + /!\ leave style.css empty like the one in the folder /!\
 + I will dispatch it in the different files from there<br>
 + Don't forget to compile sass to be able to see your changes => npm run watch (see installation process below)<br>
+
+__________________________________________________________________________________________<br>
+
+#8- MOVIES
+
++ added css for archive-movie <br>
+=> replace sass file <br>
++ modified classes names of archive-movie.php
+=> replace archive-movie.php with my version <br>
+=> done responsive for all devices
 
 __________________________________________________________________________________________<br>
 
