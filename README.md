@@ -1,13 +1,15 @@
  /!\LAST ADDS/!\ <br>
  <br>
   + added css for archive-movie <br>
-  => replace sass file <br>
   + modified classes names of archive-movie.php
-  => replace archive-movie.php with my version <br>
-  => missing custom logo for navbar => replace site-branding.php with my version <br>
-  (replace template-parts/ header + footer entire files to have corrections on navigation bar + footer) <br>
-  
-  + added sound file + temporary mp3 "welcome" sound <br>
+  + missing custom logo for navbar
+  + added sound file + mp3 "welcome" sound <br>
+  + corrections made on edition page <br>
+  => replace template-parts/ header + footer entire files to have corrections on navigation bar + footer <br>
+  => replace site-branding.php <br>
+  => replace edition-entête.php <br>
+  => replace archive-movie.php <br>
+  => replace entire sass file <br>
   => add sound file <br>
 
 
