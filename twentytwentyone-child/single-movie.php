@@ -11,9 +11,17 @@
 			</div>
 
 	        <div class="singleFilmButtonBox">
-		        <a href="#" class="singleFilmButton">WATCH TRAILER</a>
+		        <?php
+			    $trailer=get_field("trailer");
+			    if ($trailer){
+		        echo do_shortcode( '[wp-video-popup start="0" video="'.$trailer.'"]' );
+		        ?>
+		        <a href="#" class="singleFilmButton wp-video-popup">WATCH TRAILER</a>
+		        <?php
+			        }
+			    ?>
 		        <div class="singleFilmButton"> <?php the_terms(get_the_ID(), 'category'); ?> MOVIE LIST</div>
-		        <a href="http://localhost/wikibifff/films/" class="singleFilmButton">BIFFF MOVIE LIST</a>
+		        <a href="http://localhost/wikibifff/movie/" class="singleFilmButton">BIFFF MOVIE LIST</a>
 	        </div>
 
 		</div>
@@ -110,43 +118,85 @@
 					</div>		
 	            </div>
 	            
-	            <div class="col-md-4">
-		            <label class="labelTitle">Prize:</label>
-		            <label class="labelContent">
-		            <?php
-						if( have_rows('competitions') ):
-							while( have_rows('competitions') ) : the_row();
-
+	            <?php
+					if( have_rows('competitions') ):
+						$comp_list=array();
+						$prize_list=array();
+						while( have_rows('competitions') ) : the_row();
+							$tmp=array();	
+							
 							if (get_sub_field('year_edition')):
 								$yeared=get_term(get_sub_field('year_edition'));
-								echo($yeared->name." - ");
+								array_push($tmp,$yeared->name);
 							endif;
-
+	
 							if (get_sub_field('competition')):
 								$comp=get_term(get_sub_field('competition'),'competition');
-								echo($comp->name." - ");
+								array_push($tmp,$comp->name);
 							endif;
 							
-							if (get_sub_field('price')):
+							if (get_sub_field('price')){
 								$price=get_term(get_sub_field('price'),'price');
-								echo($price->name." - ");
-							endif;
-							
-							if (get_sub_field('winner')):
-								$w=get_sub_field('winner');
-								foreach( $w as $entry ):
-									echo($entry);
-								endforeach;
-							endif;
-									
-							endwhile;
-						endif;
-			            
+								array_push($tmp,$price->name);
+
+								if (get_sub_field('winner')):
+									$w=get_sub_field('winner');
+									foreach( $w as $entry ):
+										array_push($tmp,$entry);
+									endforeach;
+								endif;
+								
+								array_push($prize_list,join(" - ",$tmp));
+							} else {
+								array_push($comp_list,join(" - ",$tmp));
+							}
+								
+						endwhile;
+					endif;
+		            
+		            ?>	            
+	            
+	            
+	            
+	            <div class="col-md-4">
+		            <?php 
+			            if ($prize_list){
+				    ?>
+			            <label class="labelTitle">Prize:</label>
+			            <label class="labelContent">
+			            <ul>
+			            <?php
+				            foreach ($prize_list as $p){
+					            echo "<li>".$p."</li>";
+				            }
+				            ?>
+			            </ul>
+			            </label>
+			        <?php
+				         }
+				         if ($comp_list){
+				    ?>  
+		            <label class="labelTitle">Competitions:</label>
+		            <label class="labelContent">
+		            <ul>
+		            <?php
+			            foreach ($comp_list as $c){
+				            echo "<li>".$c."</li>";
+			            }
 			            ?>
+		            </ul>
 		            </label>
+		            <?php
+				         }
+				    ?>  
 	            </div>	            
 
             </div>
+
+	        <?php
+	        	$guests = get_field('guests');
+	        	if ($guests) { 
+	        ?>
 
             <div><h4>Guests</h4></div>
 
@@ -157,17 +207,57 @@
 			if( $guests ):
 				foreach( $guests as $guest ): ?>
 				
-		    <div class="col-md-3 rounded">
-		    <?php
-				echo("<a href='".get_post_permalink($guest->ID)."'>".$guest->post_title."</a> ");
-		    ?>
-		    </div>
+			    <div class="col-md-3 rounded">
+			    <?php
+					echo("<a href='".get_post_permalink($guest->ID)."'>".$guest->post_title."</a> ");
+			    ?>
+			    </div>
 		     <?php
 				endforeach;
 			endif;
 		     ?>
 
             </div>
+            <?php 
+	            }
+
+	        	$images = get_field('galleryGallery');
+	        	if ($images) { 
+	        ?>            
+            
+            <div><h4>Gallery</h4></div>
+            <div class="mb-1 row">
+	            <div class="col-md-12">
+						<?php
+
+							// Load value (array of ids).
+							
+							$image_ids = array();
+							//print_r($images[0]);
+							foreach( $images as $image ):
+							
+							//echo $image["ID"];
+							array_push($image_ids, $image["ID"]);
+							endforeach;
+							//echo "xxx". implode( ',', $image_ids )."yyy";
+							if( $image_ids ) {
+							
+							    // Generate string of ids ("123,456,789").
+							    $images_string = implode( ',', $image_ids );
+							
+							    // Generate and do shortcode.
+							    // Note: The following string is split to simply prevent our own website from rendering the gallery shortcode.
+							    $shortcode = sprintf( '[' . 'gallery ids="%s" size="medium" link="file" columns="6"]', esc_attr($images_string) );
+							    echo do_shortcode( $shortcode );
+							}
+						?>		            
+	            </div>
+            </div>
+            <?php 
+	            }
+	        ?>             
+            
+            
 		</div>		
 	</div>
 	

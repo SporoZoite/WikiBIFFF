@@ -17369,6 +17369,10 @@ label {
   background-position-y: 103%;
   background-repeat: no-repeat;
 }
+.edition-container p {
+  padding: 0rem 1rem;
+  margin-bottom: 1rem;
+}
 
 .container {
   padding: 1rem 0rem;
@@ -17546,6 +17550,17 @@ ul {
 #edition-movies .mb-2 a :hover {
   filter: invert(1);
 }
+#edition-movies .card-body .guest {
+  height: 10rem;
+  width: 12rem;
+  overflow: hidden;
+  margin-left: 2rem;
+  display: flex;
+  margin-top: 0.5rem;
+}
+#edition-movies .card-body .guest .img-fluid {
+  max-width: 200%;
+}
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
   .edition-container {
@@ -17713,6 +17728,10 @@ ul {
 }
 .single-container h4, .single-container .h4 {
   margin: 1rem 0rem;
+}
+.single-container ul {
+  padding-left: 0rem;
+  margin-bottom: 0.5rem;
 }
 .single-container .labelTitle {
   text-transform: uppercase;
@@ -17931,7 +17950,8 @@ ul {
   width: 100vw;
   height: 0%;
   padding: 1.5rem 4rem;
-  margin-top: 4.5rem;
+  padding-right: 2rem;
+  margin-top: 4.4rem;
   z-index: 3;
 }
 .movies-container .movies-bar h4, .movies-container .movies-bar .h4 {
@@ -17944,7 +17964,7 @@ ul {
 }
 .movies-container .movies-bar ul {
   display: flex;
-  margin: 0rem 1rem;
+  margin: 0rem 0rem;
   align-items: center;
   justify-content: center;
 }
@@ -17997,7 +18017,6 @@ ul {
   grid-template-areas: "select";
   align-items: center;
   position: relative;
-  width: 15rem;
   border: 0.4em solid #D00019;
   padding: 0.25em 0.25em;
   font-size: clamp(var(--min), var(--val), var(--max));
@@ -18088,7 +18107,7 @@ ul {
     justify-content: center;
     align-items: flex-start;
     padding: 1rem;
-    margin-top: 4.6rem;
+    margin-top: 4.4rem;
     padding-bottom: 0rem;
   }
   .movies-container .movies-bar h4, .movies-container .movies-bar .h4 {
@@ -18143,7 +18162,7 @@ ul {
     justify-content: center;
     align-items: flex-start;
     padding: 1rem;
-    margin-top: 4.6rem;
+    margin-top: 4.4rem;
     padding-bottom: 0rem;
   }
   .movies-container .movies-bar h4, .movies-container .movies-bar .h4 {
@@ -18290,7 +18309,6 @@ ul {
   .movies-container .movies-bar .sf-input-select {
     display: grid;
     align-items: center;
-    width: 10rem;
     border: 0.5em solid #212529;
     padding: 0.25em 0.25em;
     font-size: clamp(var(--min), var(--val), var(--max));
