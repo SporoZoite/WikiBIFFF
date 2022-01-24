@@ -21,6 +21,10 @@
     background-position-y: 103%;
     background-repeat: no-repeat;
   }
+  p {
+    padding: 0rem 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .container {
@@ -173,7 +177,6 @@ ul {
   background-repeat: no-repeat;
 }
 
-
 #edition-movies {
   font-family: "RobotoBold";
   padding: 1rem;
@@ -192,6 +195,19 @@ ul {
       text-transform: uppercase;
       :hover {
         filter: invert(1);
+      }
+    }
+  }
+  .card-body {
+    .guest {
+      height: 10rem;
+      width: 12rem;
+      overflow: hidden;
+      margin-left: 2rem;
+      display: flex;
+      margin-top: 0.5rem;
+      .img-fluid {
+        max-width: 200%;
       }
     }
   }

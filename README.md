@@ -1,28 +1,18 @@
- /!\LAST CORRECTIONS/!\ <br>
+ /!\LAST ADDS/!\ <br>
  <br>
- 
-   27-28th Decembre 2021 <br> 
-  + finished footer V2 <br>
-   => added css for responsive all supports <br>
-  => see UPDATE on footer
-  => see photos on GIT
- 
-   21-22th Decembre 2021 <br> 
-  + added sound file + temporary mp3 "welcome" sound <br>
-   => add sound file <br>
-  + created favicon <br>
-  => see point #7 FAVICON to install
-  + working on footer design (work in progress)<br>
-  + working on preloader (work in progress)<br>
-  => see UPDATE on footer
- 
- 
-   20th Decembre 2021 <br>
-  + correction of p => font-size of timeline's boxes + select-box arrow in _bifff-history.scss <br>
-  + changed left button position in _home.scss <br>
-  => replace sass file <br>
-  => replace template-parts file => header + footer files to have corrections on navigation bar + footer <br>
-  => missing custom logo for navbar => replace site-branding.php with my version <br>
+  + added css for archive-movie <br>
+  + modified classes names of archive-movie.php
+  + missing custom logo for navbar
+  + added sound file + mp3 "welcome" sound <br>
+  + corrections made on edition page <br>
+  => replace template-parts/ header + footer entire files to have corrections on navigation bar + footer <br>
+  => replace site-branding.php <br>
+  => replace edition-entête.php <br>
+  => replace archive-movie.php <br>
+  => replace entire sass file <br>
+  => add sound file <br>
+
+
 
 __________________________________________________________________________________________<br>
 
@@ -36,6 +26,16 @@ ________________________________________________________________________________
 + /!\ leave style.css empty like the one in the folder /!\
 + I will dispatch it in the different files from there<br>
 + Don't forget to compile sass to be able to see your changes => npm run watch (see installation process below)<br>
+
+__________________________________________________________________________________________<br>
+
+#8- MOVIES
+
++ added css for archive-movie <br>
+=> replace sass file <br>
++ modified classes names of archive-movie.php
+=> replace archive-movie.php with my version <br>
+=> done responsive for all devices
 
 __________________________________________________________________________________________<br>
 
@@ -86,7 +86,7 @@ ________________________________________________________________________________
 + add widget "image" 
 => put any image from media library at first
 => click on 'replace'
-=> change 'Current media URL' by http://wiki.bifff.net/wp-content/themes/twentytwentyone-child/images/40th.png
+=> change 'Current media URL' by http://wiki.bifff.net/wp-content/themes/twentytwentyone-child/images/bifff-logo-footer.png
 + add widget navigation and call it "About us" (it's temporary) select the main navigation
 =>reorganise widgets and put the image in first position, About us in second position then the comments, then meta, and finally the search bar in last position by clicking on arrows<br>
 => ok responsive all supports

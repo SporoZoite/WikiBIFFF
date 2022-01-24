@@ -16926,6 +16926,7 @@ label {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   appearance: none !important;
+  background: none !important;
   background-color: transparent;
   border: none;
   padding: 0 1em 0 0;
@@ -17368,6 +17369,10 @@ label {
   background-position-y: 103%;
   background-repeat: no-repeat;
 }
+.edition-container p {
+  padding: 0rem 1rem;
+  margin-bottom: 1rem;
+}
 
 .container {
   padding: 1rem 0rem;
@@ -17545,6 +17550,17 @@ ul {
 #edition-movies .mb-2 a :hover {
   filter: invert(1);
 }
+#edition-movies .card-body .guest {
+  height: 10rem;
+  width: 12rem;
+  overflow: hidden;
+  margin-left: 2rem;
+  display: flex;
+  margin-top: 0.5rem;
+}
+#edition-movies .card-body .guest .img-fluid {
+  max-width: 200%;
+}
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
   .edition-container {
@@ -17712,6 +17728,10 @@ ul {
 }
 .single-container h4, .single-container .h4 {
   margin: 1rem 0rem;
+}
+.single-container ul {
+  padding-left: 0rem;
+  margin-bottom: 0.5rem;
 }
 .single-container .labelTitle {
   text-transform: uppercase;
@@ -17907,6 +17927,437 @@ ul {
     --min: 0.8rem;
     --val: 1.5vw;
     --max: 2rem;
+  }
+}
+.movies-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 100vw;
+  background-color: #ebe8e8;
+  overflow: hidden;
+}
+.movies-container .movies-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 0%;
+  padding: 1.5rem 4rem;
+  padding-right: 2rem;
+  margin-top: 4.4rem;
+  z-index: 3;
+}
+.movies-container .movies-bar h4, .movies-container .movies-bar .h4 {
+  margin: 0rem 1rem;
+  font-family: "RobotoBold";
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.5rem;
+  --val: 1.2vw;
+  --max: 2rem;
+}
+.movies-container .movies-bar ul {
+  display: flex;
+  margin: 0rem 0rem;
+  align-items: center;
+  justify-content: center;
+}
+.movies-container .movies-bar li {
+  display: flex;
+  margin: 0rem 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.movies-container .movies-bar #search-filter-form-142192 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.movies-container .movies-bar input {
+  background-color: #d00019;
+  padding: 0.4em 1em;
+  color: white;
+  text-transform: uppercase;
+  font-family: "RobotoBold";
+  margin-left: 0.5rem;
+}
+.movies-container .movies-bar label {
+  background-color: white;
+  padding-left: 0.2em;
+}
+.movies-container .movies-bar select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background: none !important;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: "RobotoBold";
+  color: black;
+  cursor: inherit;
+  line-height: inherit;
+  z-index: 1;
+  outline: none;
+}
+.movies-container .movies-bar select::-ms-expand {
+  display: none !important;
+}
+.movies-container .movies-bar .sf-input-select {
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  position: relative;
+  border: 0.4em solid #D00019;
+  padding: 0.25em 0.25em;
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.5rem;
+  --val: 0.8vw;
+  --max: 2rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: white;
+}
+.movies-container .movies-bar .sf-input-select select, .movies-container .movies-bar .sf-input-select::after {
+  grid-area: select;
+}
+.movies-container .movies-bar .sf-input-select::after {
+  content: "▼";
+  justify-self: center;
+  align-self: center;
+  padding: 1em;
+  background-color: #d00019;
+  transition: 0.25s all ease;
+  pointer-events: none;
+  position: absolute;
+  left: 80%;
+}
+.movies-container .movies-bar select:focus + .focus {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: inherit;
+}
+.movies-container #mainlist {
+  max-width: 1600px;
+  margin: 1rem;
+  color: black;
+  font-family: "RobotoBold";
+  text-transform: uppercase;
+}
+.movies-container #mainlist .search-filter-results {
+  margin: 1rem;
+}
+.movies-container #mainlist .pagination {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.movies-container #mainlist a {
+  color: white !important;
+  font-family: "RobotoBold";
+  background-color: #be1b17;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+.movies-container #mainlist .col-md-12 a {
+  color: white !important;
+  font-family: "RobotoBold";
+  background-color: none;
+  text-transform: uppercase;
+  padding: 0em;
+}
+.movies-container #mainlist img {
+  height: 30rem !important;
+  width: 100%;
+  background-color: #212529;
+  background-image: url(../images/b17.svg);
+  background-size: 183%;
+  background-position-x: -50%;
+  background-position-y: 103%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 52rem) and (max-width: 64rem) and (orientation: portrait) {
+  .movies-container h1, .movies-container .h1 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 4.3vw;
+    --max: 3rem;
+    padding-bottom: 0.5rem;
+    margin-left: 2rem;
+  }
+  .movies-container .movies-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-top: 4.4rem;
+    padding-bottom: 0rem;
+  }
+  .movies-container .movies-bar h4, .movies-container .movies-bar .h4 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.8vw;
+    --max: 2rem;
+    margin: 0rem 0.5rem;
+  }
+  .movies-container .movies-bar li {
+    margin: 0rem 0.5rem;
+  }
+  .movies-container .movies-bar ul {
+    margin: 0rem 0.5rem;
+  }
+  .movies-container .movies-bar .sf-input-select {
+    width: 10rem;
+    min-width: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
+  .movies-container .movies-bar #search-filter-form-142192 {
+    align-self: center;
+    padding-bottom: 0.5rem;
+  }
+  .movies-container .movies-bar input {
+    padding: 0.25em 0.8em;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.5vw;
+    --max: 2rem;
+    margin-left: 0.5rem;
+  }
+  .movies-container #mainlist img {
+    height: 20rem !important;
+  }
+}
+@media screen and (min-width: 47rem) and (max-width: 52rem) and (orientation: portrait) {
+  .movies-container h1, .movies-container .h1 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 4.3vw;
+    --max: 3rem;
+    padding-bottom: 0.5rem;
+    margin-left: 2rem;
+  }
+  .movies-container .movies-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-top: 4.4rem;
+    padding-bottom: 0rem;
+  }
+  .movies-container .movies-bar h4, .movies-container .movies-bar .h4 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.8vw;
+    --max: 2rem;
+    margin: 0rem 0.5rem;
+  }
+  .movies-container .movies-bar li {
+    margin: 0rem 0.5rem;
+  }
+  .movies-container .movies-bar ul {
+    margin: 0rem 0.5rem;
+  }
+  .movies-container .movies-bar .sf-input-select {
+    width: 7rem;
+    min-width: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
+  .movies-container .movies-bar #search-filter-form-142192 {
+    align-self: center;
+    padding-bottom: 0.5rem;
+  }
+  .movies-container .movies-bar input {
+    padding: 0.25em 0.8em;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.5vw;
+    --max: 2rem;
+    margin-left: 0.5rem;
+  }
+  .movies-container #mainlist {
+    max-width: 1600px;
+    margin: 1rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.6vw;
+    --max: 1.2rem;
+  }
+  .movies-container #mainlist .search-filter-results {
+    margin: 1rem;
+  }
+  .movies-container #mainlist .pagination {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .movies-container #mainlist a {
+    color: white !important;
+    font-family: "RobotoBold";
+    background-color: #d00019;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.5vw;
+    --max: 2rem;
+    border-radius: 5px;
+  }
+  .movies-container #mainlist img {
+    height: 15rem !important;
+    width: 10rem;
+    background-image: url(../images/b17.svg);
+    background-size: 183%;
+    background-position-x: -50%;
+    background-position-y: 103%;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 47rem) {
+  .movies-container .movies-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2.1rem;
+    padding-bottom: 0rem;
+  }
+  .movies-container .movies-bar h1, .movies-container .movies-bar .h1 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 5.5vw;
+    --max: 3rem;
+    margin-bottom: 1rem;
+  }
+  .movies-container .movies-bar h4, .movies-container .movies-bar .h4 {
+    margin: 0rem 1rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 3vw;
+    --max: 2rem;
+  }
+  .movies-container .movies-bar ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 0rem;
+    padding: 0rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .movies-container .movies-bar li {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 0rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+  }
+  .movies-container .movies-bar #search-filter-form-142192 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100vw;
+    background-color: #be1b17;
+    padding-top: 0.5rem;
+  }
+  .movies-container .movies-bar input {
+    padding: 0.5em 2em;
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 3.2vw;
+    --max: 2rem;
+    background-color: #212529;
+  }
+  .movies-container .movies-bar label {
+    padding-left: 0.5em;
+  }
+  .movies-container .movies-bar select {
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+  }
+  .movies-container .movies-bar .sf-input-select {
+    display: grid;
+    align-items: center;
+    border: 0.5em solid #212529;
+    padding: 0.25em 0.25em;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 2.5vw;
+    --max: 2rem;
+  }
+  .movies-container #mainlist {
+    max-width: 1600px;
+    margin: 0.5rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 2.7vw;
+    --max: 1rem;
+  }
+  .movies-container #mainlist .search-filter-results {
+    margin: 1rem;
+  }
+  .movies-container #mainlist .pagination {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .movies-container #mainlist a {
+    color: white !important;
+    font-family: "RobotoBold";
+    background-color: #d00019;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 2.5vw;
+    --max: 2rem;
+    border-radius: 5px;
+  }
+  .movies-container #mainlist img {
+    height: 20rem !important;
+    width: 15rem;
+    background-image: url(../images/b17.svg);
+    background-size: 183%;
+    background-position-x: -50%;
+    background-position-y: 103%;
+    background-repeat: no-repeat;
+  }
+  .movies-container #mainlist .col-md-12 {
+    display: flex;
+    flex-direction: column;
   }
 }
 

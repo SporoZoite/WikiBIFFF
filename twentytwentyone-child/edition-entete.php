@@ -3,7 +3,7 @@
 	// load all movies and sort them!
 
 	$edition_year=get_field("year");
-
+	$currentcatid=$post->ID;
 	$movies = get_posts( 
 		array( 
 			'post_type' => 'movie',
@@ -14,9 +14,14 @@
 		) 
 	);
 	
+	$sections_disp=get_field("displayed_sections");
+	$events_disp=get_field("displayed_events");
+	
 	$opening=array();
 	$closing=array();
 	$winner_mv=array();
+	$winner_st_mv=array();
+	$winner_lt_mv=array();
 	$cp_movies=0;
 	$cp_short=0;
 	$cp_premiere=0;
@@ -97,13 +102,18 @@
 							
 							$mv->lineprice=$subcomp_txt."-".$subprice_txt;
 							$tmpmv=clone($mv);
-							array_push($winner_mv, $tmpmv);
+							if ($mtype=="movie"){
+								array_push($winner_lt_mv, $tmpmv);
+							} else {
+								array_push($winner_st_mv, $tmpmv);
+							}
 						}
 					}
 				}
 			}
 		}
 	}
+	$winner_mv=array_merge($winner_lt_mv, $winner_st_mv);
 	//print_r($competition_array);
 	//print_r(array_keys($section_array));
 	?>
@@ -148,7 +158,7 @@
 		            
 		            
 		             <h3 id = "edition-title" class="mb-3"><?php the_field('name'); ?>  </h3>
-					<p class="mb-3"><?php the_field('description'); ?></p>
+					<p class="mb-3" style="padding-top:0rem;"><?php the_content(); ?></p>
 		            
 	            </div>
                 
@@ -191,7 +201,7 @@
 	                    foreach($opening as $o){
 		                    $imgurl=get_the_post_thumbnail_url($o);
 		                    echo "<img src='".$imgurl."' style='width:100%;'>";
-		                    echo "<h5>".get_the_title($o)."</h5>";
+		                    echo "<h5 style=\"font-size:1rem;\">".get_the_title($o)."</h5>";
 	                    }   
 		            ?>
                 </div>
@@ -203,7 +213,7 @@
 	                    foreach($closing as $c){
 		                    $imgurl=get_the_post_thumbnail_url($c);
 		                    echo "<img src='".$imgurl."' style='width:100%;'>";
-		                    echo "<h5>".get_the_title($c)."</h5>";
+		                    echo "<h5 style=\"font-size:1rem;\">".get_the_title($c)."</h5>";
 	                    }   
 		            ?>
                 </div>
@@ -243,6 +253,28 @@
 							?>
 						</li>
                 <?php endforeach; ?>
+			</ul>
+		</div>
+    </div>
+
+    <div><a name="edprize"></a><h3>HIGHLIGHTS</h3></div>
+
+    <div class="channel">
+        <div class="app">
+	        <ul class="hs full">
+        		<?php
+
+					// Load value (array of ids).
+					$images = get_field('gallery');
+					$image_ids = array();
+					//print_r($images[0]);
+					foreach( $images as $image ):
+					?>
+						<li class="item" style="height:20rem;">
+	                        	<img src="<?php echo $image["url"]; ?>" style="max-height:150%;" title="<?php echo $image["title"]; ?>" alt="<?php echo $image["title"]; ?>"/>
+						</li>
+                <?php 
+	                endforeach; ?>
 			</ul>
 		</div>
     </div>
@@ -294,7 +326,7 @@
 
                 <?php 
 	                $sec_all=array_keys($section_array);
-	                foreach ($sec_all as $sec): ?>
+	                foreach ($sections_disp as $sec): ?>
 	                
 	                <div class="app">
 		                
@@ -330,10 +362,12 @@
  
     
     <div id="edition-movies">
-		<div><h3>MOVIES</h3></div>
+		<div><h3>MOVIES</h3>
+	    </div>
 
 
-		<div><a name="edmovies"></a><h4>LONG MOVIES</h4></div>
+		<div><a name="edmovies"></a><h4>LONG MOVIES</h4>
+	    </div>
 
 
 
@@ -467,7 +501,7 @@
 			        $relatedGuests = get_posts( 
 						array( 
 							'post_type' => 'guest',
-						    'category__in' => wp_get_post_categories( $post->ID ), 
+						    'category__in' => wp_get_post_categories($currentcatid ), 
 						    'numberposts'  => 100,
 						    'orderby'=>'title',
 							'order'=>'ASC'
@@ -483,13 +517,13 @@
 		            <li class="item" style="padding-left:0.313rem;padding-right:0.313rem;">
 		                <div class="card bg-dark">
 		                    <div class="card-body">
-		                        <div style="height:12.5rem;width:15.625rem;">
+		                        <div class="guest">
 		                            <img src="<?php
 		                                echo get_the_post_thumbnail_url($post);
-		                                ?>" alt="" class="img-fluid w-70 mb-3 m-auto rounded">
+		                                ?>" alt="" class="img-fluid">
 		                        </div>
-								<div style="height:5rem;">
-		                        <h4 style="text-align:center;">
+								<div style="height:5rem;display: flex;align-items: center;justify-content: center;">
+		                        <h4 style="text-align:center;max-width:14rem;">
 		                        	<?php
 		                            	$idGuest=$post->ID;
 		                             	echo get_field('surname', $idGuest)." ".get_field('firstname', $idGuest); 
@@ -513,31 +547,58 @@
 		
 		
 		
-		<div style="margin-top:2rem;"><a name="edevents"></a><h3>ALL EVENTS</h3></div>
-                        <div class="mb-2 row" style="margin-top:1rem;">
-                        <div class="col-md-6">
-                            <?php
+		<div style="margin-top:2rem;"><a name="edevents"></a><h3>EVENTS</h3></div>
+		
+		
+	    <div class="channel">
+	
+	
+            <?php 
+                foreach ($events_disp as $ev): 
+            ?>
+                <div class="app">
+	             
+                <?php
+                	echo "<h4>". $ev->post_title."</h4><ul class=\"hs full\">";
+                	$ev_gal=get_field("gallery", $ev->ID);
+                	
+                	foreach( $ev_gal as $image ):
+					?>
+						<li class="item" style="height:20rem;">
+	                        	<img src="<?php echo $image["url"]; ?>" style="max-height:150%;" title="<?php echo $image["title"]; ?>" alt="<?php echo $image["title"]; ?>"/>
+						</li>
+            	<?php endforeach; ?>
+	                
+                </div>
+            <?php endforeach; ?>
+	
+	    </div>		
+		
+		<div style="margin-top:2rem;"><a name="edguests"></a><h3>ALL EVENTS</h3></div>
+            <div class="mb-2 row" style="margin-top:1rem;">
+            <div class="col-md-6">
+                <?php
 
-					        $events = get_posts( 
-								array( 
-									'post_type' => 'event',
-								    'category__in' => wp_get_post_categories( $post->ID ), 
-								    'numberposts'  => 100,
-								    'orderby'=>'title',
-									'order'=>'ASC'
-								) 
-							);
+		        $events = get_posts( 
+					array( 
+						'post_type' => 'event',
+					    'category__in' => wp_get_post_categories( $currentcatid ), 
+					    'numberposts'  => 100,
+					    'orderby'=>'title',
+						'order'=>'ASC'
+					) 
+				);
 
-                            foreach ($events as $ev):
-                            ?>				
+                foreach ($events as $ev):
+                ?>				
 
-							<div class="row">
-								<div class="col-md-12">
-		                        <a href="<?php echo get_permalink($ev); ?>"> <?php echo get_the_title($ev); ?> </a>
-								</div>
-							</div>
-							
-							<?php endforeach; ?>
+				<div class="row">
+					<div class="col-md-12">
+                    <a href="<?php echo get_permalink($ev); ?>"> <?php echo get_the_title($ev); ?> </a>
+					</div>
+				</div>
+				
+				<?php endforeach; ?>
                 
              
             </div>  

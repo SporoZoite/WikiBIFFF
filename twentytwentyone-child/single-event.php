@@ -74,6 +74,43 @@
 	            </div>	            
 
             </div>
+            
+            <?php
+	        	$movies_linked=get_field("movies");  
+	        	if ($movies_linked) { 
+	        ?>
+            
+			<div><h4>Movies</h4></div>
+            <div class="mb-1 row">
+	            <div class="col-md-12"> 
+		            
+		        	<div class="channel">
+		                <div class="app">
+			                <ul class="hs full">
+			                <?php
+			                	foreach ($movies_linked as $mv):
+									$imgurl=get_the_post_thumbnail_url($mv);
+									if ($imgurl){
+	                		?>
+								<li class="item"style="background-color:#000000;height:25rem;">
+		                        <a href="<?php echo get_permalink($mv); ?>">
+		                        	<img src="<?php echo get_the_post_thumbnail_url($mv); ?>" style="height:25rem;" title="<?php echo get_the_title($mv); ?>" alt="<?php echo get_the_title($mv); ?>"/>
+		                        </a>
+								</li>
+			            	<?php 
+				            	};
+				            	endforeach; ?>
+			            	</ul>
+		                </div>
+				    </div>	
+				    
+	            </div>
+            </div>  
+            <?php
+	            }
+	        ?>         
+            
+            
             <div><h4>Gallery</h4></div>
             <div class="mb-1 row">
 	            <div class="col-md-12">
@@ -104,20 +141,25 @@
 	            </div>
             </div>
 
+        <?php
+        	$guests = get_field('guests');
+        	if ($guests) { 
+        ?>
+
         <div><h4>Guests</h4></div>
 
         <div class="mb-1 row">
 			<div class="col-md-12">
             <?php 
-			$guests = get_field('guests');
+			
 			if( $guests ):
 				foreach( $guests as $guest ): ?>
 				
-		     <div class="col-md-3 rounded">
-		     <?php
-				echo("<a href='".get_post_permalink($guest->ID)."'>".$guest->post_title."</a> ");
-		     ?>
-		     </div>
+			     <div class="col-md-3 rounded">
+			     <?php
+					echo("<a href='".get_post_permalink($guest->ID)."'>".$guest->post_title."</a> ");
+			     ?>
+			     </div>
 		     <?php
 				endforeach;
 			endif;
@@ -125,13 +167,29 @@
 
 		    </div>
 	    </div>
-		</div>
+
+		
+		<?php
+	        }
+	    ?>
 	
 
-
+		</div>
     </div>	
 	
 	
 </div>
+
+<script>
+	 var root = document.documentElement;
+const lists = document.querySelectorAll('.hs'); 
+
+lists.forEach(el => {
+  const listItems = el.querySelectorAll('li');
+  const n = el.children.length;
+  el.style.setProperty('--total', n);
+});
+	 
+</script>   
 
 <?php get_footer(); ?>
