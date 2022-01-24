@@ -14611,6 +14611,15 @@ body {
   max-width: 100%;
   width: 100vw;
   font-family: "RobotoMedium";
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
+}
+body body::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
 }
 body a {
   text-decoration: none;
