@@ -1,5 +1,8 @@
  /!\LAST ADDS/!\ <br>
  <br>
+ 
+  +updated css edition page <br>
+  
   + added css for archive-movie <br>
   + modified classes names of archive-movie.php
   + missing custom logo for navbar
