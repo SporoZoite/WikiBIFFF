@@ -530,7 +530,7 @@
 		                             ?>
 		                        </h4>
 								</div>
-		                        <div style="height:5rem;">
+		                        <div style="height:5rem;width:16rem;">
 		                        <p>
 		                        <?php echo substr(get_post_field('post_content', $idGuest),0,70)."..."; ?>
 		                        </p>
