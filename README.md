@@ -11,6 +11,8 @@
   => replace archive-movie.php <br>
   => replace entire sass file <br>
   => add sound file <br>
+  
+  + added line to hide scrollbar in sass file 
 
 
 
