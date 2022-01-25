@@ -1,7 +1,11 @@
  /!\LAST ADDS/!\ <br>
  <br>
  
-  +updated css edition page <br>
+ 
+  + made changes on highlight design <br>
+  + added line to hide scrollbar in sass file <br>
+  + replace "edition-entête" by my version to add carousel-like highlight section <br>
+  + replace sass file to add new css <br>
   
   + added css for archive-movie <br>
   + modified classes names of archive-movie.php
@@ -15,7 +19,7 @@
   => replace entire sass file <br>
   => add sound file <br>
   
-  + added line to hide scrollbar in sass file 
+ 
 
 
 
