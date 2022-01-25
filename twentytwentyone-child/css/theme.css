@@ -17462,7 +17462,6 @@ ul {
 .hs {
   display: grid;
   grid-gap: calc(var(--gutter) / 2);
-  /*  grid-template-columns: 10px repeat(var(--total), calc(50% - var(--gutter) * 2)) 10px;*/
   grid-template-columns: 10px repeat(var(--total), 300px) 10px;
   grid-template-rows: minmax(150px, 1fr);
   overflow-x: scroll;
@@ -17472,6 +17471,74 @@ ul {
   margin-bottom: calc(-0.25 * var(--gutter));
 }
 
+.slide-track {
+  grid-template-columns: 10px repeat(var(--total), auto) 10px;
+  -webkit-animation: slider 90s ease-in-out infinite alternate;
+  animation: slider 90s ease-in-out infinite alternate;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.slide {
+  padding: 0px;
+}
+
+@-webkit-keyframes slider {
+  0% {
+    transform: translateX(0, 0);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+@keyframes slider {
+  0% {
+    transform: translateX(0, 0);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  @-webkit-keyframes slider {
+    0% {
+      transform: translateX(0, 0);
+    }
+    100% {
+      transform: translateX(-93%);
+    }
+  }
+  @keyframes slider {
+    0% {
+      transform: translateX(0, 0);
+    }
+    100% {
+      transform: translateX(-93%);
+    }
+  }
+}
+@media screen and (max-width: 47rem) {
+  @-webkit-keyframes slider {
+    0% {
+      transform: translateX(0, 0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes slider {
+    0% {
+      transform: translateX(0, 0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
 .hs:before,
 .hs:after {
   content: "";
@@ -17480,15 +17547,13 @@ ul {
 .hs > .channel li,
 .channel .item {
   scroll-snap-align: center;
-  /*  padding: calc(var(--gutter) / 2 * 1.5);*/
-  padding: 15px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*background: #fff;*/
-  border-radius: 8px;
-  width: 300px;
+  border-radius: 0.5rem;
+  width: 18.75rem;
   overflow: hidden;
 }
 
@@ -17522,13 +17587,13 @@ ul {
 
 .item-2 {
   scroll-snap-align: center;
-  padding: 15px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
-  width: 300px;
+  border-radius: 0.5rem;
+  width: 18.75rem;
   overflow: hidden;
   background-image: url(../images/splatters.svg);
   background-size: 160%;
