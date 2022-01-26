@@ -14830,7 +14830,7 @@ figure.woocommerce-product-gallery__wrapper {
   padding-bottom: 0.625rem;
   padding-left: 3.125rem;
   padding-right: 3.125rem;
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.2rem solid black;
 }
 
 .site-branding {
@@ -15400,7 +15400,8 @@ label {
   }
 }
 .post-186047 {
-  margin: 6rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .entry-content {
@@ -15427,7 +15428,7 @@ a.um-link-alt {
   font-family: "RobotoBold";
 }
 
-.um-login .um-logout .um-186043 .uimob340 {
+.um-login.um-logout.um-186043.uimob340 {
   margin: 1rem;
   background: #be1b17;
   padding: 1rem;
@@ -15462,6 +15463,10 @@ a.um-link-alt {
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .post-186047 {
+    margin: 6rem;
+  }
+
   .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 1rem;
@@ -15469,7 +15474,7 @@ a.um-link-alt {
     --max: 3rem;
   }
 
-  .um-login .um-logout .um-186043 .uimob340 {
+  .um-login.um-logout.um-186043.uimob340 {
     margin: 1rem;
     padding: 1rem;
   }
@@ -15490,7 +15495,7 @@ a.um-link-alt {
     border-radius: 3px;
   }
 
-  .entry-footer .default-max-width {
+  .entry-footer.default-max-width {
     text-align: center;
   }
 }
@@ -15506,7 +15511,7 @@ a.um-link-alt {
     margin: 4rem;
   }
 
-  .um-login .um-logout .um-186043 .uimob340 {
+  .um-login.um-logout.um-186043.uimob340 {
     margin: 1rem;
     padding: 1rem;
   }
@@ -15527,6 +15532,72 @@ a.um-link-alt {
     border-radius: 3px;
   }
 }
+.page-header.alignwide {
+  margin-top: 4.5rem !important;
+  background: #be1b17;
+  padding: 1.5rem 4rem;
+  text-transform: uppercase;
+}
+.page-header.alignwide h1, .page-header.alignwide .h1 {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 1rem;
+  --val: 2vw;
+  --max: 2.8125rem;
+}
+
+.section-vampire-ball {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0rem;
+  background: #212529;
+  width: 40rem !important;
+  align-self: center;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.entry-header,
+.post-thumbnail,
+.entry-content,
+.entry-footer,
+.author-bio {
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.entry-title.default-max-width {
+  padding: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.post-thumbnail {
+  width: 25rem !important;
+  height: 25rem;
+  background: white;
+  overflow: hidden;
+}
+
+.entry-content p {
+  background: #be1b17;
+  padding: 1.5rem;
+  border-radius: 3px;
+}
+
+.entry-header {
+  height: 32rem;
+  padding: 0rem;
+}
+
+.more-link {
+  color: #751715 !important;
+  font-family: "RobotoBold";
+}
+
 .page-id-1210 aside.widget-area {
   display: none;
 }

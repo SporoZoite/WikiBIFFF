@@ -1,5 +1,6 @@
 .post-186047 {
-  margin: 6rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .entry-content {
@@ -24,7 +25,7 @@ a.um-link-alt {
   font-family: "RobotoBold";
 }
 
-.um-login .um-logout .um-186043 .uimob340 {
+.um-login.um-logout.um-186043.uimob340 {
   margin: 1rem;
   background: #be1b17;
   padding: 1rem;
@@ -59,13 +60,16 @@ a.um-link-alt {
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .post-186047 {
+    margin: 6rem;
+  }
   .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 1rem;
     --val: 4.3vw;
     --max: 3rem;
   }
-  .um-login .um-logout .um-186043 .uimob340 {
+  .um-login.um-logout.um-186043.uimob340 {
     margin: 1rem;
     padding: 1rem;
   }
@@ -85,7 +89,7 @@ a.um-link-alt {
     padding: 0.5rem 3rem;
     border-radius: 3px;
   }
-  .entry-footer .default-max-width {
+  .entry-footer.default-max-width {
     text-align: center;
   }
 }
@@ -101,7 +105,7 @@ a.um-link-alt {
     margin: 4rem;
   }
 
-  .um-login .um-logout .um-186043 .uimob340 {
+  .um-login.um-logout.um-186043.uimob340 {
     margin: 1rem;
     padding: 1rem;
   }

@@ -1,0 +1,63 @@
+.page-header.alignwide {
+  margin-top: 4.5rem !important;
+  background: #be1b17;
+  padding: 1.5rem 4rem;
+  text-transform: uppercase;
+  h1 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 2vw;
+    --max: 2.8125rem;
+  }
+}
+
+.section-vampire-ball {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0rem;
+  background: #212529;
+  width: 40rem !important;
+  align-self: center;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.entry-header,
+.post-thumbnail,
+.entry-content,
+.entry-footer,
+.author-bio {
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.entry-title.default-max-width {
+  padding: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.post-thumbnail {
+  width: 25rem !important;
+  height: 25rem;
+  background: white;
+  overflow:hidden;
+}
+.entry-content {
+  p {
+    background: #be1b17;
+    padding: 1.5rem;
+    border-radius: 3px;
+  }
+}
+.entry-header {
+  height: 32rem;
+  padding: 0rem;
+}
+.more-link {
+  color: #751715 !important;
+  font-family: "RobotoBold";
+}
