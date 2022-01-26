@@ -15576,10 +15576,13 @@ a.um-link-alt {
 }
 
 .post-thumbnail {
+  text-align: center;
   width: 25rem !important;
-  height: 25rem;
-  background: white;
+  height: 35rem;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .entry-content p {
@@ -15589,13 +15592,20 @@ a.um-link-alt {
 }
 
 .entry-header {
-  height: 32rem;
+  height: 42rem;
   padding: 0rem;
 }
 
 .more-link {
   color: #751715 !important;
   font-family: "RobotoBold";
+}
+
+.post-thumbnail .wp-post-image {
+  width: 23rem !important;
+  margin-right: auto;
+  height: auto !important;
+  margin-top: calc(2 * var(--global--spacing-vertical));
 }
 
 .page-id-1210 aside.widget-area {
