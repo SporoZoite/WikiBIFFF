@@ -1,10 +1,12 @@
  /!\LAST ADDS/!\ <br>
  <br>
  
+  + made style for login page <br>
+  => in src file : added _login.scss page <br>
  
   + made changes on highlight design <br>
   + added line to hide scrollbar in sass file <br>
-  + replace "edition-entête" by my version to add carousel-like highlight section <br>
+  + replace "edition-entête" by my version to add carousel-like highlight section and other small changes <br>
   + replace sass file to add new css <br>
   
   + added css for archive-movie <br>
