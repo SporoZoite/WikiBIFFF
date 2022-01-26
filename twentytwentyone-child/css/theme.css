@@ -15047,7 +15047,7 @@ figure.woocommerce-product-gallery__wrapper {
   max-width: 25ch;
 }
 .widget_search .widget-title {
-  width: 10%;
+  width: 100%;
   padding: 0rem;
 }
 
@@ -15217,6 +15217,8 @@ label {
   appearance: none !important;
   -moz-appearance: none !important;
   -webkit-appearance: none !important;
+  --global--font-size-page-title:none!important;
+  --entry-content--font-family:none!important;
   --text-multiplier: 1;
 }
 :root h1, :root .h1 {
@@ -15395,6 +15397,134 @@ label {
   .gallery-item img {
     width: 4rem !important;
     height: 3rem !important;
+  }
+}
+.post-186047 {
+  margin: 6rem;
+}
+
+.entry-content {
+  color: white !important;
+}
+
+.um-field-label {
+  color: white !important;
+}
+
+.um-button {
+  background: #be1b17;
+}
+
+.um-button.um-alt {
+  background: #272727;
+}
+
+.um .um-button.um-alt {
+  color: white;
+}
+
+a.um-link-alt {
+  font-family: "RobotoBold";
+}
+
+.um-login .um-logout .um-186043 .uimob340 {
+  margin: 1rem;
+  background: #be1b17;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.um-misc-img {
+  margin: 1rem;
+}
+
+.um-misc-with-img {
+  color: white;
+  font-family: "RobotoBold";
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 1rem;
+  --val: 1.5vw;
+  --max: 3rem;
+}
+
+.edit-link {
+  font-family: "RobotoBold";
+  background: #272727;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+
+.entry-title {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 1rem;
+  --val: 2.4vw;
+  --max: 2.8125rem;
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .entry-title {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 4.3vw;
+    --max: 3rem;
+  }
+
+  .um-login .um-logout .um-186043 .uimob340 {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .um-misc-img {
+    margin: 1rem;
+  }
+
+  .um-misc-with-img {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 3.5vw;
+    --max: 3rem;
+  }
+
+  .edit-link {
+    padding: 0.5rem 3rem;
+    border-radius: 3px;
+  }
+
+  .entry-footer .default-max-width {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 47rem) and (orientation: portrait) {
+  .entry-title {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 8vw;
+    --max: 3rem;
+  }
+
+  .post-186047 {
+    margin: 4rem;
+  }
+
+  .um-login .um-logout .um-186043 .uimob340 {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .um-misc-img {
+    margin: 1rem;
+  }
+
+  .um-misc-with-img {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 5vw;
+    --max: 3rem;
+  }
+
+  .edit-link {
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
   }
 }
 .page-id-1210 aside.widget-area {
