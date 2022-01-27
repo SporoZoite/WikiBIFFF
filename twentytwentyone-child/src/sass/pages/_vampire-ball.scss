@@ -11,63 +11,67 @@
   }
 }
 
-.section-vampire-ball {
+.entry {
+  margin: 1.5rem auto;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  display: flex;
+  background: #212529;
+  border-radius: 5px;
+  max-width: 60%;
+  justify-self: center;
+  overflow: hidden;
+  justify-content: space-around;
+  background-image: url(../images/splash2.svg);
+  background-size: 40%;
+  background-position-x: 117%;
+  background-position-y: 35%;
+  background-repeat: no-repeat;
+  .entry-title.default-max-width {
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 20rem;
+    padding: 0.5rem;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+      -1px -1px 0 #000;
+  }
+}
+.entry-header {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  margin: 1.5rem 0rem;
-  background: #212529;
-  width: 40rem !important;
-  align-self: center;
-  margin: auto;
-  margin-top: 2rem;
-  border-radius: 5px;
+  max-height: 40rem;
+  width: 30rem;
   padding: 1rem;
+  overflow: hidden;
 }
 
-.entry-header,
-.post-thumbnail,
-.entry-content,
-.entry-footer,
-.author-bio {
-  border-radius: 5px;
-  padding: 1rem;
-}
-
-.entry-title.default-max-width {
-  padding: 1.5rem;
-  text-transform: uppercase;
-  text-align: center;
-}
 .post-thumbnail {
-  text-align: center;
-  width: 25rem !important;
-  height: 35rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  border: 10px solid white;
+  border-radius: 5px;
 }
 .entry-content {
+  width: 50rem;
+  padding: 5rem;
   p {
     background: #be1b17;
-    padding: 1.5rem;
-    border-radius: 3px;
+    padding: 2rem;
+    border-radius: 5px;
   }
 }
-.entry-header {
-  height: 42rem;
-  padding: 0rem;
+
+.entry-footer {
+  display: none;
 }
+
 .more-link {
   color: #751715 !important;
   font-family: "RobotoBold";
-}
-
-.post-thumbnail .wp-post-image {
-  width: 23rem !important;
-  margin-right: auto;
-  height: auto !important;
-  margin-top: calc(2 * var(--global--spacing-vertical));
 }
