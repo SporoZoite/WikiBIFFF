@@ -59,7 +59,7 @@
 }
 .entry-content {
   width: 50rem;
-  padding: 5rem;
+  padding: 3rem;
   p {
     background: #be1b17;
     padding: 2rem;
@@ -74,4 +74,67 @@
 .more-link {
   color: #751715 !important;
   font-family: "RobotoBold";
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .page-header.alignwide {
+    h1 {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 3.5vw;
+      --max: 3rem;
+    }
+  }
+
+  .entry {
+    max-width: 90%;
+    .entry-title.default-max-width {
+      a {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 1rem;
+        --val: 2.7vw;
+        --max: 2.8125rem;
+      }
+    }
+  }
+
+  .entry-content {
+    width: 45rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 47rem) {
+  .page-header.alignwide {
+    margin-top: 2.5rem !important;
+    padding: 1rem 2rem;
+  }
+  .entry {
+    max-width: 85%;
+    flex-direction: column;
+    background-size: 100%;
+    margin-bottom: 1.5rem;
+    .entry-title.default-max-width {
+      padding: 0rem;
+      a {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 1rem;
+        --val: 5.5vw;
+        --max: 3rem;
+      }
+    }
+  }
+  .entry-header {
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .entry-content {
+    width: 100%;
+    padding: 0rem;
+    p {
+      padding: 1rem;
+    }
+  }
 }
