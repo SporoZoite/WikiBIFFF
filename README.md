@@ -1,8 +1,16 @@
  /!\LAST ADDS/!\ <br>
  <br>
  
+  + made style for section pages (ex: ball des vampires) <br>
+  + ok responsive all supports + ok pour all section pages <br>
+  => in src file : added _vampire-ball.scss page <br>
+ 
   + made style for login page <br>
   => in src file : added _login.scss page <br>
+  
+   + corrected footer default <br>
+  
+  => replace src file to add modifications
  
   + made changes on highlight design <br>
   + added line to hide scrollbar in sass file <br>
