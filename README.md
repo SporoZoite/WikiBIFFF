@@ -1,36 +1,9 @@
  /!\LAST ADDS/!\ <br>
  <br>
  
-  + made style for section pages (ex: ball des vampires) <br>
-  + ok responsive all supports + ok pour all section pages <br>
-  => in src file : added _vampire-ball.scss page <br>
+ + corrections on navbar padding <br>
+ => replace sass file to add modification <br>
  
-  + made style for login page <br>
-  => in src file : added _login.scss page <br>
-  
-   + corrected footer default <br>
-  
-  => replace src file to add modifications
- 
-  + made changes on highlight design <br>
-  + added line to hide scrollbar in sass file <br>
-  + replace "edition-entête" by my version to add carousel-like highlight section and other small changes <br>
-  + replace sass file to add new css <br>
-  
-  + added css for archive-movie <br>
-  + modified classes names of archive-movie.php
-  + missing custom logo for navbar
-  + added sound file + mp3 "welcome" sound <br>
-  + corrections made on edition page <br>
-  => replace template-parts/ header + footer entire files to have corrections on navigation bar + footer <br>
-  => replace site-branding.php <br>
-  => replace edition-entête.php <br>
-  => replace archive-movie.php <br>
-  => replace entire sass file <br>
-  => add sound file <br>
-  
- 
-
 
 
 __________________________________________________________________________________________<br>
@@ -48,13 +21,32 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________<br>
 
+#10- LOGIN/USER/ACCOUNT/... PAGES
+
+ + made style for login page <br>
+  => in src file : added _login.scss page <br>
+
+__________________________________________________________________________________________<br>
+
+#9- SECTION PAGE/VAMPIRE BALL
+
+ + made style for section pages (ex: ball des vampires) <br>
+ + ok responsive all supports + ok pour all section pages <br>
+  => in src file : added _vampire-ball.scss page <br>
+
+__________________________________________________________________________________________<br>
+
 #8- MOVIES
 
 + added css for archive-movie <br>
 => replace sass file <br>
 + modified classes names of archive-movie.php
 => replace archive-movie.php with my version <br>
-=> done responsive for all devices
+=> done responsive for all devices <br>
+LAST ADDS <br>
+  + added css for archive-movie <br>
+  + modified classes names of archive-movie.php <br>
+
 
 __________________________________________________________________________________________<br>
 
@@ -89,6 +81,11 @@ ________________________________________________________________________________
 + changed edition-entete.php => added ids/ changed opening&closing boxes to put them on the right/ changed some titles <br>
 + added svg and png files to images file <br>
 + replace files : css / images/ js / src and edition-entete.php to add new modifications <br>
+LAST ADDS <br>
+++ made changes on highlight design <br>
+  + added line to hide scrollbar in sass file <br>
+  + replace "edition-entête" by my version to add carousel-like highlight section and other small changes <br>
+  + replace sass file to add new css <br>
 
 __________________________________________________________________________________________<br>
 
