@@ -226,6 +226,29 @@
 </main><!-- /.container -->
 
 <main class="container">
+
+<div><a name="edprize"></a><h3>HIGHLIGHTS</h3></div>
+
+    <div class="channel">
+        <div class="app slider" style="height:25rem;">
+	        <ul class="hs full slide-track">
+        		<?php
+
+					// Load value (array of ids).
+					$images = get_field('gallery');
+					$image_ids = array();
+					//print_r($images[0]);
+					foreach( $images as $image ):
+					?>
+						<li class="item slide" style="height:20rem;width: max-content;">
+	                        	<img src="<?php echo $image["url"]; ?>" style="max-height:100%;height:20rem" title="<?php echo $image["title"]; ?>" alt="<?php echo $image["title"]; ?>"/>
+						</li>
+                <?php 
+	                endforeach; ?>
+			</ul>
+		</div>
+    </div>
+ 
     <div><a name="edprize"></a><h3>COMPETITION WINNERS</h3></div>
 
     <div class="channel">
@@ -257,28 +280,7 @@
 		</div>
     </div>
 
-    <div><a name="edprize"></a><h3>HIGHLIGHTS</h3></div>
-
-    <div class="channel">
-        <div class="app">
-	        <ul class="hs full">
-        		<?php
-
-					// Load value (array of ids).
-					$images = get_field('gallery');
-					$image_ids = array();
-					//print_r($images[0]);
-					foreach( $images as $image ):
-					?>
-						<li class="item" style="height:20rem;">
-	                        	<img src="<?php echo $image["url"]; ?>" style="max-height:150%;" title="<?php echo $image["title"]; ?>" alt="<?php echo $image["title"]; ?>"/>
-						</li>
-                <?php 
-	                endforeach; ?>
-			</ul>
-		</div>
-    </div>
- 
+    
      
 	<div><a name="edcompetitions"></a><h3>Highlighted competitions</h3></div>
 	<div class="channel">
@@ -530,7 +532,7 @@
 		                             ?>
 		                        </h4>
 								</div>
-		                        <div style="height:5rem;">
+		                        <div style="height:5rem;width:16rem;">
 		                        <p>
 		                        <?php echo substr(get_post_field('post_content', $idGuest),0,70)."..."; ?>
 		                        <!-- --></p>

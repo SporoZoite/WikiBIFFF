@@ -15,9 +15,7 @@
     <div class="carousel-wrap">
         <div class="owl-carousel">
             <?php
-                /**
-                    afficher les invités par edition et par type
-                **/
+                
             $edition = get_query_var('edition');
             $type_guest = get_query_var('type');
             if ($type_guest==='') {
