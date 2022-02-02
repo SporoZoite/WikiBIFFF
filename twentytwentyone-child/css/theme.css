@@ -14829,7 +14829,6 @@ figure.woocommerce-product-gallery__wrapper {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   padding-left: 3.125rem;
-  padding-right: 3.125rem;
   border-bottom: 0.2rem solid black;
 }
 
@@ -14875,7 +14874,6 @@ figure.woocommerce-product-gallery__wrapper {
 @media only screen and (min-width: 47rem) and (max-width: 62rem) {
   .site-header {
     padding-left: 1.125rem;
-    padding-right: 1.125rem;
   }
 
   .brand-image {
@@ -14891,7 +14889,6 @@ figure.woocommerce-product-gallery__wrapper {
 @media only screen and (max-width: 47rem) {
   .site-header {
     padding-left: 1.125rem;
-    border-bottom: 0.1rem solid black;
   }
 
   .site-branding {
@@ -15400,136 +15397,576 @@ label {
   }
 }
 .post-186047 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin: unset !important;
+  margin-bottom: 0rem !important;
+  margin-top: 0rem !important;
+  padding: unset !important;
+  display: block !important;
+  background: none !important;
+  border-radius: unset !important;
+  max-width: 100% !important;
+  justify-self: center !important;
+  overflow: hidden !important;
+  justify-content: unset !important;
+  background-image: none !important;
 }
-
-.entry-content {
+.post-186047 .entry-header {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  max-height: 100vw !important;
+  width: 100% !important;
+  padding: 0rem 2rem !important;
+  overflow: hidden !important;
+}
+.post-186047 .entry-content {
   color: white !important;
+  width: 100% !important;
+  padding: 1rem !important;
+}
+.post-186047 .entry-title {
+  font-size: clamp(var(--min), var(--val), var(--max)) !important;
+  --min: 1rem !important;
+  --val: 2.4vw !important;
+  --max: 2.8125rem !important;
+  text-transform: uppercase !important;
+}
+.post-186047 .entry-footer {
+  display: block !important;
+  padding: 0rem 2rem !important;
 }
 
 .um-field-label {
   color: white !important;
+  font-family: "RobotoBold" !important;
 }
 
 .um-button {
-  background: #be1b17;
+  background: #be1b17 !important;
+  font-family: "RobotoBold" !important;
 }
 
 .um-button.um-alt {
-  background: #272727;
+  background: #272727 !important;
+  font-family: "RobotoBold" !important;
 }
 
 .um .um-button.um-alt {
-  color: white;
+  color: white !important;
 }
 
 a.um-link-alt {
-  font-family: "RobotoBold";
+  font-family: "RobotoBold" !important;
 }
 
 .um-login.um-logout.um-186043.uimob340 {
-  margin: 1rem;
-  background: #be1b17;
-  padding: 1rem;
-  border-radius: 5px;
+  margin: 1rem !important;
+  background: #be1b17 !important;
+  padding: 1rem !important;
+  border-radius: 5px !important;
+  float: left !important;
 }
 
 .um-misc-img {
-  margin: 1rem;
+  margin: 1rem !important;
 }
 
 .um-misc-with-img {
-  color: white;
-  font-family: "RobotoBold";
-  font-size: clamp(var(--min), var(--val), var(--max));
-  --min: 1rem;
-  --val: 1.5vw;
-  --max: 3rem;
+  color: white !important;
+  font-family: "RobotoBold" !important;
+  font-size: clamp(var(--min), var(--val), var(--max)) !important;
+  --min: 1rem !important;
+  --val: 1.5vw !important;
+  --max: 3rem !important;
+}
+
+.um-misc-ul {
+  color: white !important;
+  font-family: "RobotoBold" !important;
 }
 
 .edit-link {
-  font-family: "RobotoBold";
-  background: #272727;
-  padding: 0.5rem 1rem;
-  border-radius: 3px;
-}
-
-.entry-title {
-  font-size: clamp(var(--min), var(--val), var(--max));
-  --min: 1rem;
-  --val: 2.4vw;
-  --max: 2.8125rem;
+  font-family: "RobotoBold" !important;
+  background: #272727 !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 3px !important;
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
   .post-186047 {
-    margin: 6rem;
+    margin: 6rem !important;
   }
-
-  .entry-title {
-    font-size: clamp(var(--min), var(--val), var(--max));
-    --min: 1rem;
-    --val: 4.3vw;
-    --max: 3rem;
+  .post-186047 .entry-title {
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 4.3vw !important;
+    --max: 3rem !important;
+  }
+  .post-186047 .entry-content {
+    color: white !important;
+    width: 100% !important;
+    padding: 1rem !important;
   }
 
   .um-login.um-logout.um-186043.uimob340 {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1rem !important;
+    padding: 1rem !important;
   }
 
   .um-misc-img {
-    margin: 1rem;
+    margin: 1rem !important;
   }
 
   .um-misc-with-img {
-    font-size: clamp(var(--min), var(--val), var(--max));
-    --min: 1rem;
-    --val: 3.5vw;
-    --max: 3rem;
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 3.5vw !important;
+    --max: 3rem !important;
   }
 
   .edit-link {
-    padding: 0.5rem 3rem;
-    border-radius: 3px;
-  }
-
-  .entry-footer.default-max-width {
-    text-align: center;
+    padding: 0.5rem 3rem !important;
+    border-radius: 3px !important;
   }
 }
 @media screen and (max-width: 47rem) and (orientation: portrait) {
-  .entry-title {
-    font-size: clamp(var(--min), var(--val), var(--max));
-    --min: 1rem;
-    --val: 8vw;
-    --max: 3rem;
-  }
-
   .post-186047 {
-    margin: 4rem;
+    margin: 4rem !important;
+  }
+  .post-186047 .entry-title {
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 8vw !important;
+    --max: 3rem !important;
+  }
+  .post-186047 .entry-header {
+    padding: 0rem 0rem !important;
+  }
+  .post-186047 .entry-content {
+    padding: 0rem !important;
+  }
+  .post-186047 .entry-footer {
+    padding: 0rem 0rem !important;
   }
 
   .um-login.um-logout.um-186043.uimob340 {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1rem 0rem !important;
+    padding: 1rem !important;
   }
 
   .um-misc-img {
-    margin: 1rem;
+    margin: 1rem !important;
   }
 
   .um-misc-with-img {
-    font-size: clamp(var(--min), var(--val), var(--max));
-    --min: 1rem;
-    --val: 5vw;
-    --max: 3rem;
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 5vw !important;
+    --max: 3rem !important;
   }
 
   .edit-link {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem !important;
+    border-radius: 3px !important;
+  }
+}
+.post-186051 {
+  margin: unset !important;
+  margin-bottom: 0rem !important;
+  margin-top: 0rem !important;
+  padding: unset !important;
+  display: block !important;
+  background: none !important;
+  border-radius: unset !important;
+  max-width: 100% !important;
+  justify-self: center !important;
+  overflow: hidden !important;
+  justify-content: unset !important;
+  background-image: none !important;
+}
+.post-186051 .entry-header {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  max-height: 100vw !important;
+  width: 100% !important;
+  padding: 0rem 4rem !important;
+  overflow: hidden !important;
+}
+.post-186051 .entry-content {
+  color: white !important;
+  width: 100% !important;
+  padding: 0rem 1rem !important;
+}
+.post-186051 .entry-title {
+  font-size: clamp(var(--min), var(--val), var(--max)) !important;
+  --min: 1rem !important;
+  --val: 2.4vw !important;
+  --max: 2.8125rem !important;
+  text-transform: uppercase !important;
+}
+.post-186051 .entry-footer {
+  display: block !important;
+  padding: 0rem 4rem !important;
+}
+.post-186051 .edit-link {
+  padding: 0.5rem 3rem !important;
+  border-radius: 3px !important;
+}
+
+.um-form {
+  margin: 3rem !important;
+}
+
+.um-account-side {
+  background: #be1b17 !important;
+  padding: 2.1rem !important;
+  border-radius: 5px !important;
+}
+
+.um-account-main {
+  float: right !important;
+  width: 68% !important;
+  border: 3px #272727 solid !important;
+  border-radius: 3px !important;
+  padding: 1.5rem !important;
+}
+
+.um-account-name a {
+  color: white !important;
+  font-family: "RobotoBold" !important;
+  font-size: clamp(var(--min), var(--val), var(--max)) !important;
+  --min: 1rem !important;
+  --val: 1.5vw !important;
+  --max: 3rem !important;
+}
+
+.um-account-profile-link .um-link {
+  font-family: "RobotoBold" !important;
+  color: white !important;
+}
+
+.um-faicon-user {
+  color: #be1b17 !important;
+}
+
+.um-account-heading {
+  color: white !important;
+  font-family: "RobotoBold" !important;
+}
+
+.um-field-label {
+  color: white !important;
+  font-family: "RobotoBold" !important;
+}
+
+.um-field-area {
+  font-family: "RobotoBold" !important;
+}
+
+.um-verified-info a {
+  color: #696969 !important;
+  font-family: "RobotoBold" !important;
+}
+
+.um-button {
+  background: #be1b17 !important;
+  font-family: "RobotoBold" !important;
+}
+
+.um-account-meta {
+  float: none !important;
+  width: 100% !important;
+  margin: auto !important;
+  padding: 1.5rem 0rem !important;
+  background: #be1b17 !important;
+}
+
+.um-account-nav a {
+  color: white !important;
+  font-family: "RobotoBold" !important;
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .post-186051 {
+    margin: 4rem 0rem !important;
+  }
+  .post-186051 .entry-title {
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 4.3vw !important;
+    --max: 3rem !important;
+  }
+  .post-186051 .entry-content {
+    color: white !important;
+    width: 100% !important;
+    padding: 0rem 1rem !important;
+  }
+  .post-186051 .entry-footer {
+    display: block !important;
+    padding: 0rem 4rem !important;
+  }
+  .post-186051 .entry-footer-default-max-width {
+    text-align: end;
+  }
+
+  .um-account-name a {
+    color: white !important;
+    font-family: "RobotoBold";
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 3.5vw !important;
+    --max: 3rem !important;
+  }
+
+  .um-account-side {
+    background: #be1b17 !important;
+    padding: 2.5rem !important;
+    float: left !important;
+    width: 30% !important;
+    border-radius: 5px !important;
+  }
+
+  .um-account-main {
+    float: right !important;
+    width: 66% !important;
+    border: 3px #272727 solid !important;
+    border-radius: 3px !important;
+    padding: 1.5rem !important;
+  }
+
+  a.um-account-link.current {
+    background: #212529 !important;
+  }
+}
+@media screen and (max-width: 47rem) and (orientation: portrait) {
+  .post-186051 {
+    margin: 2rem 0rem !important;
+  }
+  .post-186051 .entry-title {
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 8vw !important;
+    --max: 3rem !important;
+  }
+  .post-186051 .entry-header {
+    padding: 0rem 3rem !important;
+  }
+  .post-186051 .entry-content {
+    color: white !important;
+    width: 100% !important;
+    padding: 0rem 0rem !important;
+  }
+  .post-186051 .entry-footer {
+    padding: 0rem 4rem !important;
+  }
+  .post-186051 .entry-footer-default-max-width {
+    text-align: center;
+  }
+
+  .um-account-name a {
+    color: white !important;
+    font-family: "RobotoBold" !important;
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 5vw !important;
+    --max: 3rem !important;
+  }
+
+  .um-account-meta {
+    float: none !important;
+    width: unset !important;
+    margin: auto !important;
+    padding: 1rem !important;
+    background: #be1b17 !important;
     border-radius: 3px;
+    text-align: center;
+  }
+
+  .um-account-main {
+    width: 100% !important;
+    float: none !important;
+    margin-top: 1.5rem !important;
+    border: 3px #272727 solid !important;
+    border-radius: 3px !important;
+    padding: 1.5rem !important;
+  }
+
+  .um-account-nav a {
+    color: white !important;
+    font-family: "RobotoBold" !important;
+  }
+}
+.post-186049 {
+  margin: unset !important;
+  margin-bottom: 0rem !important;
+  margin-top: 0rem !important;
+  padding: unset !important;
+  display: block !important;
+  background: none !important;
+  border-radius: unset !important;
+  max-width: 100% !important;
+  justify-self: center !important;
+  overflow: hidden !important;
+  justify-content: unset !important;
+  background-image: none !important;
+}
+.post-186049 .entry-header {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  max-height: 100vw !important;
+  width: 100% !important;
+  padding: 0rem 2rem !important;
+  overflow: hidden !important;
+}
+.post-186049 .entry-content {
+  color: white !important;
+  width: 100% !important;
+  padding: 1rem !important;
+}
+.post-186049 .entry-title {
+  font-size: clamp(var(--min), var(--val), var(--max)) !important;
+  --min: 1rem !important;
+  --val: 2.4vw !important;
+  --max: 2.8125rem !important;
+  text-transform: uppercase !important;
+}
+.post-186049 .entry-footer {
+  display: block !important;
+  padding: 0rem 2rem !important;
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .post-186049 {
+    margin: 6rem !important;
+  }
+  .post-186049 .entry-title {
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 4.3vw !important;
+    --max: 3rem !important;
+  }
+  .post-186049 .entry-content {
+    color: white !important;
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+}
+@media screen and (max-width: 47rem) and (orientation: portrait) {
+  .post-186049 {
+    margin: 4rem !important;
+  }
+  .post-186049 .entry-title {
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 8vw !important;
+    --max: 3rem !important;
+  }
+  .post-186049 .entry-header {
+    padding: 0rem 0rem !important;
+  }
+  .post-186049 .entry-content {
+    padding: 0rem !important;
+  }
+  .post-186049 .entry-footer {
+    padding: 0rem 0rem !important;
+  }
+}
+.post-186052 {
+  margin: unset !important;
+  margin-bottom: 0rem !important;
+  margin-top: 0rem !important;
+  padding: unset !important;
+  display: block !important;
+  background: none !important;
+  border-radius: unset !important;
+  max-width: 100% !important;
+  justify-self: center !important;
+  overflow: hidden !important;
+  justify-content: unset !important;
+  background-image: none !important;
+}
+.post-186052 .entry-header {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  max-height: 100vw !important;
+  width: 100% !important;
+  padding: 0rem 2rem !important;
+  overflow: hidden !important;
+}
+.post-186052 .entry-content {
+  color: white !important;
+  width: 100% !important;
+  padding: 2rem !important;
+  background-color: #272727;
+  border-radius: 3px !important;
+  margin: 2rem !important;
+}
+.post-186052 .entry-title {
+  font-size: clamp(var(--min), var(--val), var(--max)) !important;
+  --min: 1rem !important;
+  --val: 2.4vw !important;
+  --max: 2.8125rem !important;
+  text-transform: uppercase !important;
+}
+.post-186052 .entry-footer {
+  display: block !important;
+  padding: 0rem 2rem !important;
+}
+.post-186052 .um-button {
+  background: #be1b17 !important;
+  font-family: "RobotoBold" !important;
+}
+
+.um-field-block {
+  color: white !important;
+  font-family: "RobotoBold" !important;
+  text-align: left !important;
+}
+
+.um-field-area {
+  font-family: "RobotoBold" !important;
+}
+
+.um-form-field.valid {
+  width: 80%;
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .post-186052 {
+    margin: 6rem !important;
+  }
+  .post-186052 .entry-title {
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 4.3vw !important;
+    --max: 3rem !important;
+  }
+}
+@media screen and (max-width: 47rem) and (orientation: portrait) {
+  .post-186052 {
+    margin: 3rem 0rem !important;
+  }
+  .post-186052 .entry-title {
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 8vw !important;
+    --max: 3rem !important;
+  }
+  .post-186052 .entry-header {
+    padding: 0rem 2rem !important;
+  }
+  .post-186052 .entry-content {
+    padding: 1rem 2rem !important;
+  }
+  .post-186052 .entry-footer {
+    padding: 0rem 2rem !important;
   }
 }
 .page-header.alignwide {
@@ -15634,7 +16071,7 @@ a.um-link-alt {
     padding: 2rem;
   }
 }
-@media screen and (max-width: 47rem) {
+@media screen and (max-width: 47rem) and (orientation: portrait) {
   .page-header.alignwide {
     margin-top: 2.5rem !important;
     padding: 1rem 2rem;

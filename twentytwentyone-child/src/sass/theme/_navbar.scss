@@ -9,7 +9,6 @@
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   padding-left: 3.125rem;
-  padding-right: 3.125rem;
   border-bottom: 0.2rem solid black;
 }
 .site-branding {
@@ -53,7 +52,6 @@
 @media only screen and (min-width: 47rem) and (max-width: 62rem) {
   .site-header {
     padding-left: 1.125rem;
-    padding-right: 1.125rem;
   }
   .brand-image {
     margin-top: 0rem;
@@ -68,7 +66,6 @@
 @media only screen and (max-width: 47rem) {
   .site-header {
     padding-left: 1.125rem;
-    border-bottom: 0.1rem solid black;
   }
   .site-branding {
     height: 0.5rem;

@@ -1,4 +1,4 @@
-.post-186047 {
+.post-186049 {
   margin: unset !important;
   margin-bottom: 0rem !important;
   margin-top: 0rem !important;
@@ -39,62 +39,8 @@
   }
 }
 
-.um-field-label {
-  color: white !important;
-  font-family: "RobotoBold" !important;
-}
-
-.um-button {
-  background: $darkrouge !important;
-  font-family: "RobotoBold" !important;
-}
-
-.um-button.um-alt {
-  background: #272727 !important;
-  font-family: "RobotoBold" !important;
-}
-.um .um-button.um-alt {
-  color: white !important;
-}
-a.um-link-alt {
-  font-family: "RobotoBold" !important;
-}
-
-.um-login.um-logout.um-186043.uimob340 {
-  margin: 1rem !important;
-  background: #be1b17 !important;
-  padding: 1rem !important;
-  border-radius: 5px !important;
-  float: left !important;
-}
-
-.um-misc-img {
-  margin: 1rem !important;
-}
-
-.um-misc-with-img {
-  color: white !important;
-  font-family: "RobotoBold" !important;
-  font-size: clamp(var(--min), var(--val), var(--max)) !important;
-  --min: 1rem !important;
-  --val: 1.5vw !important;
-  --max: 3rem !important;
-}
-
-.um-misc-ul {
-  color: white !important;
-  font-family: "RobotoBold" !important;
-}
-
-.edit-link {
-  font-family: "RobotoBold" !important;
-  background: #272727 !important;
-  padding: 0.5rem 1rem !important;
-  border-radius: 3px !important;
-}
-
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
-  .post-186047 {
+  .post-186049 {
     margin: 6rem !important;
 
     .entry-title {
@@ -109,31 +55,10 @@ a.um-link-alt {
       padding: 1rem !important;
     }
   }
-
-  .um-login.um-logout.um-186043.uimob340 {
-    margin: 1rem !important;
-    padding: 1rem !important;
-  }
-
-  .um-misc-img {
-    margin: 1rem !important;
-  }
-
-  .um-misc-with-img {
-    font-size: clamp(var(--min), var(--val), var(--max)) !important;
-    --min: 1rem !important;
-    --val: 3.5vw !important;
-    --max: 3rem !important;
-  }
-
-  .edit-link {
-    padding: 0.5rem 3rem !important;
-    border-radius: 3px !important;
-  }
 }
 
 @media screen and (max-width: 47rem) and (orientation: portrait) {
-  .post-186047 {
+  .post-186049 {
     margin: 4rem !important;
     .entry-title {
       font-size: clamp(var(--min), var(--val), var(--max)) !important;
@@ -150,26 +75,5 @@ a.um-link-alt {
     .entry-footer {
       padding: 0rem 0rem !important;
     }
-  }
-
-  .um-login.um-logout.um-186043.uimob340 {
-    margin: 1rem 0rem !important;
-    padding: 1rem !important;
-  }
-
-  .um-misc-img {
-    margin: 1rem !important;
-  }
-
-  .um-misc-with-img {
-    font-size: clamp(var(--min), var(--val), var(--max)) !important;
-    --min: 1rem !important;
-    --val: 5vw !important;
-    --max: 3rem !important;
-  }
-
-  .edit-link {
-    padding: 0.5rem 1rem !important;
-    border-radius: 3px !important;
   }
 }
