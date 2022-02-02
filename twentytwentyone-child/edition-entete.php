@@ -533,7 +533,7 @@
 		                        <div style="height:5rem;">
 		                        <p>
 		                        <?php echo substr(get_post_field('post_content', $idGuest),0,70)."..."; ?>
-		                        </p>
+		                        <!-- --></p>
 		                        </div>
 		                        <hr/>
 		                        <a href="<?php echo get_permalink($post); ?>" style="text-decoration:none;color:#D00019!important;"><h4>MORE INFO</h4></a>
