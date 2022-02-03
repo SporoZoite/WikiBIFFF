@@ -1,9 +1,22 @@
  /!\LAST ADDS/!\ <br>
  <br>
  
+ /!\to have global settings that need to be disabled you must add _root.scss/!\ <br>
  + corrections on navbar padding <br>
- => replace sass file to add modification <br>
+ + modifs in _single-movie.scss <br>
+ + corrections on page Login/Logout <br>
+ + added page Account <br>
+ + added page Members <br>
+ + added page Password reset <br>
+ + added page Register <br> 
+ + added page User (with edit mode) <br>
+ + added page Politique de confidentialité <br>
  
+ => replace the sass file to add modification <br>
+ => grouped files in user file + single-movie file + theme file + _politique-de-confidentialité.scss <br>
+ => to be sure replace all the sass file to add all modifications <br>
+ 
+
 
 
 __________________________________________________________________________________________<br>
