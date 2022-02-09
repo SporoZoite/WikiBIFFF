@@ -18737,7 +18737,7 @@ ul {
     flex-direction: column;
   }
 }
-.post-186047 {
+#login-container .entry {
   margin: unset !important;
   margin-bottom: 0rem !important;
   margin-top: 0rem !important;
@@ -18751,7 +18751,7 @@ ul {
   justify-content: unset !important;
   background-image: none !important;
 }
-.post-186047 .entry-header {
+#login-container .entry .entry-header {
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
@@ -18761,12 +18761,12 @@ ul {
   padding: 0rem 2rem !important;
   overflow: hidden !important;
 }
-.post-186047 .entry-content {
+#login-container .entry .entry-content {
   color: white !important;
   width: 100% !important;
   padding: 1rem !important;
 }
-.post-186047 .entry-title {
+#login-container .entry .entry-title {
   font-size: clamp(var(--min), var(--val), var(--max)) !important;
   --min: 1rem !important;
   --val: 2.4vw !important;
@@ -18774,7 +18774,7 @@ ul {
   text-transform: uppercase !important;
   font-family: "RobotoBold" !important;
 }
-.post-186047 .entry-footer {
+#login-container .entry .entry-footer {
   display: block !important;
   padding: 0rem 2rem !important;
 }
@@ -18836,59 +18836,55 @@ a.um-link-alt {
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
-  .post-186047 {
+  #login-container .entry {
     margin: 6rem !important;
   }
-  .post-186047 .entry-title {
+  #login-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
     --val: 4.3vw !important;
     --max: 3rem !important;
   }
-  .post-186047 .entry-content {
+  #login-container .entry .entry-content {
     color: white !important;
     width: 100% !important;
     padding: 1rem !important;
   }
-
-  .um-login.um-logout.um-186043.uimob340 {
+  #login-container .um-login.um-logout.um-186043.uimob340 {
     margin: 1rem !important;
     padding: 1rem !important;
   }
-
-  .um-misc-img {
+  #login-container .um-misc-img {
     margin: 1rem !important;
   }
-
-  .um-misc-with-img {
+  #login-container .um-misc-with-img {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
     --val: 3.5vw !important;
     --max: 3rem !important;
   }
-
-  .edit-link {
+  #login-container .edit-link {
     padding: 0.5rem 3rem !important;
     border-radius: 3px !important;
   }
 }
 @media screen and (max-width: 47rem) and (orientation: portrait) {
-  .post-186047 {
+  #login-container .entry {
     margin: 4rem !important;
   }
-  .post-186047 .entry-title {
+  #login-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
     --val: 8vw !important;
     --max: 3rem !important;
   }
-  .post-186047 .entry-header {
+  #login-container .entry .entry-header {
     padding: 0rem 0rem !important;
   }
-  .post-186047 .entry-content {
+  #login-container .entry .entry-content {
     padding: 0rem !important;
   }
-  .post-186047 .entry-footer {
+  #login-container .entry .entry-footer {
     padding: 0rem 0rem !important;
   }
 
@@ -18913,7 +18909,7 @@ a.um-link-alt {
     border-radius: 3px !important;
   }
 }
-.post-186051 {
+#account-container .entry {
   margin: unset !important;
   margin-bottom: 0rem !important;
   margin-top: 0rem !important;
@@ -18927,7 +18923,7 @@ a.um-link-alt {
   justify-content: unset !important;
   background-image: none !important;
 }
-.post-186051 .entry-header {
+#account-container .entry .entry-header {
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
@@ -18937,12 +18933,12 @@ a.um-link-alt {
   padding: 0rem 4rem !important;
   overflow: hidden !important;
 }
-.post-186051 .entry-content {
+#account-container .entry .entry-content {
   color: white !important;
   width: 100% !important;
   padding: 0rem 1rem !important;
 }
-.post-186051 .entry-title {
+#account-container .entry .entry-title {
   font-size: clamp(var(--min), var(--val), var(--max)) !important;
   --min: 1rem !important;
   --val: 2.4vw !important;
@@ -18950,11 +18946,11 @@ a.um-link-alt {
   text-transform: uppercase !important;
   font-family: "RobotoBold" !important;
 }
-.post-186051 .entry-footer {
+#account-container .entry .entry-footer {
   display: block !important;
   padding: 0rem 4rem !important;
 }
-.post-186051 .edit-link {
+#account-container .entry .edit-link {
   padding: 0.5rem 3rem !important;
   border-radius: 3px !important;
 }
@@ -19033,26 +19029,26 @@ a.um-link-alt {
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
-  .post-186051 {
+  #account-container .entry {
     margin: 4rem 0rem !important;
   }
-  .post-186051 .entry-title {
+  #account-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
     --val: 4.3vw !important;
     --max: 3rem !important;
   }
-  .post-186051 .entry-content {
+  #account-container .entry .entry-content {
     color: white !important;
     width: 100% !important;
     padding: 0rem 1rem !important;
   }
-  .post-186051 .entry-footer {
+  #account-container .entry .entry-footer {
     display: block !important;
     padding: 0rem 4rem !important;
   }
-  .post-186051 .entry-footer-default-max-width {
-    text-align: end;
+  #account-container .entry .entry-footer-default-max-width {
+    text-align: end !important;
   }
 
   .um-account-name a {
@@ -19085,28 +19081,28 @@ a.um-link-alt {
   }
 }
 @media screen and (max-width: 47rem) and (orientation: portrait) {
-  .post-186051 {
+  #account-container .entry {
     margin: 2rem 0rem !important;
   }
-  .post-186051 .entry-title {
+  #account-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
     --val: 8vw !important;
     --max: 3rem !important;
   }
-  .post-186051 .entry-header {
+  #account-container .entry .entry-header {
     padding: 0rem 3rem !important;
   }
-  .post-186051 .entry-content {
+  #account-container .entry .entry-content {
     color: white !important;
     width: 100% !important;
     padding: 0rem 0rem !important;
   }
-  .post-186051 .entry-footer {
+  #account-container .entry .entry-footer {
     padding: 0rem 4rem !important;
   }
-  .post-186051 .entry-footer-default-max-width {
-    text-align: center;
+  #account-container .entry .entry-footer-default-max-width {
+    text-align: center !important;
   }
 
   .um-account-name a {
@@ -19124,8 +19120,8 @@ a.um-link-alt {
     margin: auto !important;
     padding: 1rem !important;
     background: #be1b17 !important;
-    border-radius: 3px;
-    text-align: center;
+    border-radius: 3px !important;
+    text-align: center !important;
   }
 
   .um-account-main {
@@ -19142,7 +19138,7 @@ a.um-link-alt {
     font-family: "RobotoBold" !important;
   }
 }
-.post-186049 {
+#members-container .entry {
   margin: unset !important;
   margin-bottom: 0rem !important;
   margin-top: 0rem !important;
@@ -19156,7 +19152,7 @@ a.um-link-alt {
   justify-content: unset !important;
   background-image: none !important;
 }
-.post-186049 .entry-header {
+#members-container .entry .entry-header {
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
@@ -19166,7 +19162,7 @@ a.um-link-alt {
   padding: 0rem 2rem !important;
   overflow: hidden !important;
 }
-.post-186049 .entry-content {
+#members-container .entry .entry-content {
   color: white !important;
   width: 100% !important;
   padding: 3rem !important;
@@ -19175,13 +19171,13 @@ a.um-link-alt {
   font-family: "RobotoBold" !important;
   border: 3px solid #be1b17 !important;
 }
-.post-186049 .entry-content p {
+#members-container .entry .entry-content p {
   color: white !important;
   font-family: "RobotoBold" !important;
   background: none !important;
   padding: 0rem !important;
 }
-.post-186049 .entry-title {
+#members-container .entry .entry-title {
   font-size: clamp(var(--min), var(--val), var(--max)) !important;
   --min: 1rem !important;
   --val: 2.4vw !important;
@@ -19189,30 +19185,30 @@ a.um-link-alt {
   text-transform: uppercase !important;
   font-family: "RobotoBold" !important;
 }
-.post-186049 .entry-footer {
+#members-container .entry .entry-footer {
   display: block !important;
   padding: 0rem 2rem !important;
 }
-.post-186049 .edit-link {
+#members-container .entry .edit-link {
   padding: 0.5rem 3rem !important;
   border-radius: 3px !important;
 }
-.post-186049 footer.entry-footer.default-max-width {
+#members-container .entry footer.entry-footer.default-max-width {
   text-align: center !important;
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
-  .post-186049 {
+  #members-container .entry {
     margin: 6rem 4rem !important;
     min-height: 30vh !important;
   }
-  .post-186049 .entry-title {
+  #members-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
     --val: 4.3vw !important;
     --max: 3rem !important;
   }
-  .post-186049 .entry-content {
+  #members-container .entry .entry-content {
     color: white !important;
     width: 100% !important;
     padding: 3rem !important;
@@ -19223,19 +19219,19 @@ a.um-link-alt {
   }
 }
 @media screen and (max-width: 47rem) and (orientation: portrait) {
-  .post-186048 {
+  #members-container .entry {
     margin: 4rem 2rem !important;
   }
-  .post-186048 .entry-title {
+  #members-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
     --val: 8vw !important;
     --max: 3rem !important;
   }
-  .post-186048 .entry-header {
+  #members-container .entry .entry-header {
     padding: 0rem 2rem !important;
   }
-  .post-186048 .entry-content {
+  #members-container .entry .entry-content {
     color: white !important;
     width: 100% !important;
     padding: 3rem !important;
@@ -19246,15 +19242,15 @@ a.um-link-alt {
     font-family: "RobotoBold" !important;
     border: 3px solid #be1b17 !important;
   }
-  .post-186048 .entry-footer {
+  #members-container .entry .entry-footer {
     padding: 0rem 0rem !important;
   }
-  .post-186048 .edit-link {
+  #members-container .entry .edit-link {
     padding: 0.5rem 1rem !important;
     border-radius: 3px !important;
   }
 }
-.post-186048 {
+#register-container .entry {
   margin: unset !important;
   margin-bottom: 0rem !important;
   margin-top: 0rem !important;
@@ -19268,7 +19264,7 @@ a.um-link-alt {
   justify-content: unset !important;
   background-image: none !important;
 }
-.post-186048 .entry-header {
+#register-container .entry .entry-header {
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
@@ -19278,7 +19274,7 @@ a.um-link-alt {
   padding: 0rem 2rem !important;
   overflow: hidden !important;
 }
-.post-186048 .entry-content {
+#register-container .entry .entry-content {
   color: white !important;
   width: 100% !important;
   padding: 3rem !important;
@@ -19287,7 +19283,7 @@ a.um-link-alt {
   font-family: "RobotoBold" !important;
   border: 3px solid #be1b17 !important;
 }
-.post-186048 .entry-title {
+#register-container .entry .entry-title {
   font-size: clamp(var(--min), var(--val), var(--max)) !important;
   --min: 1rem !important;
   --val: 2.4vw !important;
@@ -19295,30 +19291,30 @@ a.um-link-alt {
   text-transform: uppercase !important;
   font-family: "RobotoBold" !important;
 }
-.post-186048 footer.entry-footer.default-max-width {
+#register-container .entry footer.entry-footer.default-max-width {
   text-align: center !important;
 }
-.post-186048 .entry-footer {
+#register-container .entry .entry-footer {
   display: block !important;
   padding: 0rem 2rem !important;
 }
-.post-186048 .edit-link {
+#register-container .entry .edit-link {
   padding: 0.5rem 3rem !important;
   border-radius: 3px !important;
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
-  .post-186048 {
+  #register-container .entry {
     margin: 6rem 4rem !important;
     min-height: 30vh !important;
   }
-  .post-186048 .entry-title {
+  #register-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
     --val: 4.3vw !important;
     --max: 3rem !important;
   }
-  .post-186048 .entry-content {
+  #register-container .entry .entry-content {
     color: white !important;
     width: 100% !important;
     padding: 3rem !important;
@@ -19329,19 +19325,19 @@ a.um-link-alt {
   }
 }
 @media screen and (max-width: 47rem) and (orientation: portrait) {
-  .post-186048 {
+  #register-container .entry {
     margin: 4rem 2rem !important;
   }
-  .post-186048 .entry-title {
+  #register-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
     --val: 8vw !important;
     --max: 3rem !important;
   }
-  .post-186048 .entry-header {
+  #register-container .entry .entry-header {
     padding: 0rem 2rem !important;
   }
-  .post-186048 .entry-content {
+  #register-container .entry .entry-content {
     color: white !important;
     width: 100% !important;
     padding: 3rem !important;
@@ -19352,15 +19348,15 @@ a.um-link-alt {
     font-family: "RobotoBold" !important;
     border: 3px solid #be1b17 !important;
   }
-  .post-186048 .entry-footer {
+  #register-container .entry .entry-footer {
     padding: 0rem 0rem !important;
   }
-  .post-186048 .edit-link {
+  #register-container .entry .edit-link {
     padding: 0.5rem 1rem !important;
     border-radius: 3px !important;
   }
 }
-.post-186046 {
+#user-container .entry {
   margin: auto !important;
   margin-bottom: 0rem !important;
   margin-top: 0rem !important;
@@ -19374,26 +19370,26 @@ a.um-link-alt {
   justify-content: unset !important;
   background-image: none !important;
 }
-.post-186046 .entry-header {
+#user-container .entry .entry-header {
   display: none !important;
 }
-.post-186046 .entry-content {
+#user-container .entry .entry-content {
   color: white !important;
   width: 90% !important;
   padding: 0rem 2rem !important;
   margin: auto !important;
 }
-.post-186046 .entry-title {
+#user-container .entry .entry-title {
   display: none !important;
 }
-.post-186046 footer.entry-footer.default-max-width {
+#user-container .entry footer.entry-footer.default-max-width {
   text-align: center;
 }
-.post-186046 .entry-footer {
+#user-container .entry .entry-footer {
   display: block !important;
   padding: 0rem 4rem !important;
 }
-.post-186046 .edit-link {
+#user-container .entry .edit-link {
   padding: 0.5rem 3rem !important;
   border-radius: 3px !important;
 }
@@ -19456,28 +19452,27 @@ span.title {
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
-  .post-186046 {
+  #user-container .entry {
     margin: 5rem 0rem 3rem 0rem !important;
   }
-  .post-186046 .entry-content {
+  #user-container .entry .entry-content {
     color: white !important;
     width: 90% !important;
     padding: 0rem 0rem !important;
     margin: auto !important;
   }
-  .post-186046 .entry-footer {
+  #user-container .entry .entry-footer {
     display: block !important;
     padding: 0rem 4rem !important;
   }
-  .post-186046 .edit-link {
+  #user-container .entry .edit-link {
     padding: 0.5rem 1rem !important;
     border-radius: 3px !important;
   }
-
-  .um-name {
+  #user-container .um-name {
     margin-top: 0.25rem !important;
   }
-  .um-name a {
+  #user-container .um-name a {
     color: white !important;
     font-family: "RobotoBold" !important;
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
@@ -19487,23 +19482,22 @@ span.title {
   }
 }
 @media screen and (max-width: 47rem) and (orientation: portrait) {
-  .post-186047 {
+  #user-container .entry {
     margin: 3rem 0rem 1rem 0rem !important;
   }
-  .post-186047 .entry-content {
+  #user-container .entry .entry-content {
     color: white !important;
     width: 90% !important;
     padding: 0rem 0rem !important;
     margin: auto !important;
   }
-  .post-186047 .entry-footer {
+  #user-container .entry .entry-footer {
     padding: 0rem 0rem !important;
   }
-
-  .um-name {
+  #user-container .um-name {
     margin-top: 0.5rem !important;
   }
-  .um-name a {
+  #user-container .um-name a {
     color: white !important;
     font-family: "RobotoBold" !important;
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
@@ -19512,7 +19506,7 @@ span.title {
     --max: 3rem !important;
   }
 }
-.post-186052 {
+#password-container .entry {
   margin: unset !important;
   margin-bottom: 0rem !important;
   margin-top: 0rem !important;
@@ -19526,7 +19520,7 @@ span.title {
   justify-content: unset !important;
   background-image: none !important;
 }
-.post-186052 .entry-header {
+#password-container .entry .entry-header {
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
@@ -19536,15 +19530,15 @@ span.title {
   padding: 0rem 2rem !important;
   overflow: hidden !important;
 }
-.post-186052 .entry-content {
+#password-container .entry .entry-content {
   color: white !important;
   width: 100% !important;
   padding: 2rem !important;
-  background-color: #272727;
+  background-color: #272727 !important;
   border-radius: 3px !important;
   margin: 2rem !important;
 }
-.post-186052 .entry-title {
+#password-container .entry .entry-title {
   font-size: clamp(var(--min), var(--val), var(--max)) !important;
   --min: 1rem !important;
   --val: 2.4vw !important;
@@ -19552,11 +19546,11 @@ span.title {
   text-transform: uppercase !important;
   font-family: "RobotoBold" !important;
 }
-.post-186052 .entry-footer {
+#password-container .entry .entry-footer {
   display: block !important;
   padding: 0rem 2rem !important;
 }
-.post-186052 .um-button {
+#password-container .entry .um-button {
   background: #be1b17 !important;
   font-family: "RobotoBold" !important;
 }
@@ -19572,14 +19566,14 @@ span.title {
 }
 
 .um-form-field.valid {
-  width: 80%;
+  width: 80% !important;
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
-  .post-186052 {
+  #password-container .entry {
     margin: 6rem !important;
   }
-  .post-186052 .entry-title {
+  #password-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
     --val: 4.3vw !important;
@@ -19587,23 +19581,219 @@ span.title {
   }
 }
 @media screen and (max-width: 47rem) and (orientation: portrait) {
-  .post-186052 {
+  #password-container .entry {
     margin: 3rem 0rem !important;
   }
-  .post-186052 .entry-title {
+  #password-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
     --val: 8vw !important;
     --max: 3rem !important;
   }
-  .post-186052 .entry-header {
+  #password-container .entry .entry-header {
     padding: 0rem 2rem !important;
   }
-  .post-186052 .entry-content {
+  #password-container .entry .entry-content {
     padding: 1rem 2rem !important;
+    max-width: 85% !important;
+    margin: 2rem auto !important;
   }
-  .post-186052 .entry-footer {
+  #password-container .entry .entry-footer {
     padding: 0rem 2rem !important;
+  }
+}
+#newtop10-container .entry {
+  margin: unset !important;
+  margin-bottom: 0rem !important;
+  margin-top: 0rem !important;
+  padding: unset !important;
+  display: block !important;
+  background: none !important;
+  border-radius: unset !important;
+  max-width: 100% !important;
+  justify-self: center !important;
+  overflow: hidden !important;
+  justify-content: unset !important;
+  background-image: none !important;
+}
+#newtop10-container .entry .entry-header {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  max-height: 100vw !important;
+  width: 100% !important;
+  padding: 0rem 2rem !important;
+  overflow: hidden !important;
+}
+#newtop10-container .entry .entry-content {
+  color: white !important;
+  width: 100% !important;
+  padding: 0rem 1rem !important;
+}
+#newtop10-container .entry .entry-title {
+  font-size: clamp(var(--min), var(--val), var(--max)) !important;
+  --min: 1rem !important;
+  --val: 2.4vw !important;
+  --max: 2.8125rem !important;
+  text-transform: uppercase !important;
+  font-family: "RobotoBold" !important;
+}
+#newtop10-container .entry .entry-footer {
+  display: block !important;
+  padding: 0rem 4rem !important;
+  text-align: center !important;
+}
+#newtop10-container .entry .edit-link {
+  padding: 0.5rem 3rem !important;
+  border-radius: 3px !important;
+}
+
+.button {
+  background: #be1b17 !important;
+  font-family: "RobotoBold" !important;
+  padding: 0.5rem 3rem !important;
+  border-radius: 3px !important;
+}
+
+.acf-input-wrap {
+  color: black !important;
+  font-family: "RobotoBold" !important;
+}
+
+ul.acf-checkbox-list.acf-bl {
+  display: none !important;
+}
+
+.acf-field.acf-field-checkbox.acf-field-61e80f3f9f25b {
+  display: none !important;
+}
+
+.acf-field input[type=text],
+.acf-field input[type=password],
+.acf-field input[type=date],
+.acf-field input[type=datetime],
+.acf-field input[type=datetime-local],
+.acf-field input[type=email],
+.acf-field input[type=month],
+.acf-field input[type=number],
+.acf-field input[type=search],
+.acf-field input[type=tel],
+.acf-field input[type=time],
+.acf-field input[type=url],
+.acf-field input[type=week],
+.acf-field textarea,
+.acf-field select {
+  border: 0px !important;
+  border-radius: 1px !important;
+}
+
+input[type=text] {
+  color: black !important;
+  font-family: "RobotoBold" !important;
+}
+
+.filter.-taxonomy {
+  font-family: "RobotoBold" !important;
+}
+
+.acf-relationship {
+  background: white;
+  border: 0px !important;
+}
+
+.acf-relationship .filters.-f2 .filter.-taxonomy {
+  width: 100% !important;
+  padding: 1rem 1rem !important;
+  background: #be1b17 !important;
+}
+
+select {
+  text-transform: uppercase !important;
+  font-family: "RobotoBold" !important;
+  background-color: #be1b17 !important;
+  color: white !important;
+  /* reset */
+  margin: 0;
+  box-sizing: border-box !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+select {
+  background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc) !important;
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em !important;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em !important;
+  background-repeat: no-repeat !important;
+}
+
+select:focus {
+  background-image: linear-gradient(45deg, white 50%, transparent 50%), linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(to right, #ccc, #ccc) !important;
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, calc(100% - 2.5em) 0.5em !important;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em !important;
+  background-repeat: no-repeat !important;
+  border-color: white !important;
+  outline: 0 !important;
+}
+
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 #000 !important;
+}
+
+span.acf-rel-item {
+  height: 10rem !important;
+  margin: 1rem 0rem !important;
+}
+
+.acf-relationship .list .acf-rel-item .thumbnail {
+  width: 10rem !important;
+  height: 10rem !important;
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  #newtop10-container .entry {
+    margin: 4rem 0rem !important;
+  }
+  #newtop10-container .entry .entry-title {
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 4.3vw !important;
+    --max: 3rem !important;
+  }
+  #newtop10-container .entry .entry-content {
+    color: white !important;
+    width: 100% !important;
+    padding: 0rem 1rem !important;
+  }
+  #newtop10-container .entry .entry-footer {
+    display: block !important;
+    padding: 0rem 4rem !important;
+  }
+}
+@media screen and (max-width: 47rem) and (orientation: portrait) {
+  #newtop10-container .entry {
+    margin: 2rem 0rem !important;
+  }
+  #newtop10-container .entry .entry-title {
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 8vw !important;
+    --max: 3rem !important;
+  }
+  #newtop10-container .entry .entry-header {
+    padding: 0rem 3rem !important;
+  }
+  #newtop10-container .entry .entry-content {
+    color: white !important;
+    width: 100% !important;
+    padding: 0rem 0rem !important;
+  }
+  #newtop10-container .entry .entry-footer {
+    padding: 0rem 4rem !important;
+  }
+  #newtop10-container .entry .entry-footer-default-max-width {
+    text-align: center !important;
   }
 }
 

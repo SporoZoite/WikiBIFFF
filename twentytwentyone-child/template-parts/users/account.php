@@ -11,7 +11,7 @@
 
 ?>
 
-<div class="single-container">
+<div class="single-container" id="account-container">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 		<?php if ( ! is_front_page() ) : ?>

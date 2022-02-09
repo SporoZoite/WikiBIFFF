@@ -1,38 +1,40 @@
-.post-186046 {
-  margin: auto !important;
-  margin-bottom: 0rem !important;
-  margin-top: 0rem !important;
-  padding: unset !important;
-  display: block !important;
-  background: none !important;
-  border-radius: unset !important;
-  max-width: 100% !important;
-  justify-self: center !important;
-  overflow: hidden !important;
-  justify-content: unset !important;
-  background-image: none !important;
-  .entry-header {
-    display: none !important;
-  }
-  .entry-content {
-    color: white !important;
-    width: 90% !important;
-    padding: 0rem 2rem !important;
+#user-container {
+  .entry {
     margin: auto !important;
-  }
-  .entry-title {
-    display: none !important;
-  }
-  footer.entry-footer.default-max-width {
-    text-align: center;
-  }
-  .entry-footer {
+    margin-bottom: 0rem !important;
+    margin-top: 0rem !important;
+    padding: unset !important;
     display: block !important;
-    padding: 0rem 4rem !important;
-  }
-  .edit-link {
-    padding: 0.5rem 3rem !important;
-    border-radius: 3px !important;
+    background: none !important;
+    border-radius: unset !important;
+    max-width: 100% !important;
+    justify-self: center !important;
+    overflow: hidden !important;
+    justify-content: unset !important;
+    background-image: none !important;
+    .entry-header {
+      display: none !important;
+    }
+    .entry-content {
+      color: white !important;
+      width: 90% !important;
+      padding: 0rem 2rem !important;
+      margin: auto !important;
+    }
+    .entry-title {
+      display: none !important;
+    }
+    footer.entry-footer.default-max-width {
+      text-align: center;
+    }
+    .entry-footer {
+      display: block !important;
+      padding: 0rem 4rem !important;
+    }
+    .edit-link {
+      padding: 0.5rem 3rem !important;
+      border-radius: 3px !important;
+    }
   }
 }
 
@@ -98,58 +100,62 @@ span.title {
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
-  .post-186046 {
-    margin: 5rem 0rem 3rem 0rem !important;
-    .entry-content {
-      color: white !important;
-      width: 90% !important;
-      padding: 0rem 0rem !important;
-      margin: auto !important;
+  #user-container {
+    .entry {
+      margin: 5rem 0rem 3rem 0rem !important;
+      .entry-content {
+        color: white !important;
+        width: 90% !important;
+        padding: 0rem 0rem !important;
+        margin: auto !important;
+      }
+      .entry-footer {
+        display: block !important;
+        padding: 0rem 4rem !important;
+      }
+      .edit-link {
+        padding: 0.5rem 1rem !important;
+        border-radius: 3px !important;
+      }
     }
-    .entry-footer {
-      display: block !important;
-      padding: 0rem 4rem !important;
-    }
-    .edit-link {
-      padding: 0.5rem 1rem !important;
-      border-radius: 3px !important;
-    }
-  }
-  .um-name {
-    margin-top: 0.25rem !important;
-    a {
-      color: white !important;
-      font-family: "RobotoBold" !important;
-      font-size: clamp(var(--min), var(--val), var(--max)) !important;
-      --min: 1rem !important;
-      --val: 4vw !important;
-      --max: 3rem !important;
+    .um-name {
+      margin-top: 0.25rem !important;
+      a {
+        color: white !important;
+        font-family: "RobotoBold" !important;
+        font-size: clamp(var(--min), var(--val), var(--max)) !important;
+        --min: 1rem !important;
+        --val: 4vw !important;
+        --max: 3rem !important;
+      }
     }
   }
 }
 
 @media screen and (max-width: 47rem) and (orientation: portrait) {
-  .post-186047 {
-    margin: 3rem 0rem 1rem 0rem !important;
-    .entry-content {
-      color: white !important;
-      width: 90% !important;
-      padding: 0rem 0rem !important;
-      margin: auto !important;
+  #user-container {
+    .entry {
+      margin: 3rem 0rem 1rem 0rem !important;
+      .entry-content {
+        color: white !important;
+        width: 90% !important;
+        padding: 0rem 0rem !important;
+        margin: auto !important;
+      }
+      .entry-footer {
+        padding: 0rem 0rem !important;
+      }
     }
-    .entry-footer {
-      padding: 0rem 0rem !important;
-    }
-  }
-  .um-name {
-    margin-top: 0.5rem !important;
-    a {
-      color: white !important;
-      font-family: "RobotoBold" !important;
-      font-size: clamp(var(--min), var(--val), var(--max)) !important;
-      --min: 1rem !important;
-      --val: 6vw !important;
-      --max: 3rem !important;
+    .um-name {
+      margin-top: 0.5rem !important;
+      a {
+        color: white !important;
+        font-family: "RobotoBold" !important;
+        font-size: clamp(var(--min), var(--val), var(--max)) !important;
+        --min: 1rem !important;
+        --val: 6vw !important;
+        --max: 3rem !important;
+      }
     }
   }
 }
