@@ -3,17 +3,62 @@
  
  /!\to have global settings that need to be disabled you must add _root.scss/!\ <br>
  + corrections on navbar padding <br>
- + modifs in _single-movie.scss <br>
- + corrections on page Login/Logout <br>
- + added page Account <br>
- + added page Members <br>
- + added page Password reset <br>
- + added page Register <br> 
- + added page User (with edit mode) <br>
- + added page Politique de confidentialité <br>
+ + corrections on vampire-ball.scss <br>
+ + modifs in single-movie.scss <br>
  
- => replace the sass file to add modification <br>
- => grouped files in user file + single-movie file + theme file + _politique-de-confidentialité.scss <br>
+ + inside template-parts => created new file "users"<br>
+ + => added account.php<br>
+ + => added login.php<br>
+ + => added members.php<br>
+ + => added password.php<br>
+ + => added register.php<br>
+ + => added user.php<br>
+
+ + created pages <br>
+ + => added template-account.php<br>
+ + => added template-login.php<br>
+ + => added template-register.php<br>
+ + => added template-password.php<br>
+ + => added template-members.php<br>
+ + => added template-user.php<br>
+
+ + => need to change pages templates :<br>
+ + account => Bifff-account<br>
+ + login et logout => Account-login<br>
+ + members => Account-members<br>
+ + password reset => Account-password<br>
+ + register => Account-register<br>
+ + user => Account-user<br>
+
+ + added sass file : users <br>
+ + added login.scss <br>
+ + added account.scss <br>
+ + added members.scss <br>
+ + added password.scss <br>
+ + added register.scss <br> 
+ + added user.scss <br>
+ 
+ + added sass page Politique de confidentialité <br>
+ + => politique-de-confidentialité.scss <br>
+
+ + inside template-parts => created new file "top10"<br>
+  + => added newtop10.php<br>
+
+ + created page <br>
+ + => added template-newtop10.php<br>
+
+ + => need to change pages templates :<br>
+ + top10 new => new-top-10<br>
+ + top10 edit => new-top-10<br>
+
+ + added sass file : top10 <br>
+ + added edittop10.scss <br>
+ + added top10.scss <br>
+ + added newtop10.scss <br>
+
+ + made changes in template-my-top10.php <br>
+
+ => replace the sass file to add style modifications <br>
  => to be sure replace all the sass file to add all modifications <br>
  
 
