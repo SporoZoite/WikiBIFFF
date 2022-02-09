@@ -5,30 +5,34 @@
  + corrections on navbar padding <br>
  + corrections on vampire-ball.scss <br>
  + modifs in single-movie.scss <br>
+ <br>
  
  + inside template-parts => created new file "users"<br>
- + => added account.php<br>
- + => added login.php<br>
- + => added members.php<br>
- + => added password.php<br>
- + => added register.php<br>
- + => added user.php<br>
+  => added account.php<br>
+  => added login.php<br>
+  => added members.php<br>
+  => added password.php<br>
+  => added register.php<br>
+  => added user.php<br>
+  <br>
 
  + created pages <br>
- + => added template-account.php<br>
- + => added template-login.php<br>
- + => added template-register.php<br>
- + => added template-password.php<br>
- + => added template-members.php<br>
- + => added template-user.php<br>
+  => added template-account.php<br>
+  => added template-login.php<br>
+  => added template-register.php<br>
+  => added template-password.php<br>
+  => added template-members.php<br>
+  => added template-user.php<br>
+  <br>
 
- + => need to change pages templates :<br>
+  => need to change pages templates :<br>
  + account => Bifff-account<br>
  + login et logout => Account-login<br>
  + members => Account-members<br>
  + password reset => Account-password<br>
  + register => Account-register<br>
  + user => Account-user<br>
+ <br>
 
  + added sass file : users <br>
  + added login.scss <br>
@@ -37,26 +41,33 @@
  + added password.scss <br>
  + added register.scss <br> 
  + added user.scss <br>
+ <br>
  
  + added sass page Politique de confidentialité <br>
- + => politique-de-confidentialité.scss <br>
+  => politique-de-confidentialité.scss <br>
+  <br>
 
  + inside template-parts => created new file "top10"<br>
-  + => added newtop10.php<br>
+   => added newtop10.php<br>
+   <br>
 
  + created page <br>
- + => added template-newtop10.php<br>
+   => added template-newtop10.php<br>
+   <br>
 
  + => need to change pages templates :<br>
  + top10 new => new-top-10<br>
  + top10 edit => new-top-10<br>
+ <br>
 
  + added sass file : top10 <br>
  + added edittop10.scss <br>
  + added top10.scss <br>
  + added newtop10.scss <br>
+ <br>
 
  + made changes in template-my-top10.php <br>
+ <br>
 
  => replace the sass file to add style modifications <br>
  => to be sure replace all the sass file to add all modifications <br>
