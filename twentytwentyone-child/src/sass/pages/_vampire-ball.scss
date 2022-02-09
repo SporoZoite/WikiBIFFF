@@ -108,6 +108,12 @@
   .page-header.alignwide {
     margin-top: 2.5rem !important;
     padding: 1rem 2rem;
+     h1 {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 1rem;
+        --val: 5.5vw;
+        --max: 3rem;
+      }
   }
   .entry {
     max-width: 85%;

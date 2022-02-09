@@ -1,0 +1,107 @@
+.top10-container {
+  overflow: hidden;
+  padding-bottom: 5.5rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  .page-header.alignwide {
+    margin-top: 4.5rem !important;
+    background: #be1b17;
+    padding: 1.5rem 4rem;
+    text-transform: uppercase;
+    h1 {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 2vw;
+      --max: 2.8125rem;
+    }
+  }
+  a.um-button.um-alt {
+    margin: 1rem 5rem !important;
+    width: 10rem;
+    float: right;
+    font-family: "RobotoBold";
+    text-transform: uppercase !important;
+    color: white !important;
+  }
+  .col-md-10 {
+    padding-left: 4rem;
+  }
+  .title-autor {
+    font-family: "RobotoMedium";
+    margin: 1rem 0.5rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.8rem;
+    --val: 1.2vw;
+    --max: 1.875rem;
+  }
+  .related_movies {
+    width: 100%;
+    .top-img {
+      height: 10rem;
+      float: left;
+      margin-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .top10-container {
+    min-height: 42.6rem;
+    .page-header.alignwide {
+      h1 {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 1rem;
+        --val: 3.5vw;
+        --max: 3rem;
+      }
+    }
+    a.um-button.um-alt {
+      margin: 1rem 2rem !important;
+      margin-left: 0rem !important;
+    }
+    .title-autor {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.8rem;
+      --val: 2.2vw;
+      --max: 3rem;
+      margin: 1rem 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 47rem) and (orientation: portrait) {
+  .top10-container {
+    .page-header.alignwide {
+      margin-top: 2.5rem !important;
+      padding: 1rem 2rem;
+      h1 {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 1rem;
+        --val: 5.5vw;
+        --max: 3rem;
+      }
+    }
+    .title-autor {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.8rem;
+      --val: 4vw;
+      --max: 3rem;
+      margin: 1rem 0.5rem;
+    }
+    .related_movies {
+      width: 100%;
+      .top-img {
+        height: 8rem;
+        float: left;
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+    a.um-button.um-alt {
+      margin: 1rem 2rem !important;
+      width: 6rem;
+    }
+  }
+}
