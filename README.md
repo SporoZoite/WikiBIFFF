@@ -61,7 +61,6 @@
  <br>
 
  + added sass file : top10 <br>
- + added edittop10.scss <br>
  + added top10.scss <br>
  + added newtop10.scss <br>
  <br>
