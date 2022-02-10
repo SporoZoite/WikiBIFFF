@@ -19835,11 +19835,6 @@ span.title {
   height: 10rem !important;
   min-width: 8rem !important;
   display: flex !important;
-  background-image: url(../images/b2.svg);
-  background-size: 183%;
-  background-position-x: 50%;
-  background-position-y: 50%;
-  background-repeat: no-repeat;
   overflow: hidden !important;
 }
 #newtop10-container .acf-field.acf-field-relationship.acf-field-61e7fa4e8ad2a {
@@ -19881,6 +19876,13 @@ span.title {
 #newtop10-container select:-moz-focusring {
   color: transparent !important;
   text-shadow: 0 0 0 #000 !important;
+}
+#newtop10-container textarea {
+  font-family: "RobotoMedium";
+}
+#newtop10-container .acf-field.acf-field-textarea {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
