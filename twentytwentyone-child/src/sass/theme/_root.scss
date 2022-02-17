@@ -23,6 +23,7 @@
   -webkit-appearance: none!important;
   --global--font-size-page-title:none!important;
   --entry-content--font-family:none!important;
+  --global--font-size-lg:none!important;
   h1 {
     margin: 0px;
     font-size: clamp(var(--min), var(--val), var(--max));
@@ -55,11 +56,20 @@
     text-transform: uppercase;
     font-family: "RobotoBold";
   }
+  h5 {
+    margin: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.4rem;
+    --val: 1vw;
+    --max: 2rem;
+    text-transform: uppercase;
+    font-family: "RobotoBold";
+  }
   p {
     margin: 0px;
     font-size: clamp(var(--min), var(--val), var(--max));
-    --min: 0.5rem;
-    --val: 1.2vw;
+    --min: 0.2rem;
+    --val: 1vw;
     --max: 1.125rem;
     text-align: justify;
     font-family: "RobotoMedium";

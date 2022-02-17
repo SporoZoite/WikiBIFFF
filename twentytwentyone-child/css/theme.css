@@ -14388,6 +14388,13 @@ textarea.form-control-lg {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Harmonster";
+  src: url(../fonts/HarmonsterDemo-Regular.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
@@ -14829,6 +14836,7 @@ figure.woocommerce-product-gallery__wrapper {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   padding-left: 3.125rem;
+  padding-right: 3.125rem;
   border-bottom: 0.2rem solid black;
 }
 
@@ -15216,6 +15224,7 @@ label {
   -webkit-appearance: none !important;
   --global--font-size-page-title:none!important;
   --entry-content--font-family:none!important;
+  --global--font-size-lg:none!important;
   --text-multiplier: 1;
 }
 :root h1, :root .h1 {
@@ -15250,11 +15259,20 @@ label {
   text-transform: uppercase;
   font-family: "RobotoBold";
 }
+:root h5, :root .h5 {
+  margin: 0px;
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.4rem;
+  --val: 1vw;
+  --max: 2rem;
+  text-transform: uppercase;
+  font-family: "RobotoBold";
+}
 :root p {
   margin: 0px;
   font-size: clamp(var(--min), var(--val), var(--max));
-  --min: 0.5rem;
-  --val: 1.2vw;
+  --min: 0.2rem;
+  --val: 1vw;
   --max: 1.125rem;
   text-align: justify;
   font-family: "RobotoMedium";
@@ -15704,6 +15722,125 @@ article#post-3 h3, article#post-3 .h3 {
   article#post-3 .edit-link {
     padding: 0.5rem 1rem !important;
     border-radius: 3px !important;
+  }
+}
+.error-404 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem !important;
+  margin-bottom: 8rem !important;
+}
+
+.eye-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.error-text {
+  margin: 1rem 4rem !important;
+}
+
+#error-404-text {
+  margin: 0rem 0rem 1.5rem 3rem !important;
+  text-transform: uppercase !important;
+  font-family: "Harmonster" !important;
+  font-size: clamp(var(--min), var(--val), var(--max)) !important;
+  --min: 0.2rem !important;
+  --val: 4vw !important;
+  --max: 3rem !important;
+}
+
+.ghost {
+  -webkit-animation: float 3s ease-out infinite;
+  animation: float 3s ease-out infinite;
+}
+
+@-webkit-keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+.shadowFrame {
+  width: 7rem;
+  margin-top: 1.5rem !important;
+}
+
+.eye-shadow {
+  -webkit-animation: shrink 3s ease-out infinite;
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+}
+.eye-shadow ellipse {
+  transform-origin: center center;
+}
+
+@-webkit-keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  #error-404-text {
+    margin: 0rem 0rem 1.5rem 2rem !important;
+  }
+}
+@media screen and (max-width: 47rem) {
+  .error-404 {
+    flex-direction: column;
+    margin-top: 8rem !important;
+  }
+
+  #error-404-text {
+    margin: 2rem 2rem 1.5rem 2rem !important;
+    text-transform: uppercase !important;
+    font-family: "Harmonster" !important;
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 0.2rem !important;
+    --val: 9vw !important;
+    --max: 3rem !important;
+    max-width: 90% !important;
+    text-align: center !important;
   }
 }
 .page-id-1210 aside.widget-area {
@@ -17933,16 +18070,32 @@ ul {
 #edition-movies .mb-2 a :hover {
   filter: invert(1);
 }
+#edition-movies .card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 1rem !important;
+  justify-content: center !important;
+  flex: unset !important;
+  width: 20rem !important;
+}
 #edition-movies .card-body .guest {
-  height: 10rem;
-  width: 12rem;
+  height: 12rem;
+  width: 14rem;
   overflow: hidden;
-  margin-left: 2rem;
+  margin: auto;
   display: flex;
-  margin-top: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }
 #edition-movies .card-body .guest .img-fluid {
-  max-width: 200%;
+  max-width: 150%;
+}
+#edition-movies .card-body .guest .more-info h5, #edition-movies .card-body .guest .more-info .h5 {
+  margin-left: 1rem;
+}
+#edition-movies .event-div {
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
@@ -18014,6 +18167,12 @@ ul {
     --val: 3vw;
     --max: 2rem;
   }
+  #edition-movies .card-body h5, #edition-movies .card-body .h5 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.4rem;
+    --val: 2.7vw;
+    --max: 2rem;
+  }
 
   .app h4, .app .h4 {
     font-size: clamp(var(--min), var(--val), var(--max));
@@ -18075,6 +18234,16 @@ ul {
   }
   #edition-movies p {
     margin: 0rem 1rem;
+  }
+  #edition-movies .card-body h5, #edition-movies .card-body .h5 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.4rem;
+    --val: 2.7vw;
+    --max: 2rem;
+  }
+  #edition-movies .event-div {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   #edition-movies .mb-2 {
     margin: 0rem 0rem !important;

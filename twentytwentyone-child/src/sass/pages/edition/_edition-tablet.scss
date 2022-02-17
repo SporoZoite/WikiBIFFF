@@ -68,10 +68,18 @@
       --val: 3vw;
       --max: 2rem;
     }
+    .card-body {
+      h5 {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.4rem;
+        --val: 2.7vw;
+        --max: 2rem;
+      }
+    }
   }
   .app {
     h4 {
-         font-size: clamp(var(--min), var(--val), var(--max));
+      font-size: clamp(var(--min), var(--val), var(--max));
       --min: 1rem;
       --val: 3vw;
       --max: 2rem;

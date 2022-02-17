@@ -17,7 +17,9 @@
       $loop->the_post();
       $i++;
       ?>
-      <option value="<?php echo $i ?>"> <?php the_terms(get_the_ID(), 'category'); ?></option>
+      <option>
+         <a href="<?php the_permalink(); ?>"><?php the_terms(get_the_ID(), 'category'); ?></a>
+      </option>
       <?php endwhile; ?>
       </select>
        <span class="focus"></span>
@@ -58,7 +60,7 @@
                                       <div class="timeline-box-content"> 
                                           <p><?php
                                           $field = get_field('description');
-                                          $trimmedfield = wp_trim_words( $field, $num_words = 30, $more = '… ' );
+                                          $trimmedfield = wp_trim_words( $field, $num_words = 20, $more = '… ' );
                                            echo $trimmedfield; ?></p>
                                       </div>
                                     </div>

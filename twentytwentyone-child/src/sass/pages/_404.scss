@@ -1,0 +1,94 @@
+.error-404 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem !important;
+  margin-bottom: 8rem !important;
+}
+
+.eye-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.eye-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.error-text {
+  margin: 1rem 4rem !important;
+}
+#error-404-text {
+  margin: 0rem 0rem 1.5rem 3rem !important;
+  text-transform: uppercase !important;
+  font-family: "Harmonster" !important;
+  font-size: clamp(var(--min), var(--val), var(--max)) !important;
+  --min: 0.2rem !important;
+  --val: 4vw !important;
+  --max: 3rem !important;
+}
+
+.ghost {
+  animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+.shadowFrame {
+  width: 7rem;
+  margin-top: 1.5rem !important;
+}
+.eye-shadow {
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+  ellipse {
+    transform-origin: center center;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  #error-404-text {
+    margin: 0rem 0rem 1.5rem 2rem !important;
+  }
+}
+
+@media screen and (max-width: 47rem) {
+  .error-404 {
+    flex-direction: column;
+    margin-top: 8rem !important;
+  }
+  #error-404-text {
+    margin: 2rem 2rem 1.5rem 2rem !important;
+    text-transform: uppercase !important;
+    font-family: "Harmonster" !important;
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 0.2rem !important;
+    --val: 9vw !important;
+    --max: 3rem !important;
+    max-width: 90% !important;
+    text-align: center !important;
+  }
+}

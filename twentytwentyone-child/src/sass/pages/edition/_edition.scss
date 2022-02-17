@@ -276,16 +276,32 @@ ul {
     }
   }
   .card-body {
+    display: flex!important;
+    flex-direction: column!important;
+    padding: 1rem!important;
+    justify-content: center!important;
+    flex: unset!important;
+    width: 20rem!important;
     .guest {
-      height: 10rem;
-      width: 12rem;
-      overflow: hidden;
-      margin-left: 2rem;
-      display: flex;
-      margin-top: 0.5rem;
+    height: 12rem;
+    width: 14rem;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
       .img-fluid {
-        max-width: 200%;
+        max-width: 150%;
+      }
+      .more-info {
+        h5 {
+        margin-left:1rem;
+        }
       }
     }
+  }
+  .event-div {
+    margin-top:2rem;
   }
 }
