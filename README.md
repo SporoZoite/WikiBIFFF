@@ -1,8 +1,26 @@
- /!\LAST ADDS/!\ <br>
+ /!\LAST ADD/!\ <br>
+ <br>
+ /!\dernière update = 17 février/!\ <br>
  <br>
  
  /!\to have global settings that need to be disabled you must add _root.scss/!\ <br>
- + corrections on navbar padding <br>
+ 
+ *Il faut remplacer le fichier edition-entête.php en ENTIER => c'est le plus simple pour avoir le bon design (actuellement beaucoup de micros détails ont sautés, c'est plus simple de le remplacer que de les retrouver un par un ou de recommencer le css une troisième fois) <br>
+ 
+  /!\footer manquant sur la page edition de 2019, je ne trouve pas la cause /!\ <br>
+  /!\années dans la scrollbox "years" dans bifff-history.php not clickables, je ne trouve pas la cause + corrections dans la page /!\ <br>
+  
+ + ajout de javascript dans src/js/custom-javascript.js <br>
+ + ajout page 404.scss + modifications sur la page 404.php <br>
+ + ajouts de fonts dans font file <br>
+ <br> 
+ 
+ + corrections dans root.scss  <br>
+ + corrections dans theme.scss  <br>
+ + corrections dans edition.scss  <br>
+ + corrections dans single-guest.php <br>
+ + corrections dans edition-bas.php (doublon de footer enlevé) <br>
+ + corrections on navbar.css <br>
  + corrections on vampire-ball.scss <br>
  + modifs in single-movie.scss <br>
  <br>
