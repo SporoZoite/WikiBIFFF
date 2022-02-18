@@ -15259,15 +15259,6 @@ label {
   text-transform: uppercase;
   font-family: "RobotoBold";
 }
-:root h5, :root .h5 {
-  margin: 0px;
-  font-size: clamp(var(--min), var(--val), var(--max));
-  --min: 0.4rem;
-  --val: 1vw;
-  --max: 2rem;
-  text-transform: uppercase;
-  font-family: "RobotoBold";
-}
 :root p {
   margin: 0px;
   font-size: clamp(var(--min), var(--val), var(--max));
@@ -15827,7 +15818,7 @@ article#post-3 h3, article#post-3 .h3 {
 }
 @media screen and (max-width: 47rem) {
   .error-404 {
-    flex-direction: column;
+    flex-direction: column !important;
     margin-top: 8rem !important;
   }
 
@@ -18070,6 +18061,9 @@ ul {
 #edition-movies .mb-2 a :hover {
   filter: invert(1);
 }
+#edition-movies .col-md-12 {
+  display: contents !important;
+}
 #edition-movies .card-body {
   display: flex !important;
   flex-direction: column !important;
@@ -18167,6 +18161,9 @@ ul {
     --val: 3vw;
     --max: 2rem;
   }
+  #edition-movies .col-md-12 {
+    display: inline !important;
+  }
   #edition-movies .card-body h5, #edition-movies .card-body .h5 {
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.4rem;
@@ -18231,6 +18228,9 @@ ul {
 
   #edition-movies h4, #edition-movies .h4 {
     text-align: center;
+  }
+  #edition-movies .col-md-12 {
+    display: inline !important;
   }
   #edition-movies p {
     margin: 0rem 1rem;

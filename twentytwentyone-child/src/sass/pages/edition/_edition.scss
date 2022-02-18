@@ -275,6 +275,9 @@ ul {
       }
     }
   }
+  .col-md-12 {
+    display: contents!important;
+}
   .card-body {
     display: flex!important;
     flex-direction: column!important;

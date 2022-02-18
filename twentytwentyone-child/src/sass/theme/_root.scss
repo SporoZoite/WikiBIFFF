@@ -56,15 +56,7 @@
     text-transform: uppercase;
     font-family: "RobotoBold";
   }
-  h5 {
-    margin: 0px;
-    font-size: clamp(var(--min), var(--val), var(--max));
-    --min: 0.4rem;
-    --val: 1vw;
-    --max: 2rem;
-    text-transform: uppercase;
-    font-family: "RobotoBold";
-  }
+ 
   p {
     margin: 0px;
     font-size: clamp(var(--min), var(--val), var(--max));
