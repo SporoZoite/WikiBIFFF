@@ -28,22 +28,22 @@
 	            <div class="col-md-4">
 
 					<div>
-						<label class="labelTitle">Jobtitle:</label>
+						<label class="labelTitle">Jobtitle: </label>
 						<label class="labelContent"><?php the_field('jobtitle');?></label>
 					</div>
 		            
-					<div>
-						<label class="labelTitle">Year:</label>
-						<label class="labelContent"><?php the_category();?></label>
+					<div style="display:flex;">
+						<label class="labelTitle">Year(s): </label>
+						<label class="labelContent"> <?php the_category();?></label>
 					</div>
 					
 					<div>
-						<label class="labelTitle">Country:</label>
-						<label class="labelContent"><?php the_terms(get_the_ID(), 'country'); ?></label>
+						<label class="labelTitle">Country: </label>
+						<label class="labelContent"> <?php the_terms(get_the_ID(), 'country'); ?></label>
 					</div>		           
 
 					<div>
-						<label class="labelTitle">Sections:</label>
+						<label class="labelTitle">Sections: </label>
 						<label class="labelContent"><?php the_field('length');?></label>
 					</div>	
 					

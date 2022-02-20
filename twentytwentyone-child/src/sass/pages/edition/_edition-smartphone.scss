@@ -49,8 +49,23 @@
     h4 {
       text-align: center;
     }
+    .col-md-12 {
+      display: inline !important;
+    }
     p {
       margin: 0rem 1rem;
+    }
+    .card-body {
+      h5 {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.4rem;
+        --val: 2.7vw;
+        --max: 2rem;
+      }
+    }
+    .event-div {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
 
     .mb-2 {

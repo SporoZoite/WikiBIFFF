@@ -1,0 +1,182 @@
+#login-container {
+  .entry {
+    margin: unset !important;
+    margin-bottom: 0rem !important;
+    margin-top: 0rem !important;
+    padding: unset !important;
+    display: block !important;
+    background: none !important;
+    border-radius: unset !important;
+    max-width: 100% !important;
+    justify-self: center !important;
+    overflow: hidden !important;
+    justify-content: unset !important;
+    background-image: none !important;
+    .entry-header {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+      align-items: flex-start !important;
+      max-height: 100vw !important;
+      width: 100% !important;
+      padding: 0rem 2rem !important;
+      overflow: hidden !important;
+    }
+    .entry-content {
+      color: white !important;
+      width: 100% !important;
+      padding: 1rem !important;
+    }
+    .entry-title {
+      font-size: clamp(var(--min), var(--val), var(--max)) !important;
+      --min: 1rem !important;
+      --val: 2.4vw !important;
+      --max: 2.8125rem !important;
+      text-transform: uppercase !important;
+      font-family: "RobotoBold" !important;
+    }
+    .entry-footer {
+      display: block !important;
+      padding: 0rem 2rem !important;
+    }
+  }
+}
+
+.um-field-label {
+  color: white !important;
+  font-family: "RobotoBold" !important;
+}
+
+.um-button {
+  background: $darkrouge !important;
+  font-family: "RobotoBold" !important;
+}
+
+.um-button.um-alt {
+  background: #272727 !important;
+  font-family: "RobotoBold" !important;
+}
+.um .um-button.um-alt {
+  color: white !important;
+}
+a.um-link-alt {
+  font-family: "RobotoBold" !important;
+}
+
+.um-login.um-logout.um-186043.uimob340 {
+  margin: 1rem !important;
+  background: #be1b17 !important;
+  padding: 1rem !important;
+  border-radius: 5px !important;
+  float: left !important;
+}
+
+.um-misc-img {
+  margin: 1rem !important;
+}
+
+.um-misc-with-img {
+  color: white !important;
+  font-family: "RobotoBold" !important;
+  font-size: clamp(var(--min), var(--val), var(--max)) !important;
+  --min: 1rem !important;
+  --val: 1.5vw !important;
+  --max: 3rem !important;
+}
+
+.um-misc-ul {
+  color: white !important;
+  font-family: "RobotoBold" !important;
+}
+
+.edit-link {
+  font-family: "RobotoBold" !important;
+  background: #272727 !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 3px !important;
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  #login-container {
+    .entry {
+      margin: 6rem !important;
+
+      .entry-title {
+        font-size: clamp(var(--min), var(--val), var(--max)) !important;
+        --min: 1rem !important;
+        --val: 4.3vw !important;
+        --max: 3rem !important;
+      }
+      .entry-content {
+        color: white !important;
+        width: 100% !important;
+        padding: 1rem !important;
+      }
+    }
+
+    .um-login.um-logout.um-186043.uimob340 {
+      margin: 1rem !important;
+      padding: 1rem !important;
+    }
+
+    .um-misc-img {
+      margin: 1rem !important;
+    }
+
+    .um-misc-with-img {
+      font-size: clamp(var(--min), var(--val), var(--max)) !important;
+      --min: 1rem !important;
+      --val: 3.5vw !important;
+      --max: 3rem !important;
+    }
+
+    .edit-link {
+      padding: 0.5rem 3rem !important;
+      border-radius: 3px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 47rem) and (orientation: portrait) {
+  #login-container {
+    .entry {
+      margin: 4rem !important;
+      .entry-title {
+        font-size: clamp(var(--min), var(--val), var(--max)) !important;
+        --min: 1rem !important;
+        --val: 8vw !important;
+        --max: 3rem !important;
+      }
+      .entry-header {
+        padding: 0rem 0rem !important;
+      }
+      .entry-content {
+        padding: 0rem !important;
+      }
+      .entry-footer {
+        padding: 0rem 0rem !important;
+      }
+    }
+  }
+
+  .um-login.um-logout.um-186043.uimob340 {
+    margin: 1rem 0rem !important;
+    padding: 1rem !important;
+  }
+
+  .um-misc-img {
+    margin: 1rem !important;
+  }
+
+  .um-misc-with-img {
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 5vw !important;
+    --max: 3rem !important;
+  }
+
+  .edit-link {
+    padding: 0.5rem 1rem !important;
+    border-radius: 3px !important;
+  }
+}

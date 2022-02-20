@@ -1,34 +1,93 @@
- /!\LAST ADDS/!\ <br>
+ /!\LAST ADD/!\ <br>
+ <br>
+ /!\dernière update = 17 février/!\ <br>
  <br>
  
-  + made style for section pages (ex: ball des vampires) <br>
-  + ok responsive all supports + ok pour all section pages <br>
-  => in src file : added _vampire-ball.scss page <br>
+ /!\to have global settings that need to be disabled you must add _root.scss/!\ <br>
  
-  + made style for login page <br>
-  => in src file : added _login.scss page <br>
-  
-   + corrected footer default <br>
-  
-  => replace src file to add modifications
+ *Il faut remplacer le fichier edition-entête.php en ENTIER => c'est le plus simple pour avoir le bon design (actuellement beaucoup de micros détails ont sautés, c'est plus simple de le remplacer que de les retrouver un par un ou de recommencer le css une troisième fois) <br>
  
-  + made changes on highlight design <br>
-  + added line to hide scrollbar in sass file <br>
-  + replace "edition-entête" by my version to add carousel-like highlight section and other small changes <br>
-  + replace sass file to add new css <br>
+  /!\footer manquant sur la page edition de 2019, je ne trouve pas la cause /!\ <br>
+  /!\années dans la scrollbox "years" dans bifff-history.php not clickables, je ne trouve pas la cause + corrections dans la page /!\ <br>
   
-  + added css for archive-movie <br>
-  + modified classes names of archive-movie.php
-  + missing custom logo for navbar
-  + added sound file + mp3 "welcome" sound <br>
-  + corrections made on edition page <br>
-  => replace template-parts/ header + footer entire files to have corrections on navigation bar + footer <br>
-  => replace site-branding.php <br>
-  => replace edition-entête.php <br>
-  => replace archive-movie.php <br>
-  => replace entire sass file <br>
-  => add sound file <br>
-  
+ + ajout de javascript dans src/js/custom-javascript.js <br>
+ + ajout page 404.scss + modifications sur la page 404.php <br>
+ + ajouts de fonts dans font file <br>
+ <br> 
+ 
+ + corrections dans root.scss  <br>
+ + corrections dans theme.scss  <br>
+ + corrections dans edition.scss  <br>
+ + corrections dans single-guest.php <br>
+ + corrections dans edition-bas.php (doublon de footer enlevé) <br>
+ + corrections on navbar.css <br>
+ + corrections on vampire-ball.scss <br>
+ + modifs in single-movie.scss <br>
+ <br>
+ 
+ + inside template-parts => created new file "users"<br>
+  => added account.php<br>
+  => added login.php<br>
+  => added members.php<br>
+  => added password.php<br>
+  => added register.php<br>
+  => added user.php<br>
+  <br>
+
+ + created pages <br>
+  => added template-account.php<br>
+  => added template-login.php<br>
+  => added template-register.php<br>
+  => added template-password.php<br>
+  => added template-members.php<br>
+  => added template-user.php<br>
+  <br>
+
+  => need to change pages templates :<br>
+ + account => Bifff-account<br>
+ + login et logout => Account-login<br>
+ + members => Account-members<br>
+ + password reset => Account-password<br>
+ + register => Account-register<br>
+ + user => Account-user<br>
+ <br>
+
+ + added sass file : users <br>
+ + added login.scss <br>
+ + added account.scss <br>
+ + added members.scss <br>
+ + added password.scss <br>
+ + added register.scss <br> 
+ + added user.scss <br>
+ <br>
+ 
+ + added sass page Politique de confidentialité <br>
+  => politique-de-confidentialité.scss <br>
+  <br>
+
+ + inside template-parts => created new file "top10"<br>
+   => added newtop10.php<br>
+   <br>
+
+ + created page <br>
+   => added template-newtop10.php<br>
+   <br>
+
+ + => need to change pages templates :<br>
+ + top10 new => new-top-10<br>
+ + top10 edit => new-top-10<br>
+ <br>
+
+ + added sass file : top10 <br>
+ + added top10.scss <br>
+ + added newtop10.scss <br>
+ <br>
+
+ + made changes in template-my-top10.php <br>
+ <br>
+
+ => replace the sass file to add style modifications <br>
+ => to be sure replace all the sass file to add all modifications <br>
  
 
 
@@ -48,13 +107,32 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________<br>
 
+#10- LOGIN/USER/ACCOUNT/... PAGES
+
+ + made style for login page <br>
+  => in src file : added _login.scss page <br>
+
+__________________________________________________________________________________________<br>
+
+#9- SECTION PAGE/VAMPIRE BALL
+
+ + made style for section pages (ex: ball des vampires) <br>
+ + ok responsive all supports + ok pour all section pages <br>
+  => in src file : added _vampire-ball.scss page <br>
+
+__________________________________________________________________________________________<br>
+
 #8- MOVIES
 
 + added css for archive-movie <br>
 => replace sass file <br>
 + modified classes names of archive-movie.php
 => replace archive-movie.php with my version <br>
-=> done responsive for all devices
+=> done responsive for all devices <br>
+LAST ADDS <br>
+  + added css for archive-movie <br>
+  + modified classes names of archive-movie.php <br>
+
 
 __________________________________________________________________________________________<br>
 
@@ -89,6 +167,11 @@ ________________________________________________________________________________
 + changed edition-entete.php => added ids/ changed opening&closing boxes to put them on the right/ changed some titles <br>
 + added svg and png files to images file <br>
 + replace files : css / images/ js / src and edition-entete.php to add new modifications <br>
+LAST ADDS <br>
+++ made changes on highlight design <br>
+  + added line to hide scrollbar in sass file <br>
+  + replace "edition-entête" by my version to add carousel-like highlight section and other small changes <br>
+  + replace sass file to add new css <br>
 
 __________________________________________________________________________________________<br>
 

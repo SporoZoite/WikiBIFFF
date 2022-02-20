@@ -15,10 +15,10 @@
 @import "pages/movies";
 @import "pages/single-event";
 @import "pages/single-guest";
-@import "pages/login";
 @import "pages/vampire-ball";
-
+@import "pages/politique-de-confidentialité";
 @import "pages/competition";
+@import "pages/404";
 
 @import "pages/home/home";
 @import "pages/home/home-tablet";
@@ -38,3 +38,13 @@
 @import "pages/single-movie/single-movie-smartphone";
 
 @import "pages/movies/movies";
+
+@import "pages/users/login";
+@import "pages/users/account";
+@import "pages/users/members";
+@import "pages/users/register";
+@import "pages/users/user";
+@import "pages/users/password-reset";
+
+@import "pages/top10/top10";
+@import "pages/top10/newtop10";

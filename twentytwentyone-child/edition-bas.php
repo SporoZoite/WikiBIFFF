@@ -97,4 +97,3 @@
     </div>
     <div class="films"><ol class="list-unstyled mb-0"><li><a>Lien vers la liste des ARTs</a></li></ol></div>
 </main> -->
-<?php get_footer()?>

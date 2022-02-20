@@ -525,21 +525,23 @@
 		                                ?>" alt="" class="img-fluid">
 		                        </div>
 								<div style="height:5rem;display: flex;align-items: center;justify-content: center;">
-		                        <h4 style="text-align:center;max-width:14rem;">
+		                        <h5 style="text-align:center;max-width:14rem;">
 		                        	<?php
 		                            	$idGuest=$post->ID;
 		                             	echo get_field('surname', $idGuest)." ".get_field('firstname', $idGuest); 
 		                             ?>
-		                        </h4>
+		                        </h5>
 								</div>
-		                        <div style="height:5rem;width:16rem;">
+		                        <div style="height:6rem;width:18rem;">
 		                        <p>
 		                        <?php echo substr(get_post_field('post_content', $idGuest),0,70)."..."; ?>
 		                        <!-- --></p>
 		                        </div>
-		                        <hr/>
-		                        <a href="<?php echo get_permalink($post); ?>" style="text-decoration:none;color:#D00019!important;"><h4>MORE INFO</h4></a>
-		                    </div>
+								<div class="more-info" style="height:5rem;width:19rem;">
+								<hr>
+		                        <a href="<?php echo get_permalink($post); ?>" style="text-decoration:none;color:white;background-color:#D00019!important;"><h5>MORE INFO</h5></a>
+					            </div>
+							</div>
 		                </div>
 		            </li>
 		            <?php endforeach; ?>
@@ -576,7 +578,7 @@
 	
 	    </div>		
 		
-		<div style="margin-top:2rem;"><a name="edguests"></a><h3>ALL EVENTS</h3></div>
+		<div class="event-div"><a name="edguests"></a><h3>ALL EVENTS</h3></div>
             <div class="mb-2 row" style="margin-top:1rem;">
             <div class="col-md-6">
                 <?php
@@ -604,8 +606,8 @@
                 
              
             </div>  
+		    </div>
 
-</main>
  
 <script>
 	 var root = document.documentElement;
