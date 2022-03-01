@@ -3,6 +3,9 @@
  /!\dernière update = 1ier mars/!\ <br>
  <br>
  
+ + remplacer fichier "js" (celui avec theme.min.js dedans) <br>
+ + 
+ 
  /!\to have global settings that need to be disabled you must add _root.scss/!\ <br>
 
   /!\années dans la scrollbox "years" dans bifff-history.php not clickables, je ne trouve pas la cause + corrections dans la page /!\ <br>
