@@ -1,14 +1,25 @@
  /!\LAST ADD/!\ <br>
  <br>
- /!\dernière update = 1ier mars/!\ <br>
+ /!\dernière update = 2 mars/!\ <br>
  <br>
  
- + remplacer fichier "js" (celui avec theme.min.js dedans) <br>
- + 
+ + remplacer le fichier "js" (celui avec theme.min.js dedans) par le nouveau pour avoir le nouveau javascript <br>
+ + new footer design done + responsive <br>
+ => changements effectués sur le site en ligne <br>
+   => addition de nouveaux menus pour le footer <br>
+ => ajouter footer.scss dans le sass <br>
  
- /!\to have global settings that need to be disabled you must add _root.scss/!\ <br>
+ + changement du nombre de mots maximum de 30 à 25 dans les paragraphes dans bifff-history.php <br>
+ => attention il faut le faire 2x dans la page car box de gauche et box de droite <br>
+ + changement dans le css de bifff-history.scss <br>
+ 
+ + corrections barre de navigation <br>
+ + ajout de la dropbox mywiki
+ => changements dans le css de navbar.scss <br>
+ => changements de noms de pages (My Top10 et New Top10) <br>
+ 
 
-  /!\années dans la scrollbox "years" dans bifff-history.php not clickables, je ne trouve pas la cause + corrections dans la page /!\ <br>
+  /!\années dans la scrollbox "years" dans bifff-history.php not clickables /!\ <br>
  
 
 
