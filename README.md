@@ -13,8 +13,7 @@
  => attention il faut le faire 2x dans la page car box de gauche et box de droite <br>
  + changement dans le css de bifff-history.scss <br>
  
- + corrections barre de navigation <br>
- + ajout de la dropbox mywiki<br>
+ + corrections barre de navigation + ajout de la dropbox mywiki<br>
  => changements dans le css de navbar.scss <br>
  => changements de noms de pages (My Top10 et New Top10) <br>
  
