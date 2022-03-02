@@ -127,7 +127,7 @@ label {
 }
 
 .widget_nav_menu {
-  padding: 5rem 3rem;
+  padding: 6rem 3rem 5rem 3rem;
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
@@ -139,35 +139,37 @@ label {
     }
   }
   .widget-area {
-    grid-template-columns: 2fr 1.2fr 2fr 1.5fr;
-    padding: 7% 4%;
-    justify-self: center;
-  }
-  .widget {
-    padding: 1rem;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 1fr 0.5fr;
   }
   .widget-title {
-    font-size: clamp(var(--min), var(--val), var(--max));
-    --min: 0.8rem;
-    --val: 1.2vw;
-    --max: 1.875rem;
+    margin-bottom: 0.5rem !important;
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 0.8rem !important;
+    --val: 1.8vw !important;
+    --max: 1.875rem !important;
+    padding-top: 0.5rem !important;
   }
-  .widget_search {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    margin-top: 0rem;
-    max-width: unset;
-  }
-  .widget_recent_comments {
-    padding-right: 1.5rem;
-  }
+
   a {
     font-size: 12px;
   }
   .widget_media_image {
-    img {
-      width: 100%;
-    }
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem 0rem 3rem;
+  }
+  .widget_nav_menu {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+  #nav_menu-2 {
+    grid-column-start: 2;
+  }
+  .widget_search .widget-title {
+    width: 14%;
+    text-align: left !important;
   }
 }
 
@@ -195,15 +197,12 @@ label {
   }
 
   .widget_media_image {
-    padding: 3rem !important;
-    padding-bottom: 1rem !important;
-    img {
-      width: 100%;
-    }
+    padding: 3rem 5rem 2rem 5rem !important;
+    border-bottom: 3px solid #be1b17;
+    margin-bottom: 0.5rem;
   }
 
   .widget {
-    padding: 1rem;
     a {
       font-size: 12px;
     }
@@ -215,12 +214,41 @@ label {
     }
   }
 
-  .widget_meta {
-    background-color: $darkrouge;
+  .widget .widget-title {
+    margin-bottom: 0rem !important;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.8rem;
+    --val: 1.2vw;
+    --max: 1.875rem;
+    padding-top: 0rem !important;
+  }
+  .widget-area ul {
+    margin-bottom: 0rem !important;
+  }
+
+  .widget_search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    padding: 1.5rem 2rem !important;
+    background-color: unset !important;
+  }
+  .widget_search .widget-title {
+    width: 25% !important;
+    text-align: left !important;
+    padding-top: 0rem !important;
+  }
+
+  .widget_nav_menu {
+    padding: 1rem;
+  }
+
+  #nav_menu-5 {
+    background-color: #be1b17;
     color: black;
   }
-  .widget_search {
-    margin-top: 0rem;
-    max-width: unset;
+  #nav_menu-4 {
+    margin-bottom: 0.5rem;
   }
 }

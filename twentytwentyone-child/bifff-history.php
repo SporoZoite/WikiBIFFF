@@ -60,7 +60,7 @@
                                       <div class="timeline-box-content"> 
                                           <p><?php
                                           $field = get_field('description');
-                                          $trimmedfield = wp_trim_words( $field, $num_words = 20, $more = '… ' );
+                                          $trimmedfield = wp_trim_words( $field, $num_words = 25, $more = '… ' );
                                            echo $trimmedfield; ?></p>
                                       </div>
                                     </div>
@@ -113,7 +113,7 @@
                                        <div class="timeline-box-content"> 
                                           <p><?php
                                           $field = get_field('description');
-                                          $trimmedfield = wp_trim_words( $field, $num_words = 30, $more = '… ' );
+                                          $trimmedfield = wp_trim_words( $field, $num_words = 25, $more = '… ' );
                                            echo $trimmedfield; ?></p>
                                       </div>
                                     </div>
