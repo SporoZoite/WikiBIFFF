@@ -19,19 +19,19 @@ get_header();
     <div class="movies-bar">
 	
 
-			<h1>GUESTS</h1>
+			<h1>EVENTS</h1>
 
 	
 	
 		<?php 
-			echo do_shortcode('[searchandfilter id="191617"]');
+			echo do_shortcode('[searchandfilter id="191630"]');
 		?>
 	</div>	
 	
 	<div id="mainlist">
 	
 		<?php 
-			echo do_shortcode('[searchandfilter id="191617" show="results"]');
+			echo do_shortcode('[searchandfilter id="191630" show="results"]');
 		?>
 		
 	</div>

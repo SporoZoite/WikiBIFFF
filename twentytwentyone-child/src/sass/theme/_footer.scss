@@ -130,6 +130,38 @@ label {
   padding: 6rem 3rem 5rem 3rem;
 }
 
+@media screen and (min-width: 64rem) and (max-width: 100rem) and (orientation: landscape) {
+  .widget-area {
+    grid-template-columns: 1.5fr 0.6fr 0.6fr 0.8fr 1.1fr;
+  }
+  .widget-title {
+    margin-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
+  }
+
+  a {
+    font-size: 12px;
+  }
+  .widget_media_image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 3rem 10rem 5rem;
+  }
+  .widget_nav_menu {
+    padding: 5rem 2rem 2rem 2rem;
+  }
+  #nav_menu-2 {
+    grid-column-start: 2;
+  }
+  .widget_search .widget-title {
+    width: 14%;
+    text-align: center !important;
+  }
+}
+
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
   .footer-wrapper {
     .footer-socials {

@@ -14636,7 +14636,7 @@ body a {
 
 .site-main {
   border-bottom: 5px solid #212529;
-  min-height: 26vh;
+  min-height: 32vh;
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
@@ -15160,6 +15160,42 @@ label {
   padding: 6rem 3rem 5rem 3rem;
 }
 
+@media screen and (min-width: 64rem) and (max-width: 100rem) and (orientation: landscape) {
+  .widget-area {
+    grid-template-columns: 1.5fr 0.6fr 0.6fr 0.8fr 1.1fr;
+  }
+
+  .widget-title {
+    margin-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  .widget_media_image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 3rem 10rem 5rem;
+  }
+
+  .widget_nav_menu {
+    padding: 5rem 2rem 2rem 2rem;
+  }
+
+  #nav_menu-2 {
+    grid-column-start: 2;
+  }
+
+  .widget_search .widget-title {
+    width: 14%;
+    text-align: center !important;
+  }
+}
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
   .footer-wrapper .footer-socials .footer-social {
     width: 75%;
@@ -15373,7 +15409,7 @@ label {
     --text-multiplier: 1;
   }
 }
-@media screen and (min-width: 47rem) and (max-width: 64rem) {
+@media screen and (min-width: 47rem) and (max-width: 63rem) {
   :root {
     --text-multiplier: 1.5;
   }
@@ -17712,6 +17748,20 @@ article#post-3 h3, article#post-3 .h3 {
     line-height: 16px !important;
   }
 }
+@media screen and (min-width: 64rem) and (max-width: 79rem) and (orientation: landscape) {
+  .history-container .timeline-container #timeline {
+    width: 100%;
+    margin: 1.875rem auto;
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 80rem) and (max-width: 100rem) and (orientation: landscape) {
+  .history-container .timeline-container #timeline {
+    width: 100%;
+    margin: 1.875rem auto;
+    padding: 0 2rem;
+  }
+}
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
   .history-container {
     padding-bottom: 3rem;
@@ -18615,11 +18665,11 @@ ul {
 }
 .movies-container .movies-bar li {
   display: flex;
-  margin: 0rem 1rem;
+  margin: 0rem 0.5rem;
   align-items: center;
   justify-content: center;
 }
-.movies-container .movies-bar #search-filter-form-142192 {
+.movies-container .movies-bar .searchandfilter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -18636,6 +18686,10 @@ ul {
 .movies-container .movies-bar label {
   background-color: white;
   padding-left: 0.2em;
+}
+.movies-container .movies-bar .searchandfilter select.sf-input-select {
+  min-width: 5rem !important;
+  width: 10rem !important;
 }
 .movies-container .movies-bar select {
   -webkit-appearance: none !important;
@@ -18659,11 +18713,11 @@ ul {
 }
 .movies-container .movies-bar .sf-input-select {
   display: grid;
-  grid-template-areas: "select";
+  grid-template-areas: "sf-input-select";
   align-items: center;
   position: relative;
   border: 0.4em solid #D00019;
-  padding: 0.25em 0.25em;
+  padding: 0.3em 0.75em;
   font-size: clamp(var(--min), var(--val), var(--max));
   --min: 0.5rem;
   --val: 0.8vw;
@@ -18673,7 +18727,7 @@ ul {
   background-color: white;
 }
 .movies-container .movies-bar .sf-input-select select, .movies-container .movies-bar .sf-input-select::after {
-  grid-area: select;
+  grid-area: sf-input-select;
 }
 .movies-container .movies-bar .sf-input-select::after {
   content: "▼";
@@ -18737,6 +18791,102 @@ ul {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 80rem) and (max-width: 100rem) and (orientation: landscape) {
+  .movies-container .movies-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.25rem 2rem;
+    margin-top: 4.4rem;
+    padding-bottom: 0rem;
+  }
+  .movies-container .movies-bar h1, .movies-container .movies-bar .h1 {
+    padding: 0.25rem 2rem;
+  }
+  .movies-container .movies-bar li {
+    margin: 0rem 0.5rem;
+  }
+  .movies-container .movies-bar ul {
+    margin: 0rem 0.5rem;
+    padding-left: 0rem !important;
+  }
+  .movies-container .movies-bar .sf-input-select {
+    width: 10rem;
+    min-width: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
+  .movies-container .movies-bar .searchandfilter {
+    align-self: center;
+    padding-bottom: 0.5rem;
+  }
+  .movies-container .movies-bar .searchandfilter select.sf-input-select {
+    min-width: 5rem !important;
+    width: 9rem !important;
+  }
+  .movies-container .movies-bar input {
+    padding: 0.25em 0.8em;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.5vw;
+    --max: 2rem;
+    margin-left: 0.5rem;
+  }
+  .movies-container #mainlist img {
+    height: 23rem !important;
+  }
+}
+@media screen and (min-width: 64rem) and (max-width: 79rem) and (orientation: landscape) {
+  .movies-container .movies-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.25rem 2rem;
+    margin-top: 4.4rem;
+    padding-bottom: 0rem;
+  }
+  .movies-container .movies-bar h1, .movies-container .movies-bar .h1 {
+    padding: 0.25rem 1.75rem;
+  }
+  .movies-container .movies-bar li {
+    margin: 0rem 0.5rem;
+  }
+  .movies-container .movies-bar ul {
+    margin: 0rem 0.5rem;
+    padding-left: 0rem !important;
+  }
+  .movies-container .movies-bar .sf-input-select {
+    width: 10rem;
+    min-width: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
+  .movies-container .movies-bar .searchandfilter {
+    align-self: center;
+    padding-bottom: 0.5rem;
+  }
+  .movies-container .movies-bar .searchandfilter select.sf-input-select {
+    min-width: 5rem !important;
+    width: 7rem !important;
+  }
+  .movies-container .movies-bar input {
+    padding: 0.25em 0.8em;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.5vw;
+    --max: 2rem;
+    margin-left: 0.5rem;
+  }
+  .movies-container #mainlist img {
+    height: 23rem !important;
+  }
+}
 @media screen and (min-width: 52rem) and (max-width: 64rem) and (orientation: portrait) {
   .movies-container h1, .movies-container .h1 {
     font-size: clamp(var(--min), var(--val), var(--max));
@@ -18763,10 +18913,11 @@ ul {
     margin: 0rem 0.5rem;
   }
   .movies-container .movies-bar li {
-    margin: 0rem 0.5rem;
+    margin: 0rem 0.25rem;
   }
   .movies-container .movies-bar ul {
     margin: 0rem 0.5rem;
+    padding-left: 0rem !important;
   }
   .movies-container .movies-bar .sf-input-select {
     width: 10rem;
@@ -18776,7 +18927,7 @@ ul {
     --val: 1.2vw;
     --max: 2rem;
   }
-  .movies-container .movies-bar #search-filter-form-142192 {
+  .movies-container .movies-bar .searchandfilter {
     align-self: center;
     padding-bottom: 0.5rem;
   }
@@ -18799,7 +18950,7 @@ ul {
     --val: 4.3vw;
     --max: 3rem;
     padding-bottom: 0.5rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
   .movies-container .movies-bar {
     display: flex;
@@ -18818,22 +18969,26 @@ ul {
     margin: 0rem 0.5rem;
   }
   .movies-container .movies-bar li {
-    margin: 0rem 0.5rem;
+    margin: 0rem 0.25rem;
   }
   .movies-container .movies-bar ul {
     margin: 0rem 0.5rem;
+    padding-left: 0rem !important;
   }
   .movies-container .movies-bar .sf-input-select {
-    width: 7rem;
     min-width: 0px;
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
     --val: 1.2vw;
     --max: 2rem;
   }
-  .movies-container .movies-bar #search-filter-form-142192 {
+  .movies-container .movies-bar .searchandfilter {
     align-self: center;
     padding-bottom: 0.5rem;
+  }
+  .movies-container .movies-bar .searchandfilter select.sf-input-select {
+    min-width: 5rem !important;
+    width: 5rem !important;
   }
   .movies-container .movies-bar input {
     padding: 0.25em 0.8em;
@@ -18923,7 +19078,7 @@ ul {
     justify-content: center;
     padding: 0.2rem;
   }
-  .movies-container .movies-bar #search-filter-form-142192 {
+  .movies-container .movies-bar .searchandfilter {
     display: flex;
     flex-direction: row;
     justify-content: center;
