@@ -1,31 +1,89 @@
  /!\LAST ADD/!\ <br>
  <br>
- /!\dernière update = 17 février/!\ <br>
+ /!\dernière update = 2 mars/!\ <br>
  <br>
  
- /!\to have global settings that need to be disabled you must add _root.scss/!\ <br>
- 
- *Il faut remplacer le fichier edition-entête.php en ENTIER => c'est le plus simple pour avoir le bon design (actuellement beaucoup de micros détails ont sautés, c'est plus simple de le remplacer que de les retrouver un par un ou de recommencer le css une troisième fois) <br>
- 
-  /!\footer manquant sur la page edition de 2019, je ne trouve pas la cause /!\ <br>
-  /!\années dans la scrollbox "years" dans bifff-history.php not clickables, je ne trouve pas la cause + corrections dans la page /!\ <br>
-  
- + ajout de javascript dans src/js/custom-javascript.js <br>
- + ajout page 404.scss + modifications sur la page 404.php <br>
- + ajouts de fonts dans font file <br>
- <br> 
- 
- + corrections dans root.scss  <br>
- + corrections dans theme.scss  <br>
- + corrections dans edition.scss  <br>
- + corrections dans single-guest.php <br>
- + corrections dans edition-bas.php (doublon de footer enlevé) <br>
- + corrections on navbar.css <br>
- + corrections on vampire-ball.scss <br>
- + modifs in single-movie.scss <br>
+ + remplacer le fichier "js" (celui avec theme.min.js dedans) par le nouveau pour avoir le nouveau javascript <br>
+ + new footer design done + responsive <br>
+ => changements effectués sur le site en ligne <br>
+   => addition de nouveaux menus pour le footer <br>
+ => ajouter footer.scss dans le sass <br>
  <br>
  
- + inside template-parts => created new file "users"<br>
+ + changement du nombre de mots maximum de 30 à 25 dans les paragraphes dans bifff-history.php <br>
+ => attention il faut le faire 2x dans la page car box de gauche et box de droite <br>
+ + changement dans le css de bifff-history.scss <br>
+ <br>
+ 
+ + corrections barre de navigation + ajout de la dropbox mywiki<br>
+ => changements dans le css de navbar.scss <br>
+ => changements de noms de pages (My Top10 et New Top10) <br>
+ <br>
+ 
+ + corrections sur la barre de catégories des pages movie/guests/events<br>
+ => added submit buttons on onine wordpress <br>
+ <br>
+ 
+ 
+ 
+
+  /!\années dans la scrollbox "years" dans bifff-history.php not clickables /!\ <br>
+ 
+
+
+
+
+__________________________________________________________________________________________<br>
+
+# WikiBIFFF
+
+#WITH EACH UPDATE
+
++ replace style.css byt the one in my folder <br>
++ add fonts, images, src, css and js files from my folder <br>
++ you can add you css style in sass/pages/theme/_theme.scss <br>
++ /!\ leave style.css empty like the one in the folder /!\
++ I will dispatch it in the different files from there<br>
++ Don't forget to compile sass to be able to see your changes => npm run watch (see installation process below)<br>
+
+__________________________________________________________________________________________<br>
+
+ #14- Top10
+
++ inside template-parts => created new file "top10"<br>
+   => added newtop10.php<br>
+   <br>
+
+ + created page <br>
+   => added template-newtop10.php<br>
+   <br>
+
+ + => need to change pages templates :<br>
+ + top10 new => new-top-10<br>
+ + top10 edit => new-top-10<br>
+ <br>
+
+ + added sass file : top10 <br>
+ + added top10.scss <br>
+ + added newtop10.scss <br>
+ <br>
+
+ + made changes in template-my-top10.php <br>
+
+__________________________________________________________________________________________<br>
+
+ #13- Politique de confidentialité
+
+ + added sass page Politique de confidentialité <br>
+  => politique-de-confidentialité.scss <br>
+  <br>
+
+__________________________________________________________________________________________<br>
+ 
+ 
+ #12-USER PAGES
+
++ inside template-parts => created new file "users"<br>
   => added account.php<br>
   => added login.php<br>
   => added members.php<br>
@@ -60,50 +118,14 @@
  + added register.scss <br> 
  + added user.scss <br>
  <br>
- 
- + added sass page Politique de confidentialité <br>
-  => politique-de-confidentialité.scss <br>
-  <br>
-
- + inside template-parts => created new file "top10"<br>
-   => added newtop10.php<br>
-   <br>
-
- + created page <br>
-   => added template-newtop10.php<br>
-   <br>
-
- + => need to change pages templates :<br>
- + top10 new => new-top-10<br>
- + top10 edit => new-top-10<br>
- <br>
-
- + added sass file : top10 <br>
- + added top10.scss <br>
- + added newtop10.scss <br>
- <br>
-
- + made changes in template-my-top10.php <br>
- <br>
-
- => replace the sass file to add style modifications <br>
- => to be sure replace all the sass file to add all modifications <br>
- 
-
-
 
 __________________________________________________________________________________________<br>
 
-# WikiBIFFF
+#11- ERROR 404
 
-#WITH EACH UPDATE
-
-+ replace style.css byt the one in my folder <br>
-+ add fonts, images, src, css and js files from my folder <br>
-+ you can add you css style in sass/pages/theme/_theme.scss <br>
-+ /!\ leave style.css empty like the one in the folder /!\
-+ I will dispatch it in the different files from there<br>
-+ Don't forget to compile sass to be able to see your changes => npm run watch (see installation process below)<br>
+ + ajout de javascript dans src/js/custom-javascript.js <br>
+ + ajout page 404.scss + modifications sur la page 404.php <br>
+ + ajouts de fonts dans font file <br>
 
 __________________________________________________________________________________________<br>
 

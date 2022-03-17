@@ -4,7 +4,6 @@
   width: 100vw;
   max-width: 100%;
   position: fixed;
-  overflow: hidden;
   z-index: 10;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -23,7 +22,7 @@
 
 .brand-image {
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.9rem;
   width: 75%;
 }
 .primary-navigation > div > .menu-wrapper {
@@ -43,20 +42,57 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   color: black;
+  font-family: "RobotoMedium" !important;
 }
 
 .primary-navigation .primary-menu-container > ul > .menu-item > a:hover {
-  color: $rouge;
+  color: $rouge !important;
   text-decoration: none;
+}
+
+.primary-navigation .sub-menu .menu-item > a {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: black;
+  font-family: "RobotoMedium" !important;
+}
+
+.primary-navigation .sub-menu .menu-item > a:hover {
+  color: $rouge !important;
+  text-decoration: none;
+}
+
+.primary-navigation > div > .menu-wrapper .sub-menu-toggle {
+  color: black !important;
+  width: 1rem !important;
+}
+
+.sub-menu {
+  padding: 1rem 0.5rem !important;
+  background-color: $rouge;
+  > li {
+    padding-bottom: 0.5rem !important;
+  }
+}
+.primary-navigation > div > .menu-wrapper > li > .sub-menu:after {
+  display: none !important;
+}
+.primary-navigation > div > .menu-wrapper > li > .sub-menu:before {
+  display: none !important;
 }
 
 @media only screen and (min-width: 47rem) and (max-width: 62rem) {
   .site-header {
     padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+  .site-branding {
+    max-width: 22%;
   }
   .brand-image {
     margin-top: 0rem;
-    width: 70%;
+    margin-bottom: 0.5rem;
+    width: 100%;
   }
   .primary-navigation .primary-menu-container > ul > .menu-item > a {
     padding-left: 0.5rem;
@@ -74,7 +110,7 @@
   }
   .brand-image {
     margin-top: 0rem;
-    width: 60%;
+    width: 50%;
   }
   .menu-button-container {
     display: flex;
@@ -107,10 +143,10 @@
     overflow-x: hidden;
     overflow-y: auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
     padding-left: 4rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
     transition: opacity 0.2s ease-in-out;
     opacity: 1;
     border: 0px;
@@ -121,14 +157,25 @@
     background-repeat: no-repeat;
   }
 
+  .primary-navigation > div > .menu-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
   .primary-navigation > .primary-menu-container > .menu-wrapper {
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.7rem;
       transition: all 0.3s ease-in-out;
+      margin-right: 1rem;
       &:hover {
         cursor: pointer;
         text-decoration: underline;
       }
+    }
+    .sub-menu {
+      padding-top: 0.7rem !important;
     }
   }
 }

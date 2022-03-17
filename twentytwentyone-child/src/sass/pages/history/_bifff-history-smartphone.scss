@@ -42,11 +42,6 @@
       .timeline-box {
         padding: 1rem;
       }
-      .timeline-box-content {
-        > p {
-          line-height: 10px !important;
-        }
-      }
       .timeline-box-image {
         max-width: 40%;
       }
@@ -72,7 +67,7 @@
           --min: 0.5rem;
           --val: 2.7vw;
           --max: 1.2rem;
-          line-height: 24px;
+          line-height: 16px!important;
         }
       }
       .timeline-box-button {

@@ -25,6 +25,22 @@ body {
   }
 }
 
+.site-main {
+  border-bottom: 5px solid #212529;
+  min-height: 32vh;
+}
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .site-main {
+    min-height: 45vh;
+  }
+}
+
+@media screen and (max-width: 47rem) {
+  .site-main {
+    min-height: 20vh;
+  }
+}
+
 .bg-light,
 .bg-light a {
   color: #000;
