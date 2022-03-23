@@ -14852,6 +14852,8 @@ figure.woocommerce-product-gallery__wrapper {
   padding-left: 3.125rem;
   padding-right: 3.125rem;
   border-bottom: 0.2rem solid black;
+  display: flex;
+  align-items: center;
 }
 
 .site-branding {
@@ -14927,8 +14929,21 @@ figure.woocommerce-product-gallery__wrapper {
   display: none !important;
 }
 
+.primary-navigation .primary-menu-container > ul > .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 62rem) and (max-width: 87rem) {
+  #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+    font-size: 16px;
+  }
+}
 @media only screen and (min-width: 47rem) and (max-width: 62rem) {
   .site-header {
+    display: flex;
+    align-items: center;
     padding-left: 1.125rem;
     padding-right: 1.125rem;
   }
@@ -14942,11 +14957,6 @@ figure.woocommerce-product-gallery__wrapper {
     margin-bottom: 0.5rem;
     width: 100%;
   }
-
-  .primary-navigation .primary-menu-container > ul > .menu-item > a {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
 }
 @media only screen and (max-width: 47rem) {
   .site-header {
@@ -14959,7 +14969,6 @@ figure.woocommerce-product-gallery__wrapper {
   }
 
   .brand-image {
-    margin-top: 0rem;
     width: 50%;
   }
 
@@ -15000,15 +15009,23 @@ figure.woocommerce-product-gallery__wrapper {
     justify-content: center;
     align-items: flex-start;
     padding-left: 4rem;
-    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
     transition: opacity 0.2s ease-in-out;
     opacity: 1;
     border: 0px;
     background-image: url(../images/splatter.svg);
-    background-size: 150%;
-    background-position-x: 9%;
-    background-position-y: -66%;
+    background-size: 100%;
+    background-position-x: 0%;
+    background-position-y: 0%;
     background-repeat: no-repeat;
+  }
+  .primary-navigation-open .primary-navigation > .primary-menu-container a {
+    font-size: 16px;
+  }
+
+  .primary-navigation .primary-menu-container > ul > .menu-item {
+    display: block;
   }
 
   .primary-navigation > div > .menu-wrapper {
@@ -15019,7 +15036,7 @@ figure.woocommerce-product-gallery__wrapper {
   }
 
   .primary-navigation > .primary-menu-container > .menu-wrapper li {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.2rem;
     transition: all 0.3s ease-in-out;
     margin-right: 1rem;
   }
@@ -15028,7 +15045,12 @@ figure.woocommerce-product-gallery__wrapper {
     text-decoration: underline;
   }
   .primary-navigation > .primary-menu-container > .menu-wrapper .sub-menu {
-    padding-top: 0.7rem !important;
+    padding: 0.5rem 0.5rem !important;
+    margin: 0.5rem !important;
+    background-color: #212529;
+  }
+  .primary-navigation > .primary-menu-container > .menu-wrapper .sub-menu a {
+    color: white !important;
   }
 }
 .footer-wrapper {
@@ -15502,6 +15524,22 @@ label {
     --max: 1.125rem;
     text-align: justify;
     font-family: "RobotoMedium";
+  }
+}
+.custom-list {
+  max-width: 1600px;
+  margin: 5rem 10rem;
+  margin-bottom: 5rem !important;
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) {
+  .custom-list {
+    margin: 3rem 6rem;
+  }
+}
+@media screen and (max-width: 47rem) {
+  .custom-list {
+    margin: 1rem 3rem;
   }
 }
 .gallery-item {
@@ -18773,14 +18811,14 @@ ul {
   margin-right: 1rem;
   border-radius: 5px;
 }
-.movies-container #mainlist .col-md-12 a {
+.movies-container #mainlist .col-md-12 div a {
   color: white !important;
   font-family: "RobotoBold";
   background-color: none;
   text-transform: uppercase;
   padding: 0em;
 }
-.movies-container #mainlist img {
+.movies-container #mainlist .col-md-12 div a img {
   height: 30rem !important;
   width: 100%;
   background-color: #212529;
@@ -19158,6 +19196,487 @@ ul {
   .movies-container #mainlist .col-md-12 {
     display: flex;
     flex-direction: column;
+  }
+}
+.events-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100vw;
+  background-color: #ebe8e8;
+  overflow: hidden;
+}
+.events-container .events-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 0%;
+  padding: 1.5rem 4rem;
+  padding-right: 2rem;
+  margin-top: 4.4rem;
+  z-index: 3;
+}
+.events-container .events-bar h4, .events-container .events-bar .h4 {
+  margin: 0rem 1rem;
+  font-family: "RobotoBold";
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.5rem;
+  --val: 1.2vw;
+  --max: 2rem;
+}
+.events-container .events-bar ul {
+  display: flex;
+  margin: 0rem 0rem;
+  align-items: center;
+  justify-content: center;
+}
+.events-container .events-bar li {
+  display: flex;
+  margin: 0rem 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.events-container .events-bar .searchandfilter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.events-container .events-bar input {
+  background-color: #d00019;
+  padding: 0.4em 1em;
+  color: white;
+  text-transform: uppercase;
+  font-family: "RobotoBold";
+  margin-left: 0.5rem;
+}
+.events-container .events-bar label {
+  background-color: white;
+  padding-left: 0.2em;
+}
+.events-container .events-bar .searchandfilter select.sf-input-select {
+  min-width: 5rem !important;
+  width: 10rem !important;
+}
+.events-container .events-bar select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background: none !important;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: "RobotoBold";
+  color: black;
+  cursor: inherit;
+  line-height: inherit;
+  z-index: 1;
+  outline: none;
+}
+.events-container .events-bar select::-ms-expand {
+  display: none !important;
+}
+.events-container .events-bar .sf-input-select {
+  display: grid;
+  grid-template-areas: "sf-input-select";
+  align-items: center;
+  position: relative;
+  border: 0.4em solid #D00019;
+  padding: 0.3em 0.75em;
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.5rem;
+  --val: 0.8vw;
+  --max: 2rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: white;
+}
+.events-container .events-bar .sf-input-select select, .events-container .events-bar .sf-input-select::after {
+  grid-area: sf-input-select;
+}
+.events-container .events-bar .sf-input-select::after {
+  content: "▼";
+  justify-self: center;
+  align-self: center;
+  padding: 1em;
+  background-color: #d00019;
+  transition: 0.25s all ease;
+  pointer-events: none;
+  position: absolute;
+  left: 80%;
+}
+.events-container .events-bar select:focus + .focus {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: inherit;
+}
+.events-container #eventslist {
+  max-width: 1600px;
+  margin: 1rem 10rem;
+  color: black;
+  font-family: "RobotoBold";
+  text-transform: uppercase;
+}
+.events-container #eventslist .search-filter-results {
+  margin: 1rem;
+}
+.events-container #eventslist .pagination {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.events-container #eventslist img {
+  min-width: 100%;
+  min-height: 10rem;
+  background-color: #212529;
+  background-image: url(../images/b17.svg);
+  background-size: 183%;
+  background-position-x: -50%;
+  background-position-y: 103%;
+  background-repeat: no-repeat;
+}
+.events-container #eventslist .cl-element {
+  min-width: 10rem;
+}
+.events-container #eventslist a {
+  font-family: "RobotoBold" !important;
+  text-transform: uppercase;
+  padding: 0em 0em;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  margin-right: 0rem;
+  border-radius: 0px;
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.5rem;
+  --val: 1.2vw;
+  --max: 2rem;
+}
+.events-container #eventslist .cl-pagination {
+  margin: 2rem 0rem;
+  background-color: #d00019;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 0.2rem 1rem;
+  color: white;
+}
+.events-container #eventslist .cl-pagination a {
+  color: white;
+}
+.events-container #eventslist .cl-pagination span.page-numbers.current {
+  color: #9c0b0b;
+}
+
+@media screen and (min-width: 80rem) and (max-width: 100rem) and (orientation: landscape) {
+  .events-container .events-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.25rem 2rem;
+    margin-top: 4.4rem;
+    padding-bottom: 0rem;
+  }
+  .events-container .events-bar h1, .events-container .events-bar .h1 {
+    padding: 0.25rem 2rem;
+  }
+  .events-container .events-bar li {
+    margin: 0rem 0.5rem;
+  }
+  .events-container .events-bar ul {
+    margin: 0rem 0.5rem;
+    padding-left: 0rem !important;
+  }
+  .events-container .events-bar .sf-input-select {
+    width: 10rem;
+    min-width: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
+  .events-container .events-bar .searchandfilter {
+    align-self: center;
+    padding-bottom: 0.5rem;
+  }
+  .events-container .events-bar .searchandfilter select.sf-input-select {
+    min-width: 5rem !important;
+    width: 9rem !important;
+  }
+  .events-container .events-bar input {
+    padding: 0.25em 0.8em;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.5vw;
+    --max: 2rem;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (min-width: 64rem) and (max-width: 79rem) and (orientation: landscape) {
+  .events-container .events-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.25rem 2rem;
+    margin-top: 4.4rem;
+    padding-bottom: 0rem;
+  }
+  .events-container .events-bar h1, .events-container .events-bar .h1 {
+    padding: 0.25rem 1.75rem;
+  }
+  .events-container .events-bar li {
+    margin: 0rem 0.5rem;
+  }
+  .events-container .events-bar ul {
+    margin: 0rem 0.5rem;
+    padding-left: 0rem !important;
+  }
+  .events-container .events-bar .sf-input-select {
+    width: 10rem;
+    min-width: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
+  .events-container .events-bar .searchandfilter {
+    align-self: center;
+    padding-bottom: 0.5rem;
+  }
+  .events-container .events-bar .searchandfilter select.sf-input-select {
+    min-width: 5rem !important;
+    width: 7rem !important;
+  }
+  .events-container .events-bar input {
+    padding: 0.25em 0.8em;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.5vw;
+    --max: 2rem;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (min-width: 52rem) and (max-width: 64rem) and (orientation: portrait) {
+  .events-container h1, .events-container .h1 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 4.3vw;
+    --max: 3rem;
+    padding-bottom: 0.5rem;
+    margin-left: 2rem;
+  }
+  .events-container .events-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-top: 4.4rem;
+    padding-bottom: 0rem;
+  }
+  .events-container .events-bar h4, .events-container .events-bar .h4 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.8vw;
+    --max: 2rem;
+    margin: 0rem 0.5rem;
+  }
+  .events-container .events-bar li {
+    margin: 0rem 0.25rem;
+  }
+  .events-container .events-bar ul {
+    margin: 0rem 0.5rem;
+    padding-left: 0rem !important;
+  }
+  .events-container .events-bar .sf-input-select {
+    width: 10rem;
+    min-width: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
+  .events-container .events-bar .searchandfilter {
+    align-self: center;
+    padding-bottom: 0.5rem;
+  }
+  .events-container .events-bar input {
+    padding: 0.25em 0.8em;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.5vw;
+    --max: 2rem;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (min-width: 52rem) and (max-width: 100rem) and (orientation: portrait) {
+  .events-container #eventslist {
+    margin: 1rem 5rem;
+  }
+}
+@media screen and (min-width: 47rem) and (max-width: 52rem) and (orientation: portrait) {
+  .events-container h1, .events-container .h1 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 4.3vw;
+    --max: 3rem;
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+  }
+  .events-container .events-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-top: 4.4rem;
+    padding-bottom: 0rem;
+  }
+  .events-container .events-bar h4, .events-container .events-bar .h4 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.8vw;
+    --max: 2rem;
+    margin: 0rem 0.5rem;
+  }
+  .events-container .events-bar li {
+    margin: 0rem 0.25rem;
+  }
+  .events-container .events-bar ul {
+    margin: 0rem 0.5rem;
+    padding-left: 0rem !important;
+  }
+  .events-container .events-bar .sf-input-select {
+    min-width: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
+  .events-container .events-bar .searchandfilter {
+    align-self: center;
+    padding-bottom: 0.5rem;
+  }
+  .events-container .events-bar .searchandfilter select.sf-input-select {
+    min-width: 5rem !important;
+    width: 5rem !important;
+  }
+  .events-container .events-bar input {
+    padding: 0.25em 0.8em;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.5vw;
+    --max: 2rem;
+    margin-left: 0.5rem;
+  }
+  .events-container #eventslist {
+    margin: 1rem 2rem;
+  }
+  .events-container #eventslist a {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.6vw;
+    --max: 1.2rem;
+  }
+}
+@media screen and (max-width: 47rem) {
+  .events-container .events-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2.1rem;
+    padding-bottom: 0rem;
+  }
+  .events-container .events-bar h1, .events-container .events-bar .h1 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 5.5vw;
+    --max: 3rem;
+    margin-bottom: 1rem;
+  }
+  .events-container .events-bar h4, .events-container .events-bar .h4 {
+    margin: 0rem 1rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 3vw;
+    --max: 2rem;
+  }
+  .events-container .events-bar ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 0rem;
+    padding: 0rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .events-container .events-bar li {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 0rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+  }
+  .events-container .events-bar .searchandfilter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100vw;
+    background-color: #be1b17;
+    padding-top: 0.5rem;
+  }
+  .events-container .events-bar input {
+    padding: 0.5em 2em;
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 3.2vw;
+    --max: 2rem;
+    background-color: #212529;
+  }
+  .events-container .events-bar label {
+    padding-left: 0.5em;
+  }
+  .events-container .events-bar select {
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+  }
+  .events-container .events-bar .sf-input-select {
+    display: grid;
+    align-items: center;
+    border: 0.5em solid #212529;
+    padding: 0.25em 0.25em;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 2.5vw;
+    --max: 2rem;
+  }
+  .events-container #eventslist {
+    margin: 1rem 2rem;
+  }
+  .events-container #eventslist a {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 2.5vw;
+    --max: 2rem;
   }
 }
 #login-container .entry {

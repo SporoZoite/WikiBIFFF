@@ -1,0 +1,17 @@
+.custom-list {
+  max-width: 1600px;
+  margin: 5rem 10rem;
+  margin-bottom: 5rem !important;
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) {
+  .custom-list {
+    margin: 3rem 6rem;
+  }
+}
+
+@media screen and (max-width: 47rem) {
+  .custom-list {
+    margin: 1rem 3rem;
+  }
+}

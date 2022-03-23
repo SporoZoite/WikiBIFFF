@@ -10,6 +10,8 @@
   padding-left: 3.125rem;
   padding-right: 3.125rem;
   border-bottom: 0.2rem solid black;
+  display: flex;
+  align-items: center;
 }
 .site-branding {
   margin-right: initial;
@@ -81,8 +83,22 @@
   display: none !important;
 }
 
+.primary-navigation .primary-menu-container > ul > .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 62rem) and (max-width: 87rem) {
+  #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+    font-size:16px;
+  }
+}
+
 @media only screen and (min-width: 47rem) and (max-width: 62rem) {
   .site-header {
+    display: flex;
+    align-items: center;
     padding-left: 1.125rem;
     padding-right: 1.125rem;
   }
@@ -93,10 +109,6 @@
     margin-top: 0rem;
     margin-bottom: 0.5rem;
     width: 100%;
-  }
-  .primary-navigation .primary-menu-container > ul > .menu-item > a {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 }
 
@@ -109,7 +121,6 @@
     max-width: calc(100% - 110px) !important;
   }
   .brand-image {
-    margin-top: 0rem;
     width: 50%;
   }
   .menu-button-container {
@@ -146,15 +157,22 @@
     justify-content: center;
     align-items: flex-start;
     padding-left: 4rem;
-    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
     transition: opacity 0.2s ease-in-out;
     opacity: 1;
     border: 0px;
     background-image: url(../images/splatter.svg);
-    background-size: 150%;
-    background-position-x: 9%;
-    background-position-y: -66%;
+    background-size: 100%;
+    background-position-x: 0%;
+    background-position-y: 0%;
     background-repeat: no-repeat;
+    a {
+      font-size: 16px;
+    }
+  }
+  .primary-navigation .primary-menu-container > ul > .menu-item {
+    display: block;
   }
 
   .primary-navigation > div > .menu-wrapper {
@@ -166,7 +184,7 @@
 
   .primary-navigation > .primary-menu-container > .menu-wrapper {
     li {
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.2rem;
       transition: all 0.3s ease-in-out;
       margin-right: 1rem;
       &:hover {
@@ -175,7 +193,12 @@
       }
     }
     .sub-menu {
-      padding-top: 0.7rem !important;
+      padding: 0.5rem 0.5rem !important;
+      margin: 0.5rem !important;
+      background-color: #212529;
+      a {
+        color: white !important;
+      }
     }
   }
 }
