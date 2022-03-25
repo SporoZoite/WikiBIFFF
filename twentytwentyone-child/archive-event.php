@@ -31,8 +31,8 @@ get_header();
 	<div id="eventslist">
 	
 		<?php 
-		 /* echo do_shortcode ('[custom-layout id="192148"]'); */
-			echo do_shortcode ('[custom-layout id="191727"]');
+		  echo do_shortcode ('[custom-layout id="192148"]'); 
+			/* echo do_shortcode ('[custom-layout id="191727"]'); */
 		?>
 		
 	</div>

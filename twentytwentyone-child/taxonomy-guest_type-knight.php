@@ -7,8 +7,8 @@
 	<div class="custom-list">
 	
 		<?php 
-		 /* echo do_shortcode ('[custom-layout id="192183"]'); */
-			echo do_shortcode ('[custom-layout id="191740"]');
+		  echo do_shortcode ('[custom-layout id="192183"]'); 
+			/* echo do_shortcode ('[custom-layout id="191740"]'); */
 		?>
 		
 	</div>

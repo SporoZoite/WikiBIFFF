@@ -2,16 +2,73 @@
   max-width: 1600px;
   margin: 5rem 10rem;
   margin-bottom: 5rem !important;
+  a {
+    color: white;
+    font-family: "RobotoBold" !important;
+    text-transform: uppercase!important;
+    font-size: clamp(var(--min), var(--val), var(--max))!important;
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
+  .cl-pagination {
+    margin: 2rem 0rem;
+    background-color: #d00019;
+    width: fit-content;
+    border-radius: 4px;
+    padding: 0.2rem 1rem;
+    color: white;
+    a {
+      color: white;
+      font-family: "RobotoBold" !important;
+      text-transform: uppercase!important;
+      font-size: clamp(var(--min), var(--val), var(--max))!important;
+      --min: 0.5rem;
+      --val: 1.2vw;
+      --max: 2rem;
+    }
+    span.page-numbers.current {
+      color: $darkerrouge;
+    }
+  }
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) {
   .custom-list {
     margin: 3rem 6rem;
+    a {
+      font-size: clamp(var(--min), var(--val), var(--max))!important;
+      --min: 0.5rem;
+      --val: 1.6vw;
+      --max: 1.2rem;
+    }
+    .cl-pagination {
+      a {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.6vw;
+        --max: 1.2rem;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 47rem) {
   .custom-list {
     margin: 1rem 3rem;
+    a {
+      font-size: clamp(var(--min), var(--val), var(--max))!important;
+      --min: 0.5rem;
+      --val: 3.5vw;
+      --max: 2rem;
+    }
+    .cl-pagination {
+      a {
+        font-size: clamp(var(--min), var(--val), var(--max))!important;
+        --min: 0.5rem;
+        --val: 3.5vw;
+        --max: 2rem;
+      }
+    }
   }
 }

@@ -148,26 +148,23 @@
       border-radius: 5px;
     }
     .col-md-12 {
-      div {
-        a {
-          color: white !important;
-          font-family: "RobotoBold";
-          background-color: none;
-          text-transform: uppercase;
-          padding: 0em;
-
-          img {
-            height: 30rem !important;
-            width: 100%;
-            background-color: #212529;
-            background-image: url(../images/b17.svg);
-            background-size: 183%;
-            background-position-x: -50%;
-            background-position-y: 103%;
-            background-repeat: no-repeat;
-          }
-        }
+      a {
+        color: white !important;
+        font-family: "RobotoBold";
+        background-color: none;
+        text-transform: uppercase;
+        padding: 0em;
       }
+    }
+    img {
+      height: 30rem !important;
+      width: 100%;
+      background-color: #212529;
+      background-image: url(../images/b17.svg);
+      background-size: 183%;
+      background-position-x: -50%;
+      background-position-y: 103%;
+      background-repeat: no-repeat;
     }
   }
 }
