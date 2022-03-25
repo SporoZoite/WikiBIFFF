@@ -8,7 +8,7 @@
 	
 		<?php 
 		  echo do_shortcode ('[custom-layout id="192238"]'); 
-			/* echo do_shortcode ('[custom-layout id="191762"]'); */
+			/*echo do_shortcode ('[custom-layout id="191762"]');*/
 		?>
 		
 	</div>

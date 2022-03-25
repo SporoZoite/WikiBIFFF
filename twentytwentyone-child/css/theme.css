@@ -18866,14 +18866,14 @@ ul {
   margin-right: 1rem;
   border-radius: 5px;
 }
-.movies-container #mainlist .col-md-12 div a {
+.movies-container #mainlist .col-md-12 a {
   color: white !important;
   font-family: "RobotoBold";
   background-color: none;
   text-transform: uppercase;
   padding: 0em;
 }
-.movies-container #mainlist .col-md-12 div a img {
+.movies-container #mainlist img {
   height: 30rem !important;
   width: 100%;
   background-color: #212529;

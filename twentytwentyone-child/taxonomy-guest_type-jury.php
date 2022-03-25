@@ -19,20 +19,21 @@ get_header();
     <div class="events-bar">
 	
 
-			<h1>EVENTS</h1>
+			<h1>JURY</h1>
 
 	
 	
 		<?php 
-			echo do_shortcode('[searchandfilter id="191630"]');
+         echo do_shortcode('[searchandfilter id="192240"]'); 
+			/* echo do_shortcode('[searchandfilter id="191763"]'); */
 		?>
 	</div>	
 	
 	<div id="eventslist">
 	
 		<?php 
-		 echo do_shortcode ('[custom-layout id="192148"]'); 
-			/*echo do_shortcode ('[custom-layout id="191727"]');*/
+		  echo do_shortcode ('[custom-layout id="192241"]'); 
+			/* echo do_shortcode ('[custom-layout id="191764"] '); */
 		?>
 		
 	</div>
