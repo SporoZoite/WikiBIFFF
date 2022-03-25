@@ -1,37 +1,18 @@
  /!\LAST ADD/!\ <br>
  <br>
- /!\dernière update = 2 mars/!\ <br>
+ /!\dernière update = 25 mars/!\ <br>
  <br>
  
- + remplacer le fichier "js" (celui avec theme.min.js dedans) par le nouveau pour avoir le nouveau javascript <br>
- + new footer design done + responsive <br>
- => changements effectués sur le site en ligne <br>
-   => addition de nouveaux menus pour le footer <br>
- => ajouter footer.scss dans le sass <br>
- <br>
- 
- + changement du nombre de mots maximum de 30 à 25 dans les paragraphes dans bifff-history.php <br>
- => attention il faut le faire 2x dans la page car box de gauche et box de droite <br>
- + changement dans le css de bifff-history.scss <br>
- <br>
- 
- + corrections barre de navigation + ajout de la dropbox mywiki<br>
- => changements dans le css de navbar.scss <br>
- => changements de noms de pages (My Top10 et New Top10) <br>
- <br>
- 
- + corrections sur la barre de catégories des pages movie/guests/events<br>
- => added submit buttons on onine wordpress <br>
- <br>
- 
- 
- 
+ + remplacer fichier "src" entier pour avoir le nouveau css <br> 
+ + remplacer le fichier "image" <br>
+ + remplacer le fichier "js" <br>
+ + remplacer archive-event.php <br>
+ + remplacer archive-guest.php <br>
+ + ajouter tous les fichiers commençant par "taxonomy-... .php"
+
 
   /!\années dans la scrollbox "years" dans bifff-history.php not clickables /!\ <br>
  
-
-
-
 
 __________________________________________________________________________________________<br>
 
