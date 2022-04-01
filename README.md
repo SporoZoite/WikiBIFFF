@@ -10,6 +10,7 @@
  + remplacer archive-guest.php <br>
  + ajouter tous les fichiers commençant par "taxonomy-... .php" <br>
  + Dans wp-content/plugins/custom-layout => remplacer le fichier "assets" par celui présent dans le GIT <br>
+ + rétablir les titres et photos dans la timeline => corriger le code dans bifff-history.php <br>
 
 
   /!\années dans la scrollbox "years" dans bifff-history.php not clickables /!\ <br>
@@ -27,6 +28,7 @@ ________________________________________________________________________________
 + /!\ leave style.css empty like the one in the folder /!\
 + I will dispatch it in the different files from there<br>
 + Don't forget to compile sass to be able to see your changes => npm run watch (see installation process below)<br>
+
 
 __________________________________________________________________________________________<br>
 
