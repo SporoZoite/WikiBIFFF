@@ -18,12 +18,12 @@
   --widget--line-height-list: unset;
   --gutter: 20px;
   margin-top: 0px !important;
-  appearance: none!important;
-  -moz-appearance: none!important;
-  -webkit-appearance: none!important;
-  --global--font-size-page-title:none!important;
-  --entry-content--font-family:none!important;
-  --global--font-size-lg:none!important;
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  --global--font-size-page-title: none !important;
+  --entry-content--font-family: none !important;
+  --global--font-size-lg: none !important;
   h1 {
     margin: 0px;
     font-size: clamp(var(--min), var(--val), var(--max));
@@ -56,7 +56,7 @@
     text-transform: uppercase;
     font-family: "RobotoBold";
   }
- 
+
   p {
     margin: 0px;
     font-size: clamp(var(--min), var(--val), var(--max));
@@ -75,6 +75,9 @@
     cursor: pointer;
   }
   --text-multiplier: 1;
+  a:hover {
+    color: #696969;
+  }
 }
 
 @media screen and (min-width: 85rem) {
