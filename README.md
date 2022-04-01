@@ -1,6 +1,6 @@
  /!\LAST ADD/!\ <br>
  <br>
- /!\dernière update = 25 mars/!\ <br>
+ /!\dernière update = 1ier avril/!\ <br>
  <br>
  
  + remplacer fichier "src" entier pour avoir le nouveau css <br> 
@@ -8,7 +8,8 @@
  + remplacer le fichier "js" <br>
  + remplacer archive-event.php <br>
  + remplacer archive-guest.php <br>
- + ajouter tous les fichiers commençant par "taxonomy-... .php"
+ + ajouter tous les fichiers commençant par "taxonomy-... .php" <br>
+ + Dans wp-content/plugins/custom-layout => remplacer le fichier "assets" par celui présent dans le GIT <br>
 
 
   /!\années dans la scrollbox "years" dans bifff-history.php not clickables /!\ <br>
