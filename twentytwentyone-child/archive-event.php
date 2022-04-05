@@ -14,9 +14,9 @@ get_header();
 ?>
 
 
-<div class="movies-container">
+<div class="events-container">
 
-    <div class="movies-bar">
+    <div class="events-bar">
 	
 
 			<h1>EVENTS</h1>
@@ -28,10 +28,11 @@ get_header();
 		?>
 	</div>	
 	
-	<div id="mainlist">
+	<div id="eventslist">
 	
 		<?php 
-			echo do_shortcode('[searchandfilter id="191630" show="results"]');
+		 echo do_shortcode ('[custom-layout id="192148"]'); 
+			/*echo do_shortcode ('[custom-layout id="191727"]');*/
 		?>
 		
 	</div>
