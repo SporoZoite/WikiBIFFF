@@ -14935,9 +14935,19 @@ figure.woocommerce-product-gallery__wrapper {
   align-items: center;
 }
 
-@media only screen and (min-width: 62rem) and (max-width: 87rem) {
+@media only screen and (min-width: 72rem) and (max-width: 87rem) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
-    font-size: 16px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 62rem) and (max-width: 72rem) {
+  #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+    font-size: 12px;
+  }
+
+  .site-header {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 }
 @media only screen and (min-width: 47rem) and (max-width: 62rem) {
@@ -16052,6 +16062,26 @@ article#post-3 h3, article#post-3 .h3 {
     text-align: center !important;
   }
 }
+.quotes-container {
+  padding: 2rem;
+  min-height: 32vh;
+}
+.quotes-container .quotes-text {
+  width: 95%;
+  margin: auto;
+  border: 5px solid #be1b17;
+  padding: 1rem;
+}
+.quotes-container .quotes-list {
+  margin: auto;
+  width: 90%;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-family: "RobotoBold";
+  color: #be1b17;
+  font-size: xx-large;
+}
+
 .page-id-1210 aside.widget-area {
   display: none;
 }
@@ -18027,7 +18057,7 @@ article#post-3 h3, article#post-3 .h3 {
 
 .edition-container {
   padding-top: 8rem;
-  width: 100%;
+  width: 95%;
   margin-right: auto;
   margin-left: auto;
   max-width: 1320px;
@@ -18133,6 +18163,10 @@ ul {
   display: none;
 }
 
+ul.hs.full::-webkit-scrollbar {
+  display: none;
+}
+
 .hs {
   display: grid;
   grid-gap: calc(var(--gutter) / 2);
@@ -18143,6 +18177,8 @@ ul {
   scroll-snap-type: x proximity;
   padding-bottom: calc(0.75 * var(--gutter));
   margin-bottom: calc(-0.25 * var(--gutter));
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
 }
 
 .slide-track {
@@ -18505,7 +18541,7 @@ ul {
 .single-container {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  width: 100%;
+  width: 95%;
   margin-right: auto;
   margin-left: auto;
   max-width: 82.5rem;
@@ -19582,7 +19618,7 @@ ul {
     margin-left: 0.5rem;
   }
 }
-@media screen and (min-width: 52rem) and (max-width: 100rem) and (orientation: portrait) {
+@media screen and (min-width: 52rem) and (max-width: 100rem) {
   .events-container #eventslist {
     margin: 1rem 5rem;
   }
