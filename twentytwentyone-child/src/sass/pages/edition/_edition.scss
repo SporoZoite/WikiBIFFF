@@ -4,7 +4,7 @@
 
 .edition-container {
   padding-top: 8rem;
-  width: 100%;
+  width: 95%;
   margin-right: auto;
   margin-left: auto;
   max-width: 1320px;
@@ -111,6 +111,10 @@ ul {
   display: none;
 }
 
+ul.hs.full::-webkit-scrollbar {
+  display: none;
+}
+
 .hs {
   display: grid;
   grid-gap: calc(var(--gutter) / 2);
@@ -120,6 +124,8 @@ ul {
   scroll-snap-type: x proximity;
   padding-bottom: calc(0.75 * var(--gutter));
   margin-bottom: calc(-0.25 * var(--gutter));
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
 }
 .slide-track {
   grid-template-columns: 10px repeat(var(--total), auto) 10px;
