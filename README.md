@@ -1,19 +1,18 @@
  /!\LAST ADD/!\ <br>
  <br>
- /!\dernière update = 1ier avril/!\ <br>
+ /!\dernière update = 8 avril/!\ <br>
  <br>
  
  + remplacer fichier "src" entier pour avoir le nouveau css <br> 
- + remplacer le fichier "image" <br>
- + remplacer le fichier "js" <br>
- + remplacer archive-event.php <br>
- + remplacer archive-guest.php <br>
- + ajouter tous les fichiers commençant par "taxonomy-... .php" <br>
- + Dans wp-content/plugins/custom-layout => remplacer le fichier "assets" par celui présent dans le GIT <br>
- + rétablir les titres et photos dans la timeline => corriger le code dans bifff-history.php <br>
+  => scrollbar = problème résolu + ajustements css (navbar + pages)
+  
+ + /!\années dans la scrollbox "years" dans bifff-history.php ne sont pas clickables (elles ne redirigent pas vers la page edition de l'année sélectionnée) /!\ <br>
+
+ + Javascript ne fonctionne plus du tout (flèche vers haut de la page + page error 404) <br>
 
 
-  /!\années dans la scrollbox "years" dans bifff-history.php not clickables /!\ <br>
+
+
  
 
 __________________________________________________________________________________________<br>
