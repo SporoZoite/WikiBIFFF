@@ -9,6 +9,11 @@
  + /!\années dans la scrollbox "years" dans bifff-history.php ne sont pas clickables (elles ne redirigent pas vers la page edition de l'année sélectionnée) /!\ <br>
 
  + Javascript ne fonctionne plus du tout (flèche vers haut de la page + page error 404) <br>
+ 
+ + Ajouter pages "template-audience-quotes-guide.php" + "audience-quotes-guide.php" <br>
+ + la page est créée dans les pages sur le wiki sous le nom "Audience Quotes' Guide" => il faut changer le template par "AudienceQuotesGuide"<br>
+ 
+ 
 
 
 
