@@ -4,5 +4,13 @@
 </header>
 
 	<div class="quotes-container">
-		<?php echo get_post_meta($post->ID, 'audience_quotes', true); ?>
+
+        <div class="quotes-text">
+             <?php echo get_the_content(); ?>
+        </div>
+       
+        <div class="quotes-list">
+		     <?php echo get_post_meta($post->ID, 'audience_quotes', true); ?>
+        </div>
+
 	</div>
