@@ -89,9 +89,25 @@
   align-items: center;
 }
 
-@media only screen and (min-width: 62rem) and (max-width: 87rem) {
-  #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
-    font-size:16px;
+@media only screen and (min-width: 72rem) and (max-width: 87rem) {
+  #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-item
+    > a.mega-menu-link {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 62rem) and (max-width: 72rem) {
+  #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-item
+    > a.mega-menu-link {
+    font-size: 12px;
+  }
+  .site-header {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 }
 

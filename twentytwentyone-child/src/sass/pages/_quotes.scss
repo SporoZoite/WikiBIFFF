@@ -1,0 +1,19 @@
+.quotes-container {
+  padding: 2rem;
+  min-height: 32vh;
+  .quotes-text {
+    width: 95%;
+    margin: auto;
+    border: 5px solid #be1b17;
+    padding: 1rem;
+  }
+  .quotes-list {
+    margin: auto;
+    width: 90%;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-family: "RobotoBold";
+    color: #be1b17;
+    font-size: xx-large;
+  }
+}
