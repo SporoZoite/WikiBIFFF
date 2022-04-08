@@ -14636,7 +14636,7 @@ body a {
 
 .site-main {
   border-bottom: 5px solid #212529;
-  min-height: 32vh;
+  min-height: 33vh;
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
@@ -15366,9 +15366,9 @@ label {
   appearance: none !important;
   -moz-appearance: none !important;
   -webkit-appearance: none !important;
-  --global--font-size-page-title:none!important;
-  --entry-content--font-family:none!important;
-  --global--font-size-lg:none!important;
+  --global--font-size-page-title: none !important;
+  --entry-content--font-family: none !important;
+  --global--font-size-lg: none !important;
   --text-multiplier: 1;
 }
 :root h1, :root .h1 {
@@ -15419,6 +15419,9 @@ label {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+}
+:root a:hover {
+  color: #696969;
 }
 
 @media screen and (min-width: 85rem) {
@@ -18416,7 +18419,7 @@ ul {
 @media screen and (max-width: 47rem) {
   .edition-container {
     padding-top: 3rem !important;
-    padding: 1rem !important;
+    padding: 1rem;
   }
   .edition-container .mb-3.rounded.bg-light {
     margin-left: 1rem;
@@ -18511,6 +18514,9 @@ ul {
 .single-container a {
   color: white;
 }
+.single-container a:hover {
+  color: #696969;
+}
 .single-container p {
   margin: 1rem 0rem;
 }
@@ -18571,7 +18577,7 @@ ul {
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
   .single-container {
-    padding-top: 3rem;
+    padding-top: 6rem !important;
     padding-bottom: 5rem;
   }
   .single-container p {
@@ -18650,8 +18656,8 @@ ul {
 }
 @media screen and (max-width: 47rem) {
   .single-container {
-    padding-top: 3rem;
     padding-bottom: 3rem;
+    padding-top: 3rem !important;
   }
   .single-container p {
     margin-bottom: 2rem;
@@ -18875,7 +18881,7 @@ ul {
 }
 .movies-container #mainlist img {
   height: 30rem !important;
-  width: 100%;
+  min-width: 100%;
   background-color: #212529;
   background-image: url(../images/b17.svg);
   background-size: 183%;
