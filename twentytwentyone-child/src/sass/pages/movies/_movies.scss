@@ -32,6 +32,7 @@
     ul {
       display: flex;
       margin: 0rem 0rem;
+      padding: 0rem;
       align-items: center;
       justify-content: center;
     }
@@ -114,6 +115,37 @@
         left: 80%;
       }
     }
+    .sf-input-text {
+      display: grid;
+      grid-template-areas: "sf-input-select";
+      align-items: center;
+      position: relative;
+      select,
+      &::after {
+        grid-area: sf-input-select;
+      }
+      border: 0.4em solid $rouge;
+      padding: 0.3em 0.75em;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.5rem;
+      --val: 0.8vw;
+      --max: 2rem;
+      cursor: pointer;
+      line-height: 1.1;
+      background-color: white;
+      margin: 0rem;
+      &::after {
+        content: "▼";
+        justify-self: center;
+        align-self: center;
+        padding: 1em;
+        background-color: #d00019;
+        transition: 0.25s all ease;
+        pointer-events: none;
+        position: absolute;
+        left: 80%;
+      }
+    }
     select:focus + .focus {
       position: absolute;
       top: -1px;
@@ -159,8 +191,9 @@
     img {
       height: 30rem !important;
       min-width: 100%;
+      max-width: 20%;
       background-color: #212529;
-      background-image: url(../images/b17.svg);
+      background-image: url(../images/splatters.svg);
       background-size: 183%;
       background-position-x: -50%;
       background-position-y: 103%;

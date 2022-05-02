@@ -18,10 +18,26 @@ body {
   body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
   }
+  
   a {
     text-decoration: none;
     cursor: pointer;
     display: inline;
+  }
+  a.um-user-bookmarks-button .um-user-bookmarks-add-button {
+    color: #d00019;
+    font-family: "ROBOTOBOLD";
+    margin: 1rem;
+  }
+  .rmp-rating-widget .rmp-icon--ratings {
+    font-size: 1.7rem !important;
+  }
+  .rmp-rating-widget .rmp-icon--processing-rating {
+    color: #d00019;
+  }
+  .rmp-btn {
+    background-color: #be1b17;
+    color: #fff;
   }
 }
 
@@ -200,4 +216,3 @@ body {
 a:hover {
   color: $grey;
 }
-
