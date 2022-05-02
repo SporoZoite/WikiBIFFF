@@ -1,0 +1,140 @@
+.page-header.alignwide {
+  margin-top: 4.5rem !important;
+  background: #be1b17;
+  padding: 1.5rem 4rem;
+  text-transform: uppercase;
+  h1 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 2vw;
+    --max: 2.8125rem;
+  }
+}
+
+.entry {
+  margin: 1.5rem auto;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background: #212529;
+  border-radius: 5px;
+  max-width: 85% !important;
+  justify-self: center;
+  overflow: hidden;
+  justify-content: space-around;
+}
+.entry-header {
+  padding: 1rem;
+  overflow: hidden;
+  .entry-title {
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 1.75vw;
+    --max: 2rem;
+  }
+}
+
+.post-thumbnail {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border: 10px solid white;
+  border-radius: 5px;
+}
+.entry-content {
+  width: auto;
+  padding: 3rem;
+  p {
+    background: #be1b17;
+    padding: 2rem;
+    border-radius: 5px;
+  }
+  select {
+    font-family: "RobotoBold";
+  }
+  ul,
+  li {
+    color: white;
+  }
+}
+
+.entry-footer {
+  display: none;
+}
+
+.more-link {
+  color: #751715 !important;
+  font-family: "RobotoBold";
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .page-header.alignwide {
+    h1 {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 3.5vw;
+      --max: 3rem;
+    }
+  }
+
+  .entry {
+    max-width: 90%;
+    .entry-title {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 2.7vw;
+      --max: 2.8125rem;
+    }
+  }
+
+  .entry-content {
+    width: auto;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 47rem) and (orientation: portrait) {
+  .page-header.alignwide {
+    margin-top: 2.5rem !important;
+    padding: 1rem 2rem;
+    h1 {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 5.5vw;
+      --max: 3rem;
+    }
+  }
+  .entry {
+    max-width: 85%;
+    flex-direction: column;
+    background-size: 100%;
+    margin-bottom: 1.5rem;
+    .entry-title {
+      padding: 0rem;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1rem;
+      --val: 5.5vw;
+      --max: 3rem;
+    }
+  }
+  .entry-header {
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .entry-content {
+    width: 100%;
+    padding: 0rem;
+    p {
+      padding: 1rem;
+    }
+  }
+}

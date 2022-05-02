@@ -1,0 +1,56 @@
+.contact-container {
+  width: 100% !important;
+  padding: 0rem 1rem !important;
+  .contact-form {
+    background-color: #272727;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 5px;
+    p {
+      margin-top: 0.5rem !important;
+    }
+    label {
+      color: white;
+      font-size: var(--global--font-size-base);
+      text-transform: uppercase;
+    }
+    input[type="submit"] {
+      background-color: #be1b17 !important;
+      text-transform: uppercase !important;
+      padding: 0.5rem 0.75rem !important;
+      font-size: var(--global--font-size-base) !important;
+      border-radius: 3px !important;
+      margin-top: 0.5rem !important;
+    }
+  }
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .contact-container {
+    .contact-form {
+      label {
+        font-size: inherit;
+      }
+      input[type="submit"] {
+        font-size: inherit !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 47rem) and (orientation: portrait) {
+  .contact-container {
+    .contact-form {
+      label {
+        font-size: inherit;
+      }
+      input[type="submit"] {
+        font-size: inherit !important;
+      }
+    }
+  }
+}

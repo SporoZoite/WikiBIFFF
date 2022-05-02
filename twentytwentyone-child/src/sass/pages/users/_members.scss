@@ -36,6 +36,32 @@
         background: none !important;
         padding: 0rem !important;
       }
+      .um-directory .um-member-directory-header {
+        width: auto !important;
+        margin-bottom: 1rem !important;
+        margin-top: 0rem !important;
+        .um-directory
+          .um-member-directory-header
+          .um-member-directory-header-row
+          .um-member-directory-search-line {
+          width: 100%;
+        }
+      }
+      .um-verified {
+        color: #be1b17 !important;
+      }
+      .um .um-members-pagi span.current {
+        background: #be1b17 !important;
+      }
+      .um-directory .um-members-pagination-box .um-members-pagi {
+        margin-top: 1rem;
+      }
+      #groups_search {
+        font-family: "RobotoMedium" !important;
+      }
+      #um-groups-filters ul.filters li.active {
+        background: #be1b17 !important;
+      }
     }
     .entry-title {
       font-size: clamp(var(--min), var(--val), var(--max)) !important;
@@ -60,7 +86,7 @@
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
-  #members-container{
+  #members-container {
     .entry {
       margin: 6rem 4rem !important;
       min-height: 30vh !important;
@@ -74,7 +100,7 @@
       .entry-content {
         color: white !important;
         width: 100% !important;
-        padding: 3rem !important;
+        padding: 2rem !important;
         margin: 2rem !important;
         max-width: 90% !important;
         font-family: "RobotoBold" !important;
@@ -87,7 +113,7 @@
 @media screen and (max-width: 47rem) and (orientation: portrait) {
   #members-container {
     .entry {
-      margin: 4rem 2rem !important;
+      margin: 2rem 0rem !important;
       .entry-title {
         font-size: clamp(var(--min), var(--val), var(--max)) !important;
         --min: 1rem !important;
@@ -100,13 +126,17 @@
       .entry-content {
         color: white !important;
         width: 100% !important;
-        padding: 3rem !important;
+        padding: 1.5rem !important;
         margin: auto !important;
         margin-top: 2rem !important;
         margin-bottom: 2rem !important;
-        max-width: 80% !important;
+        max-width: 85% !important;
         font-family: "RobotoBold" !important;
         border: 3px solid #be1b17 !important;
+        .um-directory .um-member-directory-header {
+          margin-right: 1rem !important;
+          margin-left: 1rem !important;
+        }
       }
       .entry-footer {
         padding: 0rem 0rem !important;
