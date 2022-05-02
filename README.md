@@ -1,21 +1,11 @@
  /!\LAST ADD/!\ <br>
  <br>
- /!\dernière update = 9 avril/!\ <br>
+ /!\dernière update = 2 mai/!\ <br>
  <br>
  
- + remplacer fichier "src" entier pour avoir le nouveau css <br> 
-  
- + Ajouter pages "template-contact.php" + "contact.php" <br>
- + la page est créée dans les pages sur le wiki sous le nom "Contact" => il faut changer le template par "Contact"<br>
-  
- + /!\années dans la scrollbox "years" dans bifff-history.php ne sont pas clickables (elles ne redirigent pas vers la page edition de l'année sélectionnée) /!\ <br>
-
- + Javascript ne fonctionne plus du tout (flèche vers haut de la page + page error 404) <br>
+ + Remplacer fichiers "src" "css" et "js" <br>
 
  
-
-
-
 
  
 
