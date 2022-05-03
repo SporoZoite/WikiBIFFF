@@ -24,10 +24,10 @@
     margin-bottom: 1rem !important;
     overflow: hidden !important;
     .entry-title {
-      font-size: clamp(var(--min), var(--val), var(--max)) !important;
-      --min: 1rem !important;
-      --val: 2.4vw !important;
-      --max: 2.8125rem !important;
+      font-size: clamp(var(--min), var(--val), var(--max))!important;
+      --min: 1rem!important;
+      --val: 2.4vw!important;
+      --max: 2.8125rem!important;
       text-transform: uppercase !important;
       font-family: "RobotoBold" !important;
     }
@@ -72,10 +72,10 @@
     margin: auto !important;
     max-width: 82.5rem !important;
     .entry-title {
-      font-size: clamp(var(--min), var(--val), var(--max)) !important;
-      --min: 1rem !important;
-      --val: 4.3vw !important;
-      --max: 3rem !important;
+      font-size: clamp(var(--min), var(--val), var(--max))!important;
+      --min: 1rem!important;
+      --val: 4.3vw!important;
+      --max: 3rem!important;
     }
   }
 }
@@ -90,7 +90,7 @@
     .entry-title {
       font-size: clamp(var(--min), var(--val), var(--max)) !important;
       --min: 1rem !important;
-      --val: 8vw !important;
+      --val: 5.5vw !important;
       --max: 3rem !important;
     }
     .entry-content {

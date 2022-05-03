@@ -85,7 +85,7 @@
       .entry-title {
         font-size: clamp(var(--min), var(--val), var(--max)) !important;
         --min: 1rem !important;
-        --val: 8vw !important;
+        --val: 5.5vw !important;
         --max: 3rem !important;
       }
       .entry-header {

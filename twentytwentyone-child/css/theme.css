@@ -14633,15 +14633,15 @@ body a {
   cursor: pointer;
   display: inline;
 }
-body a.um-user-bookmarks-button .um-user-bookmarks-add-button {
-  color: #d00019;
-  font-family: "ROBOTOBOLD";
-  margin: 1rem;
+body .um-clear a.um-user-bookmarks-button.um-user-bookmarks-add-button {
+  color: #d00019 !important;
+  font-family: "ROBOTOBOLD" !important;
+  margin: 1rem !important;
 }
-body .rmp-rating-widget .rmp-icon--ratings {
-  font-size: 1.7rem !important;
+body .rmp-rating-widget.rmp-icon--ratings {
+  font-size: 1.7rem;
 }
-body .rmp-rating-widget .rmp-icon--processing-rating {
+body .rmp-rating-widget.rmp-icon--processing-rating {
   color: #d00019;
 }
 body .rmp-btn {
@@ -15109,9 +15109,6 @@ figure.woocommerce-product-gallery__wrapper {
   justify-self: center;
   border-top: 1px solid #212529;
 }
-.widget-area a {
-  color: white;
-}
 
 .widget {
   font-family: "RobotoMedium";
@@ -15397,6 +15394,7 @@ label {
   --global--font-size-page-title: none !important;
   --entry-content--font-family: none !important;
   --global--font-size-lg: none !important;
+  --footer--color-link: white !important;
   --text-multiplier: 1;
 }
 :root h1, :root .h1 {
@@ -17983,6 +17981,11 @@ article#post-3 h3, article#post-3 .h3 {
   margin-left: auto;
   max-width: 1320px;
 }
+.edition-container .um-clear a.um-user-bookmarks-button.um-user-bookmarks-add-button {
+  color: #d00019 !important;
+  font-family: "ROBOTOBOLD" !important;
+  margin: 1rem !important;
+}
 .edition-container #edition-title {
   text-transform: uppercase;
   margin: 0rem !important;
@@ -18502,6 +18505,11 @@ ul.hs.full::-webkit-scrollbar {
   font-family: "RobotoMedium";
   text-transform: uppercase;
 }
+.single-container .um-clear a.um-user-bookmarks-button.um-user-bookmarks-add-button {
+  color: #d00019 !important;
+  font-family: "ROBOTOBOLD" !important;
+  margin: 1rem !important;
+}
 .single-container #single-infos {
   padding: 1rem;
 }
@@ -18748,6 +18756,11 @@ ul.hs.full::-webkit-scrollbar {
   min-width: 5rem !important;
   width: 10rem !important;
 }
+.movies-container .movies-bar .searchandfilter select.sf-input-text {
+  min-width: 5rem !important;
+  width: 10rem !important;
+  color: black;
+}
 .movies-container .movies-bar select {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
@@ -18907,11 +18920,23 @@ ul.hs.full::-webkit-scrollbar {
     --val: 1.2vw;
     --max: 2rem;
   }
+  .movies-container .movies-bar .sf-input-text {
+    width: 10rem;
+    min-width: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
   .movies-container .movies-bar .searchandfilter {
     align-self: center;
     padding-bottom: 0.5rem;
   }
   .movies-container .movies-bar .searchandfilter select.sf-input-select {
+    min-width: 5rem !important;
+    width: 9rem !important;
+  }
+  .movies-container .movies-bar .searchandfilter select.sf-input-text {
     min-width: 5rem !important;
     width: 9rem !important;
   }
@@ -18955,11 +18980,23 @@ ul.hs.full::-webkit-scrollbar {
     --val: 1.2vw;
     --max: 2rem;
   }
+  .movies-container .movies-bar .sf-input-text {
+    width: 10rem;
+    min-width: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
   .movies-container .movies-bar .searchandfilter {
     align-self: center;
     padding-bottom: 0.5rem;
   }
   .movies-container .movies-bar .searchandfilter select.sf-input-select {
+    min-width: 5rem !important;
+    width: 7rem !important;
+  }
+  .movies-container .movies-bar .searchandfilter select.sf-input-text {
     min-width: 5rem !important;
     width: 7rem !important;
   }
@@ -19008,6 +19045,14 @@ ul.hs.full::-webkit-scrollbar {
     padding-left: 0rem !important;
   }
   .movies-container .movies-bar .sf-input-select {
+    width: 10rem;
+    min-width: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
+  .movies-container .movies-bar .sf-input-text {
     width: 10rem;
     min-width: 0px;
     font-size: clamp(var(--min), var(--val), var(--max));
@@ -19070,11 +19115,22 @@ ul.hs.full::-webkit-scrollbar {
     --val: 1.2vw;
     --max: 2rem;
   }
+  .movies-container .movies-bar .sf-input-text {
+    min-width: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 1.2vw;
+    --max: 2rem;
+  }
   .movies-container .movies-bar .searchandfilter {
     align-self: center;
     padding-bottom: 0.5rem;
   }
   .movies-container .movies-bar .searchandfilter select.sf-input-select {
+    min-width: 5rem !important;
+    width: 5rem !important;
+  }
+  .movies-container .movies-bar .searchandfilter select.sf-input-text {
     min-width: 5rem !important;
     width: 5rem !important;
   }
@@ -19119,11 +19175,6 @@ ul.hs.full::-webkit-scrollbar {
   .movies-container #mainlist img {
     height: 15rem !important;
     width: 10rem;
-    background-image: url(../images/b17.svg);
-    background-size: 183%;
-    background-position-x: -50%;
-    background-position-y: 103%;
-    background-repeat: no-repeat;
   }
 }
 @media screen and (max-width: 47rem) {
@@ -19204,6 +19255,16 @@ ul.hs.full::-webkit-scrollbar {
     --val: 2.5vw;
     --max: 2rem;
   }
+  .movies-container .movies-bar .sf-input-text {
+    display: grid;
+    align-items: center;
+    border: 0.5em solid #212529;
+    padding: 0.25em 0.25em;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.5rem;
+    --val: 2.5vw;
+    --max: 2rem;
+  }
   .movies-container #mainlist {
     max-width: 1600px;
     margin: 0.5rem;
@@ -19237,11 +19298,7 @@ ul.hs.full::-webkit-scrollbar {
   .movies-container #mainlist img {
     height: 20rem !important;
     width: 15rem;
-    background-image: url(../images/b17.svg);
-    background-size: 183%;
-    background-position-x: -50%;
-    background-position-y: 103%;
-    background-repeat: no-repeat;
+    max-width: unset;
   }
   .movies-container #mainlist .col-md-12 {
     display: flex;
@@ -19867,7 +19924,7 @@ a.um-link-alt {
   #login-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
-    --val: 8vw !important;
+    --val: 5.5vw !important;
     --max: 3rem !important;
   }
   #login-container .entry .entry-header {
@@ -20079,7 +20136,7 @@ a.um-link-alt {
   #account-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
-    --val: 8vw !important;
+    --val: 5.5vw !important;
     --max: 3rem !important;
   }
   #account-container .entry .entry-header {
@@ -20175,7 +20232,7 @@ a.um-link-alt {
   margin-top: 0rem !important;
 }
 #members-container .entry .entry-content .um-directory .um-member-directory-header .um-directory .um-member-directory-header .um-member-directory-header-row .um-member-directory-search-line {
-  width: 100%;
+  width: 100% !important;
 }
 #members-container .entry .entry-content .um-verified {
   color: #be1b17 !important;
@@ -20240,7 +20297,7 @@ a.um-link-alt {
   #members-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
-    --val: 8vw !important;
+    --val: 5.5vw !important;
     --max: 3rem !important;
   }
   #members-container .entry .entry-header {
@@ -20350,7 +20407,7 @@ a.um-link-alt {
   #register-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
-    --val: 8vw !important;
+    --val: 5.5vw !important;
     --max: 3rem !important;
   }
   #register-container .entry .entry-header {
@@ -20606,7 +20663,7 @@ span.title {
   #password-container .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
-    --val: 8vw !important;
+    --val: 5.5vw !important;
     --max: 3rem !important;
   }
   #password-container .entry .entry-header {
@@ -20650,9 +20707,9 @@ span.title {
 }
 .um_groups header .entry-title {
   font-size: clamp(var(--min), var(--val), var(--max)) !important;
-  --min: 1rem !important;
-  --val: 2.4vw !important;
-  --max: 2.8125rem !important;
+  --min: 1rem!important;
+  --val: 2.4vw!important;
+  --max: 2.8125rem!important;
   text-transform: uppercase !important;
   font-family: "RobotoBold" !important;
 }
@@ -20697,9 +20754,9 @@ span.title {
   }
   .um_groups .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
-    --min: 1rem !important;
-    --val: 4.3vw !important;
-    --max: 3rem !important;
+    --min: 1rem!important;
+    --val: 4.3vw!important;
+    --max: 3rem!important;
   }
 }
 @media screen and (max-width: 47rem) and (orientation: portrait) {
@@ -20713,7 +20770,7 @@ span.title {
   .um_groups .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
     --min: 1rem !important;
-    --val: 8vw !important;
+    --val: 5.5vw !important;
     --max: 3rem !important;
   }
   .um_groups .entry-content {
@@ -20785,10 +20842,10 @@ span.title {
   text-align: center;
   text-transform: uppercase;
   padding: 0.5rem;
-  font-size: clamp(var(--min), var(--val), var(--max));
-  --min: 1rem;
-  --val: 1.75vw;
-  --max: 2rem;
+  font-size: clamp(var(--min), var(--val), var(--max)) !important;
+  --min: 1rem!important;
+  --val: 2.4vw!important;
+  --max: 2.8125rem!important;
 }
 
 .post-thumbnail {
@@ -20839,10 +20896,10 @@ span.title {
     max-width: 90%;
   }
   .entry .entry-title {
-    font-size: clamp(var(--min), var(--val), var(--max));
-    --min: 1rem;
-    --val: 2.7vw;
-    --max: 2.8125rem;
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem!important;
+    --val: 4.3vw!important;
+    --max: 3rem!important;
   }
 
   .entry-content {

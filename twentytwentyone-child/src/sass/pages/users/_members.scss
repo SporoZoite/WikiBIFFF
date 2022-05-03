@@ -44,7 +44,7 @@
           .um-member-directory-header
           .um-member-directory-header-row
           .um-member-directory-search-line {
-          width: 100%;
+          width: 100%!important;
         }
       }
       .um-verified {
@@ -117,7 +117,7 @@
       .entry-title {
         font-size: clamp(var(--min), var(--val), var(--max)) !important;
         --min: 1rem !important;
-        --val: 8vw !important;
+        --val: 5.5vw !important;
         --max: 3rem !important;
       }
       .entry-header {

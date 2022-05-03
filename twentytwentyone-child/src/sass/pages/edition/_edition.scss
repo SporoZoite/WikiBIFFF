@@ -8,7 +8,13 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 1320px;
-
+  .um-clear {
+    a.um-user-bookmarks-button.um-user-bookmarks-add-button {
+      color: #d00019 !important;
+      font-family: "ROBOTOBOLD" !important;
+      margin: 1rem !important;
+    }
+  }
   #edition-title {
     text-transform: uppercase;
     margin: 0rem !important;

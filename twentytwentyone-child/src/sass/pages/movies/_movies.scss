@@ -64,6 +64,11 @@
       min-width: 5rem !important;
       width: 10rem !important;
     }
+    .searchandfilter select.sf-input-text {
+      min-width: 5rem !important;
+      width: 10rem !important;
+      color: black;
+    }
 
     select {
       -webkit-appearance: none !important;
@@ -230,11 +235,23 @@
         --val: 1.2vw;
         --max: 2rem;
       }
+      .sf-input-text {
+        width: 10rem;
+        min-width: 0px;
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.2vw;
+        --max: 2rem;
+      }
       .searchandfilter {
         align-self: center;
         padding-bottom: 0.5rem;
       }
       .searchandfilter select.sf-input-select {
+        min-width: 5rem !important;
+        width: 9rem !important;
+      }
+      .searchandfilter select.sf-input-text {
         min-width: 5rem !important;
         width: 9rem !important;
       }
@@ -284,11 +301,23 @@
         --val: 1.2vw;
         --max: 2rem;
       }
+      .sf-input-text {
+        width: 10rem;
+        min-width: 0px;
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.2vw;
+        --max: 2rem;
+      }
       .searchandfilter {
         align-self: center;
         padding-bottom: 0.5rem;
       }
       .searchandfilter select.sf-input-select {
+        min-width: 5rem !important;
+        width: 7rem !important;
+      }
+      .searchandfilter select.sf-input-text {
         min-width: 5rem !important;
         width: 7rem !important;
       }
@@ -343,6 +372,14 @@
         padding-left: 0rem !important;
       }
       .sf-input-select {
+        width: 10rem;
+        min-width: 0px;
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.2vw;
+        --max: 2rem;
+      }
+      .sf-input-text {
         width: 10rem;
         min-width: 0px;
         font-size: clamp(var(--min), var(--val), var(--max));
@@ -411,11 +448,22 @@
         --val: 1.2vw;
         --max: 2rem;
       }
+      .sf-input-text {
+        min-width: 0px;
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.2vw;
+        --max: 2rem;
+      }
       .searchandfilter {
         align-self: center;
         padding-bottom: 0.5rem;
       }
       .searchandfilter select.sf-input-select {
+        min-width: 5rem !important;
+        width: 5rem !important;
+      }
+      .searchandfilter select.sf-input-text {
         min-width: 5rem !important;
         width: 5rem !important;
       }
@@ -463,11 +511,6 @@
       img {
         height: 15rem !important;
         width: 10rem;
-        background-image: url(../images/b17.svg);
-        background-size: 183%;
-        background-position-x: -50%;
-        background-position-y: 103%;
-        background-repeat: no-repeat;
       }
     }
   }
@@ -551,6 +594,16 @@
         --val: 2.5vw;
         --max: 2rem;
       }
+      .sf-input-text {
+        display: grid;
+        align-items: center;
+        border: 0.5em solid #212529;
+        padding: 0.25em 0.25em;
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 2.5vw;
+        --max: 2rem;
+      }
     }
     #mainlist {
       max-width: 1600px;
@@ -586,11 +639,7 @@
       img {
         height: 20rem !important;
         width: 15rem;
-        background-image: url(../images/b17.svg);
-        background-size: 183%;
-        background-position-x: -50%;
-        background-position-y: 103%;
-        background-repeat: no-repeat;
+        max-width: unset;
       }
       .col-md-12 {
         display: flex;

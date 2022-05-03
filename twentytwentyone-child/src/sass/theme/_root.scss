@@ -24,6 +24,7 @@
   --global--font-size-page-title: none !important;
   --entry-content--font-family: none !important;
   --global--font-size-lg: none !important;
+  --footer--color-link: white !important;
   h1 {
     margin: 0px;
     font-size: clamp(var(--min), var(--val), var(--max));

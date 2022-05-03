@@ -32,10 +32,10 @@
     text-align: center;
     text-transform: uppercase;
     padding: 0.5rem;
-    font-size: clamp(var(--min), var(--val), var(--max));
-    --min: 1rem;
-    --val: 1.75vw;
-    --max: 2rem;
+     font-size: clamp(var(--min), var(--val), var(--max))!important;
+      --min: 1rem!important;
+      --val: 2.4vw!important;
+      --max: 2.8125rem!important;
   }
 }
 
@@ -87,10 +87,10 @@
   .entry {
     max-width: 90%;
     .entry-title {
-      font-size: clamp(var(--min), var(--val), var(--max));
-      --min: 1rem;
-      --val: 2.7vw;
-      --max: 2.8125rem;
+      font-size: clamp(var(--min), var(--val), var(--max))!important;
+      --min: 1rem!important;
+      --val: 4.3vw!important;
+      --max: 3rem!important;
     }
   }
 

@@ -41,6 +41,13 @@
     font-family: "RobotoMedium";
     text-transform: uppercase;
   }
+  .um-clear {
+    a.um-user-bookmarks-button.um-user-bookmarks-add-button {
+      color: #d00019 !important;
+      font-family: "ROBOTOBOLD" !important;
+      margin: 1rem !important;
+    }
+  }
   #single-infos {
     padding: 1rem;
   }
