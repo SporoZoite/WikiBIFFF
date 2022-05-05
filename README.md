@@ -3,7 +3,10 @@
  /!\dernière update = 3 mai/!\ <br>
  <br>
  
- + Remplacer fichiers "src" "css" et "js" <br>
+ + Mises à jour css => remplacer fichiers "src" "css" et "js" <br>
+ + Mise en place des premiers  customs fields => remplacer ficher "home.php"<br>
+ + Ajout des images du audience quotes guide => remplacer fichier "images"<br>
+ + Mise en page du audience quotes guide => remplacer fichier "audience-quotes-guide.php" <br>
 
  
 
