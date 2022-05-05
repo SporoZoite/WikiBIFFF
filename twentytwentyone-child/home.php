@@ -38,13 +38,8 @@
          <img class="home-second-picture" src="<?php echo get_stylesheet_directory_uri(); ?>/images/tentacles.png" alt="tentacles">
          <div class="home-second-right">
          <h3 class="home-second-title">Join us for the next BIFFF festival</h3>
-         <p class="home-second-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-             sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-             sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-             Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-             invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-         </p>
+         <p class="home-second-text"> <?php echo get_post_meta($post->ID, 'next_bifff_festival', true); ?>
+        </p>
         <button onclick="window.location.href='http://www.bifff.net/';" class="home-second-button">MORE INFOS</button>
         </div>
     </div>
@@ -54,11 +49,7 @@
     <div class="home-third">
         <div class="home-third-section">
            <h3 class="home-third-title">Become a guild member!</h3>
-           <p class="home-third-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-             sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-             sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-             Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+           <p class="home-third-text"><?php echo get_post_meta($post->ID, 'become_a_guild_member', true); ?>
            </p>
            <button onclick="window.location.href='http://www.bifff.net/';" class="home-third-button">JOIN THE GUILD</button>
         </div>

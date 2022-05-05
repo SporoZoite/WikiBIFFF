@@ -15935,8 +15935,40 @@ article#post-3 h3, article#post-3 .h3 {
   }
 }
 .quotes-container {
-  padding: 2rem;
   min-height: 32vh;
+  width: 98%;
+  margin: 2rem auto;
+}
+.quotes-container p {
+  margin: 0px;
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.2rem;
+  --val: 1.25vw;
+  --max: 1.125rem;
+  font-family: "RobotoMedium";
+  line-height: 2rem !important;
+}
+.quotes-container ul {
+  margin: 1rem;
+}
+.quotes-container ul li {
+  margin: 1rem;
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.2rem;
+  --val: 1.25vw;
+  --max: 1.125rem;
+  font-family: "RobotoMedium";
+  list-style: square;
+}
+.quotes-container blockquote p {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.2rem;
+  --val: 2.5vw;
+  --max: 2vw;
+  font-family: "RobotoBold";
+  text-align: inherit !important;
+  margin: 1rem;
+  margin-top: 2rem;
 }
 .quotes-container .quotes-text {
   width: 95%;
@@ -15944,16 +15976,146 @@ article#post-3 h3, article#post-3 .h3 {
   border: 5px solid #be1b17;
   padding: 1rem;
 }
-.quotes-container .quotes-list {
+.quotes-container .quotes-text .text-center {
+  text-align: center !important;
+}
+.quotes-container .quotes-text .text-below {
+  margin-top: 1rem;
+}
+.quotes-container .quotes-text .text-title {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.2rem;
+  --val: 2.5vw;
+  --max: 1.8vw;
+}
+.quotes-container .quotes-text .quote-list {
+  background-color: #272727;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.quotes-container .quotes-text .welcome {
+  background-color: #272727;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.quotes-container .quotes-quotes {
+  margin: 3rem auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.quotes-container .quotes-quotes .quotes-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0rem;
+}
+.quotes-container .quotes-quotes .quotes-quote .quote-image {
+  max-width: 100%;
+}
+.quotes-container .quotes-quotes .quotes-quote .quote-image .quote-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.quotes-container .quotes-quotes .quotes-quote .quote-text {
+  margin: 1rem;
+  padding: 1rem;
+  border: 3px solid #be1b17;
+  max-width: 55%;
+  text-align: left !important;
+}
+.quotes-container .quotes-quotes .other-quotes {
+  margin: 1rem;
+}
+.quotes-container .quotes-quotes .other-quotes .other-quotes-title h5, .quotes-container .quotes-quotes .other-quotes .other-quotes-title .h5 {
   margin: auto;
   width: 90%;
-  margin-top: 2rem;
-  text-transform: uppercase;
-  font-family: "RobotoBold";
-  color: #be1b17;
-  font-size: xx-large;
+}
+.quotes-container .quotes-quotes .other-quotes .quotes-list {
+  margin: auto;
+  width: 90%;
+  font-family: "RobotoMedium";
+}
+.quotes-container .quotes-quotes .other-quotes .quotes-list ul {
+  margin: 1rem;
+  padding: 1rem;
+  border: 3px solid #9c0b0b;
 }
 
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .quotes-container p {
+    margin: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.2rem;
+    --val: 1.8vw;
+    --max: 1.125rem;
+    line-height: 1.5rem !important;
+  }
+  .quotes-container ul li {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.2rem;
+    --val: 1.8vw;
+    --max: 1.125rem;
+  }
+  .quotes-container blockquote p {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.2rem;
+    --val: 2.5vw;
+    --max: 3vw;
+    margin: 1rem;
+    margin-top: 2rem;
+  }
+  .quotes-container .quotes-text .text-title {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.2rem;
+    --val: 2.5vw;
+    --max: 2.2vw;
+  }
+  .quotes-container .quotes-quotes .quotes-quote {
+    flex-direction: column;
+  }
+  .quotes-container .quotes-quotes .quotes-quote .quote-image {
+    max-width: 100%;
+  }
+  .quotes-container .quotes-quotes .quotes-quote .quote-text {
+    max-width: 100%;
+  }
+  .quotes-container .quotes-quotes .other-quotes .quotes-list ul {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 47rem) {
+  .quotes-container p {
+    font-size: 14px;
+    line-height: 1.5rem !important;
+  }
+  .quotes-container ul li {
+    font-size: 14px;
+  }
+  .quotes-container blockquote p {
+    font-size: 19px;
+    margin: 1rem;
+    margin-top: 2rem;
+  }
+  .quotes-container .quotes-text .text-title {
+    font-size: 16px;
+  }
+  .quotes-container .quotes-quotes .quotes-quote {
+    flex-direction: column;
+  }
+  .quotes-container .quotes-quotes .quotes-quote .quote-image {
+    max-width: 100%;
+  }
+  .quotes-container .quotes-quotes .quotes-quote .quote-text {
+    max-width: 100%;
+  }
+  .quotes-container .quotes-quotes .other-quotes .quotes-list ul {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
 .contact-container {
   width: 100% !important;
   padding: 0rem 1rem !important;
@@ -20306,9 +20468,9 @@ a.um-link-alt {
   #members-container .entry .entry-content {
     color: white !important;
     width: 100% !important;
-    padding: 1.5rem !important;
+    padding: 1rem !important;
     margin: auto !important;
-    margin-top: 2rem !important;
+    margin-top: 1rem !important;
     margin-bottom: 2rem !important;
     max-width: 85% !important;
     font-family: "RobotoBold" !important;
@@ -20317,6 +20479,18 @@ a.um-link-alt {
   #members-container .entry .entry-content .um-directory .um-member-directory-header {
     margin-right: 1rem !important;
     margin-left: 1rem !important;
+  }
+  #members-container .entry .entry-content .um-groups-directory .um-group-item .actions ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #members-container .entry .entry-content .um-groups-directory .um-group-item .actions ul li {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  #members-container .entry .entry-content .um-groups-directory .um-group-item a .um-group-image {
+    max-width: 100% !important;
   }
   #members-container .entry .entry-footer {
     padding: 0rem 0rem !important;
