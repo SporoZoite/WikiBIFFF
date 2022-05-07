@@ -64,7 +64,7 @@
       min-width: 5rem !important;
       width: 10rem !important;
     }
-    .searchandfilter select.sf-input-text {
+    .sf-input-text {
       min-width: 5rem !important;
       width: 10rem !important;
       color: black;
@@ -166,6 +166,7 @@
     color: black;
     font-family: "RobotoBold";
     text-transform: uppercase;
+    min-height: 29vh;
     .search-filter-results {
       margin: 1rem;
     }
@@ -251,7 +252,7 @@
         min-width: 5rem !important;
         width: 9rem !important;
       }
-      .searchandfilter select.sf-input-text {
+      .sf-input-text {
         min-width: 5rem !important;
         width: 9rem !important;
       }
@@ -317,7 +318,7 @@
         min-width: 5rem !important;
         width: 7rem !important;
       }
-      .searchandfilter select.sf-input-text {
+      .sf-input-text {
         min-width: 5rem !important;
         width: 7rem !important;
       }
@@ -442,14 +443,16 @@
         padding-left: 0rem !important;
       }
       .sf-input-select {
-        min-width: 0px;
+        min-width: 5rem !important;
+        width: 5rem !important;
         font-size: clamp(var(--min), var(--val), var(--max));
         --min: 0.5rem;
         --val: 1.2vw;
         --max: 2rem;
       }
       .sf-input-text {
-        min-width: 0px;
+        min-width: 5rem !important;
+        width: 5rem !important;
         font-size: clamp(var(--min), var(--val), var(--max));
         --min: 0.5rem;
         --val: 1.2vw;
@@ -458,14 +461,6 @@
       .searchandfilter {
         align-self: center;
         padding-bottom: 0.5rem;
-      }
-      .searchandfilter select.sf-input-select {
-        min-width: 5rem !important;
-        width: 5rem !important;
-      }
-      .searchandfilter select.sf-input-text {
-        min-width: 5rem !important;
-        width: 5rem !important;
       }
 
       input {

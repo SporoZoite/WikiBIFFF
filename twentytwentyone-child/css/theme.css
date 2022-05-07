@@ -16311,7 +16311,7 @@ article#post-3 h3, article#post-3 .h3 {
 .home-right .home-right-middle .home-right-button {
   background-color: #D00019;
   border-radius: 0.4rem;
-  width: 34%;
+  width: 40%;
   height: 38%;
   max-width: 100%;
   color: white;
@@ -16496,7 +16496,7 @@ article#post-3 h3, article#post-3 .h3 {
   font-family: "RobotoBold";
   background-color: #272727;
   border-radius: 0.625rem;
-  width: 17%;
+  width: 20%;
   height: 17%;
   max-width: 100%;
   color: #D00019;
@@ -18918,7 +18918,7 @@ ul.hs.full::-webkit-scrollbar {
   min-width: 5rem !important;
   width: 10rem !important;
 }
-.movies-container .movies-bar .searchandfilter select.sf-input-text {
+.movies-container .movies-bar .sf-input-text {
   min-width: 5rem !important;
   width: 10rem !important;
   color: black;
@@ -19016,6 +19016,7 @@ ul.hs.full::-webkit-scrollbar {
   color: black;
   font-family: "RobotoBold";
   text-transform: uppercase;
+  min-height: 29vh;
 }
 .movies-container #mainlist .search-filter-results {
   margin: 1rem;
@@ -19098,7 +19099,7 @@ ul.hs.full::-webkit-scrollbar {
     min-width: 5rem !important;
     width: 9rem !important;
   }
-  .movies-container .movies-bar .searchandfilter select.sf-input-text {
+  .movies-container .movies-bar .sf-input-text {
     min-width: 5rem !important;
     width: 9rem !important;
   }
@@ -19158,7 +19159,7 @@ ul.hs.full::-webkit-scrollbar {
     min-width: 5rem !important;
     width: 7rem !important;
   }
-  .movies-container .movies-bar .searchandfilter select.sf-input-text {
+  .movies-container .movies-bar .sf-input-text {
     min-width: 5rem !important;
     width: 7rem !important;
   }
@@ -19271,14 +19272,16 @@ ul.hs.full::-webkit-scrollbar {
     padding-left: 0rem !important;
   }
   .movies-container .movies-bar .sf-input-select {
-    min-width: 0px;
+    min-width: 5rem !important;
+    width: 5rem !important;
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
     --val: 1.2vw;
     --max: 2rem;
   }
   .movies-container .movies-bar .sf-input-text {
-    min-width: 0px;
+    min-width: 5rem !important;
+    width: 5rem !important;
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
     --val: 1.2vw;
@@ -19287,14 +19290,6 @@ ul.hs.full::-webkit-scrollbar {
   .movies-container .movies-bar .searchandfilter {
     align-self: center;
     padding-bottom: 0.5rem;
-  }
-  .movies-container .movies-bar .searchandfilter select.sf-input-select {
-    min-width: 5rem !important;
-    width: 5rem !important;
-  }
-  .movies-container .movies-bar .searchandfilter select.sf-input-text {
-    min-width: 5rem !important;
-    width: 5rem !important;
   }
   .movies-container .movies-bar input {
     padding: 0.25em 0.8em;
