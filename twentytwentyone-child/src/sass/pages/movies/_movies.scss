@@ -67,7 +67,7 @@
     .sf-input-text {
       min-width: 5rem !important;
       width: 10rem !important;
-      color: black;
+      color: black !important;
     }
 
     select {
@@ -598,6 +598,9 @@
         --min: 0.5rem;
         --val: 2.5vw;
         --max: 2rem;
+        min-width: 5rem !important;
+        width: 10rem !important;
+        color: black !important;
       }
     }
     #mainlist {

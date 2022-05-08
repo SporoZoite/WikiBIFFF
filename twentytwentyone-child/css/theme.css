@@ -16368,6 +16368,8 @@ article#post-3 h3, article#post-3 .h3 {
   max-width: 100%;
   max-height: 100%;
   height: 3rem;
+  padding-left: 3rem;
+  color: black;
 }
 .home-right .home-right-search .search-form > label {
   font-size: 0px;
@@ -18921,7 +18923,7 @@ ul.hs.full::-webkit-scrollbar {
 .movies-container .movies-bar .sf-input-text {
   min-width: 5rem !important;
   width: 10rem !important;
-  color: black;
+  color: black !important;
 }
 .movies-container .movies-bar select {
   -webkit-appearance: none !important;
@@ -19421,6 +19423,9 @@ ul.hs.full::-webkit-scrollbar {
     --min: 0.5rem;
     --val: 2.5vw;
     --max: 2rem;
+    min-width: 5rem !important;
+    width: 10rem !important;
+    color: black !important;
   }
   .movies-container #mainlist {
     max-width: 1600px;
