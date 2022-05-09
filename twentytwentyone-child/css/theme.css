@@ -14664,6 +14664,11 @@ body .rmp-btn {
     min-height: 20vh;
   }
 }
+/* hide caption */
+figcaption.wp-caption-text {
+  display: none;
+}
+
 .bg-light,
 .bg-light a {
   color: #000;

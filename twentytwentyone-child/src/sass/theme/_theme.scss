@@ -59,6 +59,11 @@ body {
   }
 }
 
+/* hide caption */
+figcaption.wp-caption-text {
+	display:none;
+}
+
 .bg-light,
 .bg-light a {
   color: #000;
