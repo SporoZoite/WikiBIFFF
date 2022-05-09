@@ -1,7 +1,7 @@
 @media screen and (max-width: 47rem) {
   .edition-container {
-    padding-top: 3rem!important;
-    padding:1rem;
+    padding-top: 3rem !important;
+    padding: 1rem;
     .mb-3.rounded.bg-light {
       margin-left: 1rem;
       margin-right: 1rem;
@@ -60,7 +60,7 @@
       h5 {
         font-size: clamp(var(--min), var(--val), var(--max));
         --min: 0.4rem;
-        --val: 2.7vw;
+        --val: 4.7vw;
         --max: 2rem;
       }
     }

@@ -15943,6 +15943,7 @@ article#post-3 h3, article#post-3 .h3 {
   min-height: 32vh;
   width: 98%;
   margin: 2rem auto;
+  margin-bottom: 2rem !important;
 }
 .quotes-container p {
   margin: 0px;
@@ -18606,7 +18607,7 @@ ul.hs.full::-webkit-scrollbar {
   #edition-movies .card-body h5, #edition-movies .card-body .h5 {
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.4rem;
-    --val: 2.7vw;
+    --val: 4.7vw;
     --max: 2rem;
   }
   #edition-movies .event-div {
@@ -21146,8 +21147,7 @@ span.title {
   --max: 2.8125rem;
 }
 .top10-container a.um-button.um-alt {
-  margin: 1rem 5rem !important;
-  width: 10rem;
+  margin: 1rem 5rem 1rem 0rem !important;
   float: right;
   font-family: "RobotoBold";
   text-transform: uppercase !important;
@@ -21185,7 +21185,7 @@ span.title {
     --max: 3rem;
   }
   .top10-container a.um-button.um-alt {
-    margin: 1rem 2rem !important;
+    margin: 1rem 2rem 1rem 0rem !important;
     margin-left: 0rem !important;
   }
   .top10-container .title-autor {
@@ -21224,7 +21224,7 @@ span.title {
     margin-bottom: 1rem;
   }
   .top10-container a.um-button.um-alt {
-    margin: 1rem 2rem !important;
+    margin: 1rem 2rem 1rem 0rem !important;
     width: 6rem;
   }
 }
