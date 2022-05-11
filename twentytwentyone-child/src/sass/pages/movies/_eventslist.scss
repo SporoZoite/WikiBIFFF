@@ -62,7 +62,12 @@
       min-width: 5rem !important;
       width: 10rem !important;
     }
-
+    .searchandfilter
+      .sf-field-taxonomy-jury_participation
+      select.sf-input-select {
+      min-width: 5rem !important;
+      width: 10rem !important;
+    }
     select {
       -webkit-appearance: none !important;
       -moz-appearance: none !important;
@@ -113,6 +118,39 @@
         left: 80%;
       }
     }
+    .sf-input-text {
+      display: grid;
+      grid-template-areas: "sf-input-select";
+      align-items: center;
+      position: relative;
+      select,
+      &::after {
+        grid-area: sf-input-select;
+      }
+      border: 0.4em solid $rouge;
+      padding: 0.3em 0.75em;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.5rem;
+      --val: 0.8vw;
+      --max: 2rem;
+      cursor: pointer;
+      line-height: 1.1;
+      background-color: white;
+      color: black;
+      margin: 0rem;
+      &::after {
+        content: "▼";
+        justify-self: center;
+        align-self: center;
+        padding: 1em;
+        background-color: #d00019;
+        transition: 0.25s all ease;
+        pointer-events: none;
+        position: absolute;
+        left: 80%;
+      }
+    }
+
     select:focus + .focus {
       position: absolute;
       top: -1px;
@@ -137,7 +175,7 @@
     }
     img {
       min-width: 100%;
-      min-height:10rem;
+      min-height: 10rem;
       background-color: #212529;
       background-image: url(../images/b17.svg);
       background-size: 183%;
@@ -206,11 +244,25 @@
         --val: 1.2vw;
         --max: 2rem;
       }
+      .sf-input-text {
+        width: 10rem;
+        min-width: 0px;
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.2vw;
+        --max: 2rem;
+      }
       .searchandfilter {
         align-self: center;
         padding-bottom: 0.5rem;
       }
       .searchandfilter select.sf-input-select {
+        min-width: 5rem !important;
+        width: 9rem !important;
+      }
+      .searchandfilter
+        .sf-field-taxonomy-jury_participation
+        select.sf-input-select {
         min-width: 5rem !important;
         width: 9rem !important;
       }
@@ -255,11 +307,25 @@
         --val: 1.2vw;
         --max: 2rem;
       }
+      .sf-input-text {
+        width: 10rem;
+        min-width: 0px;
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.2vw;
+        --max: 2rem;
+      }
       .searchandfilter {
         align-self: center;
         padding-bottom: 0.5rem;
       }
       .searchandfilter select.sf-input-select {
+        min-width: 5rem !important;
+        width: 7rem !important;
+      }
+      .searchandfilter
+        .sf-field-taxonomy-jury_participation
+        select.sf-input-select {
         min-width: 5rem !important;
         width: 7rem !important;
       }
@@ -309,6 +375,14 @@
         padding-left: 0rem !important;
       }
       .sf-input-select {
+        width: 10rem;
+        min-width: 0px;
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.2vw;
+        --max: 2rem;
+      }
+      .sf-input-text {
         width: 10rem;
         min-width: 0px;
         font-size: clamp(var(--min), var(--val), var(--max));
@@ -380,11 +454,25 @@
         --val: 1.2vw;
         --max: 2rem;
       }
+      .sf-input-text {
+        min-width: 5rem !important;
+        width: 5rem !important;
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 1.2vw;
+        --max: 2rem;
+      }
       .searchandfilter {
         align-self: center;
         padding-bottom: 0.5rem;
       }
       .searchandfilter select.sf-input-select {
+        min-width: 5rem !important;
+        width: 5rem !important;
+      }
+      .searchandfilter
+        .sf-field-taxonomy-jury_participation
+        select.sf-input-select {
         min-width: 5rem !important;
         width: 5rem !important;
       }
@@ -487,6 +575,19 @@
         --min: 0.5rem;
         --val: 2.5vw;
         --max: 2rem;
+      }
+      .sf-input-text {
+        display: grid;
+        align-items: center;
+        border: 0.5em solid #212529;
+        padding: 0.25em 0.25em;
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.5rem;
+        --val: 2.5vw;
+        --max: 2rem;
+        min-width: 5rem !important;
+        width: 10rem !important;
+        color: black !important;
       }
     }
     #eventslist {
