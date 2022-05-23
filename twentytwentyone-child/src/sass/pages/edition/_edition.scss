@@ -117,9 +117,43 @@ ul {
   display: none;
 }
 
-ul.hs.full::-webkit-scrollbar {
-  display: none;
+ul.hs.full {
+  --show-double-buttons: none;
+  --scrollbar-border-thickness: 0px;
+  --scrollbar-width: 10px;
+  --scrollbar-height: 10px;
+  --scrollbar-track-color: transparent;
+  --scrollbar-button-color: #9c0b0b;
+  --scrollbar-thumb-color: #9c0b0b;
+  --scrollbar-border-color: #ffffff00;
+  --scrollbar-corner-color: #ffffff00;
 }
+ul.hs.full::-webkit-scrollbar {
+  width: var(--scrollbar-width, 10px);
+  height: var(--scrollbar-height, 10px);
+}
+ul.hs.full::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color, #9c0b0b);
+    border: var(--scrollbar-border-thickness, 3px) solid
+    var(--scrollbar-border-color, none);
+  border-radius: var(--scrollbar-border-radius, 0px);
+}
+ul.hs.full::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color, transparent);
+}
+ul.hs.full::-webkit-scrollbar-corner {
+  background: var(--scrollbar-corner-color, none);
+  border: var(--scrollbar-border-thickness, 0px) solid
+    var(--scrollbar-border-color, none);
+  border-radius: var(--scrollbar-border-radius, 0px);
+}
+ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
+#preview::-webkit-scrollbar-button:vertical:end:decrement,
+#preview::-webkit-scrollbar-button:horizontal:start:increment,
+#preview::-webkit-scrollbar-button:horizontal:end:decrement {
+  display: var(--show-double-buttons, none);
+}
+
 
 .hs {
   display: grid;
