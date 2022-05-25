@@ -1,9 +1,11 @@
  /!\LAST ADD/!\ <br>
  <br>
- /!\dernière update = 11 mai/!\ <br>
+ /!\dernière update = 24 mai/!\ <br>
  <br>
  
  + Mises à jour css => remplacer fichiers "src" "css" et "js" <br>
+ + corrections audience quotes guide => remplacer fichier "audience-quotes-guide.php <br>
+ + correction highlights poster passe devant le titre => remplacer fichier "edition-entête.php" <br>
 
 
  
