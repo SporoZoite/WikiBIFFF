@@ -5,7 +5,42 @@
  
  + Mises à jour css => remplacer fichiers "src" "css" et "js" <br>
  + corrections audience quotes guide => remplacer fichier "audience-quotes-guide.php <br>
- + correction highlights poster passe devant le titre => remplacer fichier "edition-entête.php" <br>
+ + correction highlights poster passe devant le titre =>   dans fichier "edition-entête.php" remplacer partie : <br>
+ 
+   <div><a name="edprize"></a><h3>COMPETITION WINNERS</h3></div>
+
+    <div class="channel">
+        <div class="app">
+	        <ul class="hs full">
+                <?php foreach ($winner_mv as $mv):
+	                $imgurl=get_the_post_thumbnail_url($mv);
+	                if ($imgurl){ ?>
+						<li class="item" style="background-color:#d60606;height:25rem;">
+                        <a href="<?php echo get_permalink($mv); ?>">
+                        	<img src="<?php echo get_the_post_thumbnail_url($mv); ?>" style="height:18.75rem;" title="<?php echo get_the_title($mv); ?>" alt="<?php echo get_the_title($mv); ?>"/>
+                        </a>
+                        <?php
+	                    	echo "<h5 style=\"padding:0.2rem;text-align:center;float: left;margin-top: -1.875rem;background-color: #212529;width: 100%;height: 3.125rem;font-size:1rem;border-radius:0.25em;z-index:2;\">".$mv->lineprice."</h5>";	                        
+	                    ?>
+                        
+                        <?php
+	                        } else {                        
+	                    ?>                
+						<li class="item" style="background-color:#d60606;height:25rem;">
+						<h5><a href="<?php echo get_permalink($mv); ?>"><?php echo get_the_title($mv); ?></a></h5>
+						<h5 style="padding:0.2rem;text-align:center;float: left;background-color: #212529;width: 100%;height: 3.125rem;font-size:1rem;border-radius:0.25em;"><?php echo $mv->lineprice; ?></h5>
+						<?php 
+							}
+							?>
+						</li>
+                <?php endforeach; ?>
+			</ul>
+		</div>
+    </div> 
+    
+    <br>
+    
+  
 
 
  
