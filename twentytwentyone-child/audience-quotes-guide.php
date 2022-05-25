@@ -32,7 +32,7 @@
 
             <div class="quote-text">
               <p> Les invités s'y prêtent souvent en montant sur scène quand le public le leur demande, autrement dit: Tout le temps. <br>
-                 <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;"> TRIVIA :</span> Lors de sa masterclass en 2108, Guillermo Del Toro marque l'histoire du BIFFF en étant accompagné par un groupe d'authentiques mariachis pour sa chanson «Cielito Linde», sur la scène du Ciné 1</p>
+                 <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;"> TRIVIA :</span> Lors de sa masterclass en 2018, Guillermo Del Toro marque l'histoire du BIFFF en étant accompagné par un groupe d'authentiques mariachis pour sa chanson «Cielito Lindo», sur la scène du Ciné 1</p>
             </div>
 
         </div>
@@ -74,7 +74,7 @@
 
             <div class="quote-text">
               <p>(5x "TA") Pas évident à placer: compter 3 secondes après la fin du "WELCOME". <br>
-              Dans un premier temps, contentez vous de répondre à cet appel par la réplique qui suis. <br>
+              Dans un premier temps, contentez vous de répondre à cet appel par la réplique qui suit. <br>
                <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">ORIGINE:</span> Cette réplique prend son origine en 1986 lors de la diffusion du film The Monster in the Closet, un scientifique tente d'amadouer un monstre en jouant cette mélodie au xylophone...en  vain.</p>
             </div>
 

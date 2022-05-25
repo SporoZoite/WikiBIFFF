@@ -22,6 +22,7 @@ body {
     text-decoration: none;
     cursor: pointer;
     display: inline;
+    color: white;
   }
   .um-clear {
     a.um-user-bookmarks-button.um-user-bookmarks-add-button {
@@ -60,7 +61,7 @@ body {
 
 /* hide caption */
 figcaption.wp-caption-text {
-	display:none;
+  display: none;
 }
 
 .bg-light,
@@ -221,4 +222,8 @@ figcaption.wp-caption-text {
 
 a:hover {
   color: $grey;
+}
+
+.cl-element {
+  font-family: "Roboto" !important;
 }

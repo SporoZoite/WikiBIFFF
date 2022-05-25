@@ -259,7 +259,7 @@
                         	<img src="<?php echo get_the_post_thumbnail_url($mv); ?>" style="height:18.75rem;" title="<?php echo get_the_title($mv); ?>" alt="<?php echo get_the_title($mv); ?>"/>
                         </a>
                         <?php
-	                    	echo "<h5 style=\"padding:0.2rem;text-align:center;float: left;margin-top: -1.875rem;background-color: #212529;width: 100%;height: 3.125rem;font-size:1rem;border-radius:0.25em;\">".$mv->lineprice."</h5>";	                        
+	                    	echo "<h5 style=\"padding:0.2rem;text-align:center;float: left;margin-top: -1.875rem;background-color: #212529;width: 100%;height: 3.125rem;font-size:1rem;border-radius:0.25em;z-index:2;\">".$mv->lineprice."</h5>";	                        
 	                    ?>
                         
                         <?php

@@ -8,6 +8,10 @@
   overflow: hidden;
   a {
     color: white;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem;
+    --val: 1vw;
+    --max: 1.125rem;
   }
   a:hover {
     color: #696969;
@@ -27,7 +31,7 @@
     font-family: "RobotoBold";
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 1rem;
-    --val: 2vw;
+    --val: 1vw;
     --max: 1.125rem;
     color: $darkrouge;
     text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
@@ -36,7 +40,7 @@
   .labelContent {
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 1rem;
-    --val: 2vw;
+    --val: 1vw;
     --max: 1.125rem;
     font-family: "RobotoMedium";
     text-transform: uppercase;
@@ -76,5 +80,15 @@
     a {
       padding-left: 0.5rem;
     }
+  }
+}
+
+.um-user-bookmarks-modal-content {
+  color: black !important;
+  a.um-user-bookmarks-cancel-btn {
+    color: #be1b17 !important;
+  }
+  button.um_user_bookmarks_create_folder_btn.um-modal-btn {
+    background-color: #be1b17 !important;
   }
 }

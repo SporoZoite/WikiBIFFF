@@ -95,6 +95,10 @@ a.um-link-alt {
   padding: 0.5rem 1rem !important;
   border-radius: 3px !important;
 }
+span.um-field-checkbox-option {
+    color: white;
+    font-size: 0.8rem!important;
+}
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
   #login-container {

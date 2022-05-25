@@ -2,6 +2,12 @@
   .single-container {
     padding-bottom: 3rem;
     padding-top: 3rem !important;
+    a {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.8rem;
+      --val: 2vw;
+      --max: 1.125rem;
+    }
     p {
       margin-bottom: 2rem;
       margin: 1rem 1rem;

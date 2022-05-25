@@ -126,6 +126,9 @@
     font-family: "RobotoBold" !important;
   }
 }
+i.um-verified.um-icon-checkmark-circled.um-tip-s {
+  color: green !important;
+}
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
   #account-container {
@@ -148,7 +151,7 @@
         padding: 0rem 4rem !important;
       }
       .entry-footer-default-max-width {
-        text-align: end!important;
+        text-align: end !important;
       }
     }
   }
@@ -205,7 +208,7 @@
         padding: 0rem 4rem !important;
       }
       .entry-footer-default-max-width {
-        text-align: center!important;
+        text-align: center !important;
       }
     }
   }
@@ -225,8 +228,8 @@
     margin: auto !important;
     padding: 1rem !important;
     background: #be1b17 !important;
-    border-radius: 3px!important;
-    text-align: center!important;
+    border-radius: 3px !important;
+    text-align: center !important;
   }
   .um-account-main {
     width: 100% !important;

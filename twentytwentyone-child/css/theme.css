@@ -14632,6 +14632,7 @@ body a {
   text-decoration: none;
   cursor: pointer;
   display: inline;
+  color: white;
 }
 body .um-clear a.um-user-bookmarks-button.um-user-bookmarks-add-button {
   color: #d00019 !important;
@@ -14830,6 +14831,10 @@ a:hover {
   color: #212529;
 }
 
+.cl-element {
+  font-family: "Roboto" !important;
+}
+
 .woocommerce-input-wrapper {
   width: 100%;
 }
@@ -14969,6 +14974,9 @@ figure.woocommerce-product-gallery__wrapper {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
   }
+  .site-header .site-branding {
+    width: 14rem;
+  }
 }
 @media only screen and (min-width: 47rem) and (max-width: 62rem) {
   .site-header {
@@ -15106,6 +15114,7 @@ figure.woocommerce-product-gallery__wrapper {
 .footer-wrapper .footer-socials .footer-social {
   justify-self: center;
   width: 50%;
+  cursor: pointer;
 }
 
 .widget-area {
@@ -15186,6 +15195,10 @@ figure.woocommerce-product-gallery__wrapper {
 
 input[type=search] {
   margin: 0px;
+}
+
+input#search-form-1 {
+  padding: 0rem 2rem;
 }
 
 .widget_search > .search-form .search-submit {
@@ -18679,6 +18692,10 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
 }
 .single-container a {
   color: white;
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 1rem;
+  --val: 1vw;
+  --max: 1.125rem;
 }
 .single-container a:hover {
   color: #696969;
@@ -18698,7 +18715,7 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
   font-family: "RobotoBold";
   font-size: clamp(var(--min), var(--val), var(--max));
   --min: 1rem;
-  --val: 2vw;
+  --val: 1vw;
   --max: 1.125rem;
   color: #be1b17;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
@@ -18706,7 +18723,7 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
 .single-container .labelContent {
   font-size: clamp(var(--min), var(--val), var(--max));
   --min: 1rem;
-  --val: 2vw;
+  --val: 1vw;
   --max: 1.125rem;
   font-family: "RobotoMedium";
   text-transform: uppercase;
@@ -18746,10 +18763,26 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
   padding-left: 0.5rem;
 }
 
+.um-user-bookmarks-modal-content {
+  color: black !important;
+}
+.um-user-bookmarks-modal-content a.um-user-bookmarks-cancel-btn {
+  color: #be1b17 !important;
+}
+.um-user-bookmarks-modal-content button.um_user_bookmarks_create_folder_btn.um-modal-btn {
+  background-color: #be1b17 !important;
+}
+
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
   .single-container {
     padding-top: 6rem !important;
     padding-bottom: 5rem;
+  }
+  .single-container a {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.8rem;
+    --val: 2vw;
+    --max: 1.125rem;
   }
   .single-container p {
     margin-bottom: 2rem !important;
@@ -18829,6 +18862,12 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
   .single-container {
     padding-bottom: 3rem;
     padding-top: 3rem !important;
+  }
+  .single-container a {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.8rem;
+    --val: 2vw;
+    --max: 1.125rem;
   }
   .single-container p {
     margin-bottom: 2rem;
@@ -18959,12 +18998,12 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
   padding-left: 0.2em;
 }
 .movies-container .movies-bar .searchandfilter select.sf-input-select {
-  min-width: 5rem !important;
-  width: 10rem !important;
+  min-width: 5rem;
+  width: 10rem;
 }
 .movies-container .movies-bar .sf-input-text {
-  min-width: 5rem !important;
-  width: 10rem !important;
+  min-width: 5rem;
+  width: 10rem;
   color: black !important;
 }
 .movies-container .movies-bar select {
@@ -19099,6 +19138,10 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
   background-repeat: no-repeat;
 }
 
+.results-oneelement-bf {
+  min-width: 24.5rem;
+}
+
 @media screen and (min-width: 80rem) and (max-width: 100rem) and (orientation: landscape) {
   .movies-container .movies-bar {
     display: flex;
@@ -19128,8 +19171,8 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
     --max: 2rem;
   }
   .movies-container .movies-bar .sf-input-text {
-    width: 10rem;
-    min-width: 0px;
+    min-width: 5rem !important;
+    width: 9rem !important;
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
     --val: 1.2vw;
@@ -19143,10 +19186,6 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
     min-width: 5rem !important;
     width: 9rem !important;
   }
-  .movies-container .movies-bar .sf-input-text {
-    min-width: 5rem !important;
-    width: 9rem !important;
-  }
   .movies-container .movies-bar input {
     padding: 0.25em 0.8em;
     font-size: clamp(var(--min), var(--val), var(--max));
@@ -19157,6 +19196,10 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
   }
   .movies-container #mainlist img {
     height: 23rem !important;
+  }
+
+  .results-oneelement-bf {
+    min-width: 18.5rem;
   }
 }
 @media screen and (min-width: 64rem) and (max-width: 79rem) and (orientation: landscape) {
@@ -19188,8 +19231,8 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
     --max: 2rem;
   }
   .movies-container .movies-bar .sf-input-text {
-    width: 10rem;
-    min-width: 0px;
+    min-width: 5rem !important;
+    width: 7rem !important;
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
     --val: 1.2vw;
@@ -19203,10 +19246,6 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
     min-width: 5rem !important;
     width: 7rem !important;
   }
-  .movies-container .movies-bar .sf-input-text {
-    min-width: 5rem !important;
-    width: 7rem !important;
-  }
   .movies-container .movies-bar input {
     padding: 0.25em 0.8em;
     font-size: clamp(var(--min), var(--val), var(--max));
@@ -19217,6 +19256,10 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
   }
   .movies-container #mainlist img {
     height: 23rem !important;
+  }
+
+  .results-oneelement-bf {
+    min-width: 14.5rem;
   }
 }
 @media screen and (min-width: 52rem) and (max-width: 64rem) and (orientation: portrait) {
@@ -19252,16 +19295,16 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
     padding-left: 0rem !important;
   }
   .movies-container .movies-bar .sf-input-select {
-    width: 10rem;
-    min-width: 0px;
+    min-width: 5rem !important;
+    width: 5rem !important;
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
     --val: 1.2vw;
     --max: 2rem;
   }
   .movies-container .movies-bar .sf-input-text {
-    width: 10rem;
-    min-width: 0px;
+    min-width: 5rem !important;
+    width: 5rem !important;
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
     --val: 1.2vw;
@@ -19378,6 +19421,11 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
     width: 10rem;
   }
 }
+@media screen and (min-width: 47rem) and (max-width: 53rem) and (orientation: portrait) {
+  .results-oneelement-bf {
+    min-width: 10.5rem;
+  }
+}
 @media screen and (max-width: 47rem) {
   .movies-container .movies-bar {
     display: flex;
@@ -19455,6 +19503,8 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
     --min: 0.5rem;
     --val: 2.5vw;
     --max: 2rem;
+    min-width: 5rem !important;
+    width: 10rem !important;
   }
   .movies-container .movies-bar .sf-input-text {
     display: grid;
@@ -19572,12 +19622,12 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
   padding-left: 0.2em;
 }
 .events-container .events-bar .searchandfilter select.sf-input-select {
-  min-width: 5rem !important;
-  width: 10rem !important;
+  min-width: 5rem;
+  width: 10rem;
 }
 .events-container .events-bar .searchandfilter .sf-field-taxonomy-jury_participation select.sf-input-select {
   min-width: 5rem !important;
-  width: 10rem !important;
+  width: 100% !important;
 }
 .events-container .events-bar select {
   -webkit-appearance: none !important;
@@ -19633,6 +19683,9 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
   grid-template-areas: "sf-input-select";
   align-items: center;
   position: relative;
+  min-width: 5rem;
+  width: 10rem;
+  color: black !important;
   border: 0.4em solid #D00019;
   padding: 0.3em 0.75em;
   font-size: clamp(var(--min), var(--val), var(--max));
@@ -19642,7 +19695,6 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
   cursor: pointer;
   line-height: 1.1;
   background-color: white;
-  color: black;
   margin: 0rem;
 }
 .events-container .events-bar .sf-input-text select, .events-container .events-bar .sf-input-text::after {
@@ -19721,7 +19773,7 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
   color: white;
 }
 .events-container #eventslist .cl-pagination span.page-numbers.current {
-  color: #9c0b0b;
+  color: black;
 }
 
 @media screen and (min-width: 80rem) and (max-width: 100rem) and (orientation: landscape) {
@@ -19753,8 +19805,8 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
     --max: 2rem;
   }
   .events-container .events-bar .sf-input-text {
-    width: 10rem;
-    min-width: 0px;
+    min-width: 5rem !important;
+    width: 9rem !important;
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
     --val: 1.2vw;
@@ -19810,8 +19862,8 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
     --max: 2rem;
   }
   .events-container .events-bar .sf-input-text {
-    width: 10rem;
-    min-width: 0px;
+    min-width: 5rem !important;
+    width: 7rem !important;
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
     --val: 1.2vw;
@@ -19871,16 +19923,16 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
     padding-left: 0rem !important;
   }
   .events-container .events-bar .sf-input-select {
-    width: 10rem;
-    min-width: 0px;
+    min-width: 5rem !important;
+    width: 5rem !important;
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
     --val: 1.2vw;
     --max: 2rem;
   }
   .events-container .events-bar .sf-input-text {
-    width: 10rem;
-    min-width: 0px;
+    min-width: 5rem !important;
+    width: 5rem !important;
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
     --val: 1.2vw;
@@ -19937,7 +19989,8 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
     padding-left: 0rem !important;
   }
   .events-container .events-bar .sf-input-select {
-    min-width: 0px;
+    min-width: 5rem !important;
+    width: 5rem !important;
     font-size: clamp(var(--min), var(--val), var(--max));
     --min: 0.5rem;
     --val: 1.2vw;
@@ -20058,6 +20111,8 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
     --min: 0.5rem;
     --val: 2.5vw;
     --max: 2rem;
+    min-width: 5rem !important;
+    width: 10rem !important;
   }
   .events-container .events-bar .sf-input-text {
     display: grid;
@@ -20178,6 +20233,11 @@ a.um-link-alt {
   background: #272727 !important;
   padding: 0.5rem 1rem !important;
   border-radius: 3px !important;
+}
+
+span.um-field-checkbox-option {
+  color: white;
+  font-size: 0.8rem !important;
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
@@ -20371,6 +20431,10 @@ a.um-link-alt {
 .um-account-nav a {
   color: white !important;
   font-family: "RobotoBold" !important;
+}
+
+i.um-verified.um-icon-checkmark-circled.um-tip-s {
+  color: green !important;
 }
 
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
