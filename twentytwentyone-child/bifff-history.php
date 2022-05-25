@@ -49,13 +49,13 @@
 				            <div class="timeline-item">
                     			<div class="timeline-box">
                                     <div class="timeline-box-image"> 
-                                        <?php // the_post_thumbnail('full', array('class' => 'imgHeight')); ?>
-                                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/19.jpg">
+                                        <?php  the_post_thumbnail('full', array('class' => 'imgHeight')); ?>
+                                         <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/19.jpg">-->
                                     </div>
                                     <div class="timeline-box-text">
                                       <div class="timeline-box-title">
-                                            <h4 class="box-title"> EDITION 1
-                                             <?php // the_field('nom'); ?></h4>
+                                            <h4 class="box-title">
+                                             <?php the_field('name'); ?></h4>
                                       </div>                          
                                       <div class="timeline-box-content"> 
                                           <p><?php
@@ -102,13 +102,13 @@
                                 </div>
                     			<div class="timeline-box">
                                      <div class="timeline-box-image"> 
-                                        <?php // the_post_thumbnail('full', array('class' => 'imgHeight')); ?>
-                                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/89.jpg">
+                                        <?php  the_post_thumbnail('full', array('class' => 'imgHeight')); ?>
+                                         <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/89.jpg">-->
                                      </div>
                                     <div class="timeline-box-text">
                                       <div class="timeline-box-title">
-                                         <h4 class="box-title"> EDITION 2
-                                             <?php // the_field('nom'); ?></h4>
+                                         <h4 class="box-title">
+                                             <?php  the_field('name'); ?></h4>
                                       </div>                          
                                        <div class="timeline-box-content"> 
                                           <p><?php
@@ -118,7 +118,7 @@
                                       </div>
                                     </div>
                                     <div id="timeline-box-button"> 
-                                        <a href="<?php the_permalink(); ?>" class="timeline-box-button">VOIR PLUS</a>
+                                        <a href="<?php the_permalink(); ?>" class="timeline-box-button">SEE MORE</a>
                                     </div>
                                      <div class="years">
                                        <?php the_terms(get_the_ID(), 'category'); ?>
