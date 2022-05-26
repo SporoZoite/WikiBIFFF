@@ -1,11 +1,22 @@
  /!\LAST ADD/!\ <br>
  <br>
- /!\dernière update = 24 mai/!\ <br>
+ /!\dernière update = 26 mai/!\ <br>
  <br>
  
  + Mises à jour css => remplacer fichiers "src" "css" et "js" <br>
  + corrections audience quotes guide => remplacer fichier "audience-quotes-guide.php <br>
  + correction highlights poster passe devant le titre/prix =>   dans fichier "edition-entête.php" remplacer avec celle de mon fichier la partie "Competition Winners" <br>
+ + ajout du javascript de custom layouts dans src/js/custom-layout-js.js <br>
+ parties ajoutées : 
+ <br>custom-layouts => assets => js => gutemberg => custom-layouts.js
+ <br>custom-layouts => assets => js => frontend => custom-layouts.js
+ <br> /!\/!\/!\ dans chacun de ces deux fichiers il y a un fichier nommé "custom-layouts.asset.php" ça a l'air d'avoir un rapport avec le masonry? On doit peut être intégrer ce php quelque part.<br>
+ + ajout du css de custom layouts dans src/sass/pages/custom-layouts.scss <br>
+ parties ajoutées: 
+ <br> css de tous les dossiers inclus dans custom-layouts => assets => css
+ <br> si css manquant l'ajouter à la suite dans "custom-layouts.scss " <br>
+ 
+ 
 
 
 
