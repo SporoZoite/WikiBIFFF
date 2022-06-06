@@ -42,7 +42,7 @@
         --min: 0.5rem;
         --val: 3.5vw;
         --max: 3rem;
-        content: "HISTORY";
+        content: "EDITIONS";
       }
       &:hover::after {
         content: "WELCOME!";
@@ -118,7 +118,7 @@
         --min: 0.5rem;
         --val: 3.5vw;
         --max: 3rem;
-        content: "HISTORY";
+        content: "EDITIONS";
       }
       &:hover::after {
         content: "WELCOME!";
@@ -469,39 +469,7 @@
       top: 0%;
       color: white;
       height: 100%;
-      padding-top: 1rem;
       padding-bottom: 4.5rem;
-    }
-    .home-second-title {
-      line-height: 1.5rem;
-    }
-    .home-second-text {
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    .home-second-button {
-      background-color: #d00019;
-      border-radius: 0.4rem;
-      width: 45%;
-      height: 10%;
-      max-width: 100%;
-      color: white;
-      font-size: 0px;
-      font-family: "RobotoBold";
-      margin: 1rem 0;
-      margin-top: 0rem;
-      transition: width 0.2s ease-in-out;
-      transition: height 0.2s ease-in-out;
-      font-size: clamp(var(--min), var(--val), var(--max));
-      --min: 0.5rem;
-      --val: 3.5vw;
-      --max: 3rem;
-      transition: font-size 0.2s ease-in-out;
-      align-self: flex-end;
-      &:hover {
-        background-color: $bordeau;
-        color: white !important;
-      }
     }
   }
 
@@ -528,45 +496,135 @@
       justify-content: center;
       align-items: flex-end;
       height: 24rem;
-      .home-third-title {
-        line-height: 1.5rem;
-        margin-bottom: 0.5rem;
-      }
       .home-third-text {
         margin: 0;
-        background-color: $rouge;
+        background-color: #272727;
         color: white;
         z-index: 2;
         padding: 1rem;
         border-radius: 0.5rem;
         max-width: 72vw;
       }
-      .home-third-button {
-        font-family: "RobotoBold";
+    }
+  }
+  .home-four {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    height: 47.4%;
+    width: 100vw;
+    max-width: 100%;
+    top: 205.6%;
+    background-color: $rouge;
+    color: white;
+    .home-four-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .home-four-text {
+        margin: 2rem 0;
+        max-width: 85vw;
+      }
+      .home-four-button {
         background-color: #272727;
-        border-radius: 0.625rem;
-        width: 70%;
-        height: 12%;
+        border-radius: 0.4rem;
+        padding: 0.5rem 2rem;
         max-width: 100%;
-        color: $rouge;
-        float: none;
+        color: white;
         font-size: 0px;
-        margin: 0.5rem 0;
-        margin-left: 30%;
-        &::after {
-          font-size: clamp(var(--min), var(--val), var(--max));
-          --min: 0.5rem;
-          --val: 3.5vw;
-          --max: 3rem;
-          content: "JOIN THE GUILD";
-        }
-        &:hover::after {
-          content: "BECOME A MEMBER";
-        }
+        font-family: "RobotoBold";
+        transition: width 0.2s ease-in-out;
+        transition: height 0.2s ease-in-out;
+        font-size: calc(0.6rem * var(--text-multiplier));
+        transition: font-size 0.2s ease-in-out;
         &:hover {
-          background-color: $rouge;
+          background-color: $bordeau;
           color: white !important;
         }
+      }
+    }
+  }
+
+  .home-five {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    height: 35%;
+    width: 100vw;
+    max-width: 100%;
+    top: 253%;
+    background-color: black;
+    color: white;
+    #home-five-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      border-right: 0.1rem solid black;
+      border-bottom: 0.1rem solid white;
+      height: 50%;
+      #typewrite {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        letter-spacing: 2px;
+      }
+      #cursor {
+        display: inline-block;
+        vertical-align: middle;
+        width: 3px;
+        height: 50px;
+        background-color: white;
+        animation: blink 0.75s step-end infinite;
+      }
+
+      @keyframes blink {
+        from,
+        to {
+          background-color: transparent;
+        }
+        50% {
+          background-color: white;
+        }
+      }
+    }
+    .home-five-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border-left: 0.1rem solid black;
+      border-top: 0.1rem solid white;
+      .home-five-button {
+        background-color: $rouge;
+        border-radius: 0.4rem;
+        padding: 0.5rem 2rem;
+        max-width: 100%;
+        color: white;
+        font-size: 0px;
+        font-family: "RobotoBold";
+        transition: width 0.2s ease-in-out;
+        transition: height 0.2s ease-in-out;
+        font-size: calc(0.6rem * var(--text-multiplier));
+        transition: font-size 0.2s ease-in-out;
+        margin: 1rem;
+        &:hover {
+          background-color: $bordeau;
+          color: white !important;
+        }
+      }
+      .home-five-text {
+        max-width: 80%;
       }
     }
   }
