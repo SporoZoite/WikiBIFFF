@@ -425,7 +425,47 @@
       }
     }
     .home-five-text {
-      max-width:80%;
+      max-width: 80%;
+    }
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .home-second {
+    .home-second-right {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 60%;
+      overflow: hidden;
+      left: 40%;
+      color: white;
+      height: 100%;
+      .home-second-video {
+        border: 0.3rem solid white;
+        width: 840px;
+        height: 475.5px;
+      }
+    }
+  }
+
+  .home-third {
+    .home-third-section {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      width: 65%;
+      left: 25%;
+      height: 100%;
+      margin-top: 7rem;
+      .home-third-text {
+        margin: 2rem 0;
+        max-width: 85vw;
+      }
     }
   }
 }
