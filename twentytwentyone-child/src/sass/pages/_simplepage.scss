@@ -1,0 +1,133 @@
+.simple-container {
+  min-height: 32vh;
+  width: 98%;
+  margin: 2rem auto;
+  margin-bottom: 2rem !important;
+  p {
+    margin: 0px;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 0.2rem;
+    --val: 1.25vw;
+    --max: 1.125rem;
+    font-family: "RobotoMedium";
+    line-height: 2rem !important;
+    text-align: center !important;
+  }
+
+  ul {
+    margin: 1rem;
+    li {
+      margin: 1rem;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.2rem;
+      --val: 1.25vw;
+      --max: 1.125rem;
+      font-family: "RobotoMedium";
+      list-style: square;
+    }
+  }
+
+  blockquote {
+    p {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.2rem;
+      --val: 2.5vw;
+      --max: 2vw;
+      font-family: "RobotoBold";
+      text-align: inherit !important;
+      margin: 1rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .simple-text {
+    width: 95%;
+    margin: auto;
+    border: 5px solid #be1b17;
+    padding: 1rem;
+
+    .text-center {
+      text-align: center !important;
+    }
+    .text-below {
+      margin-top: 1rem;
+    }
+    .text-title {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.2rem;
+      --val: 2.5vw;
+      --max: 1.8vw;
+    }
+  }
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .simple-container {
+    p {
+      margin: 0px;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.2rem;
+      --val: 1.8vw;
+      --max: 1.125rem;
+      line-height: 1.5rem !important;
+    }
+
+    ul {
+      li {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.2rem;
+        --val: 1.8vw;
+        --max: 1.125rem;
+      }
+    }
+
+    blockquote {
+      p {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.2rem;
+        --val: 2.5vw;
+        --max: 3vw;
+        margin: 1rem;
+        margin-top: 2rem;
+      }
+    }
+
+    .simple-text {
+      .text-title {
+        font-size: clamp(var(--min), var(--val), var(--max));
+        --min: 0.2rem;
+        --val: 2.5vw;
+        --max: 2.2vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 47rem) {
+  .simple-container {
+    p {
+      font-size: 14px;
+      line-height: 1.5rem !important;
+    }
+
+    ul {
+      li {
+        font-size: 14px;
+      }
+    }
+
+    blockquote {
+      p {
+        font-size: 19px;
+        margin: 1rem;
+        margin-top: 2rem;
+      }
+    }
+
+    .simple-text {
+      .text-title {
+        font-size: 16px;
+      }
+    }
+  }
+}
