@@ -1,8 +1,11 @@
  /!\LAST ADD/!\ <br>
  <br>
- /!\dernière update = 6 juin/!\ <br>
+ /!\dernière update = 7 juin/!\ <br>
  <br>
  
+ + Modifs page "template-simple-page.php" + ajout "template-creators-page.php" <br>
+ + Modifs scss (replace fichiers src + js + css) <br>
+ Ancien :
  + Mises à jour css + ajout de javascript => remplacer fichiers "src" "css" et "js" <br>
  + Nouvelle home page mise à jour => remplacer fichier home.php <br>
 
