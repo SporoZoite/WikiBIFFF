@@ -1,0 +1,33 @@
+.idlzm-container {
+  margin-top: 6rem;
+  h4 {
+    padding: 1rem;
+    border: 0.25rem solid #d00019;
+    text-align: center;
+  }
+  .refimg {
+    /*width: 30%;*/
+  }
+  .acf-field {
+    margin: 2rem;
+    .acf-input {
+      display: flex;
+      justify-content: center;
+      .fea-submit-button {
+        background-color: #d00019;
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+        font-family: "ROBOTOBOLD";
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64rem) and (max-width: 90rem) and (orientation: portrait) {
+  .idlzm-container {
+    .refimg {
+      /*width: 40%;*/
+    }
+  }
+}
+
