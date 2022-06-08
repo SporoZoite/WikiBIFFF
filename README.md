@@ -5,7 +5,8 @@
  
  + Modifs page "audience-quotes-guide.php" => replace page <br>
  + Add class to "template-newidlzm.php" => replace page <br>
- + replace fichiers src/js/css pour modifications homepage + audience quotes guide <br>
+ + replace fichiers src/js/css pour modifications homepage + audience quotes guide + preparation style pour idlzm<br>
+ 
 
  
 
