@@ -75,6 +75,15 @@
     display: flex;
     flex-direction: column;
 
+    .quotes-video {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0rem 4rem 0rem;
+      .quote-video {
+        border: 1rem solid #be1b17;
+      }
+    }
+
     .quotes-quote {
       display: flex;
       flex-direction: column;

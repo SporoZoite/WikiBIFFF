@@ -443,10 +443,10 @@
     display: flex;
     flex-direction: row;
     max-height: 100%;
-    height: 57%;
+    height: 50%;
     width: 100vw;
     max-width: 100%;
-    top: 102%;
+    top: 100%;
     background-color: $darkbordeau;
     .home-second-picture {
       position: absolute;
@@ -454,7 +454,7 @@
       max-width: 100%;
       z-index: 2;
       left: -48%;
-      top: 63%;
+      top: 55%;
     }
     .home-second-right {
       position: absolute;
@@ -477,14 +477,14 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
     max-height: 100%;
-    height: 58%;
+    height: 68%;
     width: 100%;
     left: 0%;
     max-width: 100%;
-    top: 156%;
+    top: 150%;
     overflow: hidden;
     background-color: white;
     padding-top: 3rem;
@@ -496,6 +496,9 @@
       justify-content: center;
       align-items: flex-end;
       height: 24rem;
+      margin-top: 0rem;
+      left:18%;
+      width:70%;
       .home-third-text {
         margin: 0;
         background-color: #272727;
@@ -514,10 +517,10 @@
     justify-content: center;
     align-items: center;
     max-height: 100%;
-    height: 47.4%;
+    height: 42%;
     width: 100vw;
     max-width: 100%;
-    top: 205.6%;
+    top: 218%;
     background-color: $rouge;
     color: white;
     .home-four-section {
@@ -559,7 +562,7 @@
     height: 35%;
     width: 100vw;
     max-width: 100%;
-    top: 253%;
+    top: 260%;
     background-color: black;
     color: white;
     #home-five-container {

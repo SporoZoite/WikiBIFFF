@@ -16023,6 +16023,14 @@ article#post-3 h3, article#post-3 .h3 {
   display: flex;
   flex-direction: column;
 }
+.quotes-container .quotes-quotes .quotes-video {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0rem 4rem 0rem;
+}
+.quotes-container .quotes-quotes .quotes-video .quote-video {
+  border: 1rem solid #be1b17;
+}
 .quotes-container .quotes-quotes .quotes-quote {
   display: flex;
   flex-direction: column;
@@ -16459,6 +16467,7 @@ article#post-3 h3, article#post-3 .h3 {
 }
 .home-second .home-second-right .home-second-video {
   border: 0.3rem solid white;
+  z-index: 3;
 }
 
 .home-third {
@@ -16466,7 +16475,7 @@ article#post-3 h3, article#post-3 .h3 {
   display: flex;
   flex-direction: column;
   max-height: 100%;
-  height: 40.9%;
+  height: 45.9%;
   width: 100vw;
   max-width: 100%;
   top: 164.7%;
@@ -16499,7 +16508,7 @@ article#post-3 h3, article#post-3 .h3 {
   height: 47.4%;
   width: 100vw;
   max-width: 100%;
-  top: 205.6%;
+  top: 210.6%;
   background-color: #D00019;
   color: white;
 }
@@ -16541,7 +16550,7 @@ article#post-3 h3, article#post-3 .h3 {
   height: 35%;
   width: 100vw;
   max-width: 100%;
-  top: 253%;
+  top: 258%;
   background-color: black;
   color: white;
 }
@@ -17732,10 +17741,10 @@ article#post-3 h3, article#post-3 .h3 {
     display: flex;
     flex-direction: row;
     max-height: 100%;
-    height: 57%;
+    height: 50%;
     width: 100vw;
     max-width: 100%;
-    top: 102%;
+    top: 100%;
     background-color: #180000;
   }
   .home-second .home-second-picture {
@@ -17744,7 +17753,7 @@ article#post-3 h3, article#post-3 .h3 {
     max-width: 100%;
     z-index: 2;
     left: -48%;
-    top: 63%;
+    top: 55%;
   }
   .home-second .home-second-right {
     position: absolute;
@@ -17766,14 +17775,14 @@ article#post-3 h3, article#post-3 .h3 {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
     max-height: 100%;
-    height: 58%;
+    height: 68%;
     width: 100%;
     left: 0%;
     max-width: 100%;
-    top: 156%;
+    top: 150%;
     overflow: hidden;
     background-color: white;
     padding-top: 3rem;
@@ -17786,6 +17795,9 @@ article#post-3 h3, article#post-3 .h3 {
     justify-content: center;
     align-items: flex-end;
     height: 24rem;
+    margin-top: 0rem;
+    left: 18%;
+    width: 70%;
   }
   .home-third .home-third-section .home-third-text {
     margin: 0;
@@ -17804,10 +17816,10 @@ article#post-3 h3, article#post-3 .h3 {
     justify-content: center;
     align-items: center;
     max-height: 100%;
-    height: 47.4%;
+    height: 42%;
     width: 100vw;
     max-width: 100%;
-    top: 205.6%;
+    top: 218%;
     background-color: #D00019;
     color: white;
   }
@@ -17849,7 +17861,7 @@ article#post-3 h3, article#post-3 .h3 {
     height: 35%;
     width: 100vw;
     max-width: 100%;
-    top: 253%;
+    top: 260%;
     background-color: black;
     color: white;
   }

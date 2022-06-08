@@ -11,6 +11,12 @@
        
         <div class="quotes-quotes">
 
+        <div class="quotes-video">
+        <iframe class="quote-video" width="840" height="475.5" src="https://www.youtube.com/embed/Roj19_E44hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <hr>
+
         <div class="quotes-quote">
 
             <div class="quote-image">
@@ -18,7 +24,7 @@
             </div>
 
             <div class="quote-text">
-                <p>A toutes personnes de l'équipe qui monte sur scène dont le film sera projeté lors de la séance.</p>
+                <p>To all the cast & crew members who mount the stage before the screening of their film.</p>
             </div>
 
         </div>
@@ -31,8 +37,9 @@
             </div>
 
             <div class="quote-text">
-              <p> Les invités s'y prêtent souvent en montant sur scène quand le public le leur demande, autrement dit: Tout le temps. <br>
-                 <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;"> TRIVIA :</span> Lors de sa masterclass en 2018, Guillermo Del Toro marque l'histoire du BIFFF en étant accompagné par un groupe d'authentiques mariachis pour sa chanson «Cielito Lindo», sur la scène du Ciné 1</p>
+              <p> Guests often do this while mounting the stage when the audience asks them to. In other words: all the time! <br>
+                 <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;"> TRIVIA :</span>During his 2018 masterclass, Guillermo Del Toro made BIFFF history by singing “Cielito Lindo”, accompanied by an authentic mariachi band on the stage of Theatre 1.
+</p>
             </div>
 
         </div>
@@ -45,9 +52,9 @@
             </div>
 
             <div class="quote-text">
-              <p>Lors du générique d'ouverture du BIFFF lorsque la carriole va passer le croisement. <br>
-              Quand une victime court. <br>
-              <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">MEMBRE CONTRIBUTEUR:</span> Agnes Kaltem</p>
+              <p>During the opening credits of the BIFFF when the chariot arrives at the crossroads.<br>
+              When a victim runs away.<br>
+              <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">CONTRIBUTING MEMBER:</span> Agnes Kaltem</p>
             </div>
 
         </div>
@@ -60,7 +67,7 @@
             </div>
 
             <div class="quote-text">
-              <p>A l'affichage du logo "BIFFF à l'écran.</p>
+              <p>When the “BIFFF" logo is displayed on the screen.</p>
             </div>
 
         </div>
@@ -73,9 +80,9 @@
             </div>
 
             <div class="quote-text">
-              <p>(5x "TA") Pas évident à placer: compter 3 secondes après la fin du "WELCOME". <br>
-              Dans un premier temps, contentez vous de répondre à cet appel par la réplique qui suit. <br>
-               <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">ORIGINE:</span> Cette réplique prend son origine en 1986 lors de la diffusion du film The Monster in the Closet, un scientifique tente d'amadouer un monstre en jouant cette mélodie au xylophone...en  vain.</p>
+              <p>(5x "TA") Not easy to time: count 3 seconds after the end of "WELCOME". <br>
+              At first, just answer this call with the following line. <br>
+               <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">ORIGIN:</span> This line originated in 1986 during the screening of the movie The Monster in the Closet, a scientist tries to coax a monster by playing this melody on the xylophone... in vain.</p>
             </div>
 
         </div>
@@ -87,8 +94,8 @@
             </div>
 
             <div class="quote-text">
-              <p>Réponse à l'appel lancé juste avant. <br>
-               <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">ORIGINE:</span> Vient de la bande annonce du film "RETRIBUTION" où l'esprit revanchard d'un mafieux assassiné prend possession d'un  dépressif suicidaire pour assouvir sa soif de vengeance.</p>
+              <p>Answer to the call just made before. <br>
+               <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">ORIGIN:</span>  Comes from the trailer of the movie "RETRIBUTION”, where the vengeful spirit of a murdered mobster takes possession of a suicidal depressive to quench his thirst for revenge.</p>
             </div>
 
         </div>
@@ -101,9 +108,9 @@
             </div>
 
             <div class="quote-text">
-              <p>Cri à la lune. <br>
-              Quand une pleine lune apparaît à l'écran<br> 
-              Depuis peu, il est aussi crié lorsqu'un loup ou une lune qui n'est pas pleine apparaît.</p>
+              <p>	howl at the moon. <br>
+              When a full moon appears on the screen.<br> 
+              Recently, it is also shouted whenever a wolf or any kind of moon appears.</p>
             </div>
 
         </div>
@@ -116,11 +123,11 @@
             </div>
 
             <div class="quote-text">
-              <p> <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">Iconique.</span> <br>
-              A placer lorsqu'une porte est ouverte dans la salle ou à l'écran. <br>
-              Vous pouvez enchaîner par un "Merci" si elle refermée ensuite. <br>
-              II peut être décliné aux portails démoniaques et/ou aux fermetures éclairs de tentes. <br>
-               <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">ORIGINE:</span> Date de l'époque du Passage 44, il y avait 6 (ou 8?) portes latérales à l'unique salle, et la lumière du couloir était très gênante pendant le film lorsque des gens sortaient ou entraient en oubliant de les fermer, d'où ce rappel impératif!- Ce qui a été étendu ensuite aux portes dans les films.</p>
+              <p> <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">Iconic.</span> <br>
+              To be shouted whenever a door is opened in the theatre or on the screen. <br>
+              You can follow up with a "Thank you" if it’s closed again. <br>
+              It can extend to demonic portals and/or with the zippers of tents. <br>
+               <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">ORIGIN:</span> During the Passage 44 era, there were 6 (or 8?) side doors to the main theater. The light in the hallway was very annoying during the movie when people went out or came in and forgot to close the door. Therefor this commanding reminder! This was later extended to all the doors in all the movies.</p>
             </div>
 
         </div>
@@ -133,8 +140,9 @@
             </div>
 
             <div class="quote-text">
-             <p>Lorsqu'un acte particulièrement sadique est perpétré. <br>
-             <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">ORIGINE:</span> Réplique cultisme pour les publivores des années 90, il s'agit d'un extrait de la pub pour Orangina Rouge parue en 1996. La bouteille d'orangeade tente de massacrer des gens avec une tronçonneuse, cette scène à elle seule était prédisposée à faire parler d'elle au BIFFF.</p>
+             <p>When a particularly sadistic act is committed. <br>
+             <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">ORIGIN:</span> A cult reply for 90’s publicity lovers. This is an extract from the Orangina Rouge commercial from 1996. The bottle of lemonade attempts to slaughter people with a chainsaw. This scene alone was destined to be the talk of the BIFFF.
+</p>
             </div>
 
         </div>
@@ -147,7 +155,7 @@
             </div>
 
             <div class="quote-text">
-             <p>Placez-le lorsque vous pensez vraiment que le protagoniste se jette naïvement dans la gueule du loup.</p>
+             <p>Shout it when you really think that the protagonist is naively throwing himself into the lion's den.</p>
             </div>
 
         </div>
@@ -160,13 +168,10 @@
             </div>
 
             <div class="quote-text">
-             <p>Lorsqu'un personnage est à la recherche de quelqu'un en l'appelant à tort et
-             travers ou lorsqu'il est perdu. <br>
-              <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">ORIGINE:</span> À l'époque du Passage44 (et encore de T&T), 
-              lorsque les personnages criaient "ouhou" pour appeler quelqu'un, c'était aussi sous-titré avec les mêmes lettres mais orthographié différemment en français
-               et en néerlandais, ce qui donnait "Joehoe" en néerlandais et quelque-chose comme "ouhou" en français.<br>   
-             Nulle-part ailleurs ces cris/appels ne sont sous-titrés; ni dans les films diffusés à la télé ni au ciné, ni sur les supporls physiques, ... <br>
-             C'était tellement ridicule de lire ces sous-titres des années durant, que le public a commencé à les « lire » à voix haute ou à les crier.</p>
+             <p>When a character is looking for someone and starts calling for them or when they are lost. <br>
+              <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">ORIGIN:</span>  Back in the days of the Passage44 (and later T&T), when characters shouted "ouhou" when calling someone. It was also subtitled but spelled differently in French and in Dutch, which gave "Joehoe" in Dutch and something like "ouhou" in French.<br>   
+             Nowhere else in the world are these screams/calls subtitled. Not in movies on TV, in theaters or on devices... <br>
+             It was so ridiculous to read these subtitles for years that the public started to "read" (or shout) them out loud.</p>
             </div>
 
         </div>
@@ -179,7 +184,7 @@
             </div>
 
             <div class="quote-text">
-             <p> A clamer à la façon d'un réal sur un plateau de tournage, lorsque le film est particulièrement lent.</p>
+             <p> To shout them like a director on a film set, when the film is particularly slow.</p>
             </div>
 
         </div>
@@ -192,8 +197,8 @@
             </div>
 
             <div class="quote-text">
-             <p> <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">VARIANTE:</span> "Quel beau film!" <br>
-              Lorsqu'un personnage aux mensurations de bombe sexuelle apparaît à l'écran.</p>
+             <p> <span style="background-color:#272727;font-weight:bold;padding: 6px;border-radius: 3px;">VARIANT:</span> "Quel beau film!" <br>
+              When a particularly attractive hottie appears on screen.</p>
             </div>
 
         </div>
@@ -206,7 +211,7 @@
             </div>
 
             <div class="quote-text">
-             <p>A dire lors d'une révélation qui allait de soit.</p>
+             <p>To be said during a plot-twist that you saw coming from miles away.</p>
             </div>
 
         </div>
@@ -219,8 +224,8 @@
             </div>
 
             <div class="quote-text">
-             <p>A placer à un moment où un personnage a décidé de rendre coup pour coup <br>
-             Lorsqu'une vengeance se prépare.</p>
+             <p>To be shouted when a character decides to fight back.  <br>
+             When revenge is in the works.</p>
             </div>
 
         </div>
@@ -233,8 +238,8 @@
             </div>
 
             <div class="quote-text">
-             <p>Quand une personne se lève<br>
-              S'utilise aussi souvent en combo avec un "La porte!".</p>
+             <p>When someone stands up.<br>
+              Often used in combination with "the door!”</p>
             </div>
 
         </div>
@@ -247,7 +252,7 @@
             </div>
 
             <div class="quote-text">
-              <p>En fin de film, lorsque celui ci était particulièrement ennuyant.</p>
+              <p>At the end of a movie, when it was particularly boring</p>
             </div>
 
         </div>
@@ -260,7 +265,7 @@
             </div>
 
             <div class="quote-text">
-              <p> Après un film particulièrement obscur.</p>
+              <p> After a very dark movie.</p>
             </div>
 
         </div>
@@ -273,7 +278,7 @@
             </div>
 
             <div class="quote-text">
-               <p>Phrase d'exemple du tutoriel animé de 2022</p>
+               <p>Example sentence from the 2022 animated tutorial</p>
             </div>
 
         </div>
