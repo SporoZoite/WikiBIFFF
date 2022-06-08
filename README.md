@@ -1,13 +1,11 @@
  /!\LAST ADD/!\ <br>
  <br>
- /!\dernière update = 7 juin/!\ <br>
+ /!\dernière update = 8 juin/!\ <br>
  <br>
  
- + Modifs page "template-simple-page.php" + ajout "template-creators-page.php" <br>
- + Modifs scss (replace fichiers src + js + css) <br>
- Ancien :
- + Mises à jour css + ajout de javascript => remplacer fichiers "src" "css" et "js" <br>
- + Nouvelle home page mise à jour => remplacer fichier home.php <br>
+ + Modifs page "audience-quotes-guide.php" => replace page <br>
+ + Add class to "template-newidlzm.php" => replace page <br>
+ + replace fichiers src/js/css pour modifications homepage + audience quotes guide <br>
 
  
 
