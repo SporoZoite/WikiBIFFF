@@ -1,11 +1,9 @@
  /!\LAST ADD/!\ <br>
  <br>
- /!\dernière update = 8 juin/!\ <br>
+ /!\dernière update = 9 juin/!\ <br>
  <br>
- 
- + Modifs page "audience-quotes-guide.php" => replace page <br>
- + Add class to "template-newidlzm.php" => replace page <br>
- + replace fichiers src/js/css pour modifications homepage + audience quotes guide + preparation style pour idlzm<br>
+
+ + replace fichiers src/js/css pour dernière modifs style pour idlzm<br>
  
 
  
