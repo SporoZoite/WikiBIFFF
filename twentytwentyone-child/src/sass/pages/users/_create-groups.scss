@@ -32,10 +32,10 @@
     text-align: center;
     text-transform: uppercase;
     padding: 0.5rem;
-     font-size: clamp(var(--min), var(--val), var(--max))!important;
-      --min: 1rem!important;
-      --val: 2.4vw!important;
-      --max: 2.8125rem!important;
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 2.4vw !important;
+    --max: 2.8125rem !important;
   }
 }
 
@@ -55,6 +55,8 @@
     background: #be1b17;
     padding: 2rem;
     border-radius: 5px;
+    color: white;
+    font-family: "RobotoBold";
   }
   select {
     font-family: "RobotoBold";
@@ -87,10 +89,10 @@
   .entry {
     max-width: 90%;
     .entry-title {
-      font-size: clamp(var(--min), var(--val), var(--max))!important;
-      --min: 1rem!important;
-      --val: 4.3vw!important;
-      --max: 3rem!important;
+      font-size: clamp(var(--min), var(--val), var(--max)) !important;
+      --min: 1rem !important;
+      --val: 4.3vw !important;
+      --max: 3rem !important;
     }
   }
 
@@ -119,14 +121,14 @@
     .entry-title {
       padding: 0rem;
       font-size: clamp(var(--min), var(--val), var(--max));
-      --min: 1rem;
-      --val: 5.5vw;
-      --max: 3rem;
+      --min: 1rem !important;
+      --val: 5.5vw !important;
+      --max: 3rem !important;
     }
   }
   .entry-header {
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0rem;
     padding-bottom: 1rem;
   }
 

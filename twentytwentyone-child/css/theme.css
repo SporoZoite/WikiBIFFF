@@ -14835,6 +14835,155 @@ a:hover {
   font-family: "Roboto" !important;
 }
 
+.um-friends-user {
+  font-family: "RobotoMedium" !important;
+}
+
+.um-profile-subnav a {
+  font-family: "RobotoBold" !important;
+}
+
+a.active {
+  font-family: "RobotoBold" !important;
+  color: #9c0b0b !important;
+}
+
+.um-followers-bar a {
+  font-family: "RobotoBold" !important;
+}
+.um-followers-bar span.um-ajax-count-followers {
+  color: #9c0b0b !important;
+}
+.um-followers-bar span.um-ajax-count-following {
+  color: #9c0b0b !important;
+}
+
+.um-activity-head {
+  font-family: "RobotoMedium" !important;
+}
+
+textarea.um-activity-textarea-elem.ui-autocomplete-input {
+  font-family: "RobotoMedium" !important;
+}
+
+.um a.um-link {
+  color: #9c0b0b !important;
+  font-family: "RobotoBold" !important;
+}
+
+.um-activity-author-meta span.um-activity-metadata a {
+  font-family: "RobotoMedium" !important;
+}
+
+.um-activity-bodyinner-txt {
+  font-family: "RobotoMedium" !important;
+}
+
+.um-activity-actions span {
+  font-family: "RobotoMedium" !important;
+}
+
+.um-activity-comment-text {
+  font-family: "RobotoMedium" !important;
+}
+
+.um-activity-comment-meta a.um-activity-comment-permalink {
+  font-family: "RobotoMedium" !important;
+}
+
+div.um .um-form .um-activity-comment-box textarea.um-activity-comment-textarea {
+  font-family: "RobotoMedium" !important;
+}
+
+.um-modal-btn.alt {
+  font-family: "RobotoMedium" !important;
+}
+
+.um-friends-user a {
+  font-family: "RobotoBold" !important;
+}
+
+.um-group-field label {
+  color: white;
+  font-size: 1rem;
+  font-family: "ROBOTOBOLD";
+}
+.um-group-field label input[type=text] {
+  color: black !important;
+}
+
+select#um_groups_post_moderations {
+  color: black !important;
+}
+
+select#um_groups_can_invite_members {
+  color: black !important;
+}
+
+span.selection {
+  color: black !important;
+}
+
+.group-form-label {
+  color: white;
+  font-family: "ROBOTOBOLD";
+}
+
+.search-result-count.default-max-width {
+  font-family: "ROBOTOBOLD";
+  margin: 2rem;
+}
+
+.entry h2.entry-title.default-max-width, .entry .entry-title.default-max-width.h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+.entry h2.entry-title.default-max-width a, .entry .entry-title.default-max-width.h2 a {
+  font-size: clamp(var(--min), var(--val), var(--max)) !important;
+  --min: 1rem !important;
+  --val: 2.4vw !important;
+  --max: 2.8125rem !important;
+}
+
+@media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
+  .entry {
+    max-width: 90%;
+  }
+  .entry h2.entry-title.default-max-width a, .entry .entry-title.default-max-width.h2 a {
+    font-size: clamp(var(--min), var(--val), var(--max)) !important;
+    --min: 1rem !important;
+    --val: 4.3vw !important;
+    --max: 3rem !important;
+  }
+}
+@media screen and (max-width: 47rem) and (orientation: portrait) {
+  .entry {
+    max-width: 85%;
+    flex-direction: column;
+    background-size: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .entry h2.entry-title.default-max-width, .entry .entry-title.default-max-width.h2 {
+    padding: 0rem;
+  }
+  .entry h2.entry-title.default-max-width a, .entry .entry-title.default-max-width.h2 a {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1rem !important;
+    --val: 5.5vw !important;
+    --max: 3rem !important;
+  }
+}
+nav.navigation.pagination {
+  margin: 0rem 2rem;
+  text-transform: uppercase;
+}
+
+span.nav-next-text {
+  padding: 0rem 1rem;
+}
+
 .woocommerce-input-wrapper {
   width: 100%;
 }
@@ -15198,7 +15347,7 @@ input[type=search] {
 }
 
 input#search-form-1 {
-  padding: 0rem 2rem;
+  padding: 0rem 3rem;
 }
 
 .widget_search > .search-form .search-submit {
@@ -19057,6 +19206,12 @@ ul.hs.full::-webkit-scrollbar-button:vertical:start:increment,
   background-color: #be1b17 !important;
 }
 
+form#form-um-older-folder-bookmark label.um-user-bookmarks-select-folder-label {
+  color: black !important;
+  font-size: 1rem !important;
+  font-family: "RobotoBold" !important;
+}
+
 @media screen and (min-width: 47rem) and (max-width: 64rem) and (orientation: portrait) {
   .single-container {
     padding-top: 6rem !important;
@@ -20645,7 +20800,7 @@ span.um-field-checkbox-option {
 }
 
 .um-form {
-  margin: 3rem !important;
+  margin: 0rem !important;
 }
 
 .um-account-side {
@@ -21499,9 +21654,9 @@ span.title {
   text-transform: uppercase;
   padding: 0.5rem;
   font-size: clamp(var(--min), var(--val), var(--max)) !important;
-  --min: 1rem!important;
-  --val: 2.4vw!important;
-  --max: 2.8125rem!important;
+  --min: 1rem !important;
+  --val: 2.4vw !important;
+  --max: 2.8125rem !important;
 }
 
 .post-thumbnail {
@@ -21522,6 +21677,8 @@ span.title {
   background: #be1b17;
   padding: 2rem;
   border-radius: 5px;
+  color: white;
+  font-family: "RobotoBold";
 }
 .entry-content select {
   font-family: "RobotoBold";
@@ -21553,9 +21710,9 @@ span.title {
   }
   .entry .entry-title {
     font-size: clamp(var(--min), var(--val), var(--max)) !important;
-    --min: 1rem!important;
-    --val: 4.3vw!important;
-    --max: 3rem!important;
+    --min: 1rem !important;
+    --val: 4.3vw !important;
+    --max: 3rem !important;
   }
 
   .entry-content {
@@ -21584,14 +21741,14 @@ span.title {
   .entry .entry-title {
     padding: 0rem;
     font-size: clamp(var(--min), var(--val), var(--max));
-    --min: 1rem;
-    --val: 5.5vw;
-    --max: 3rem;
+    --min: 1rem !important;
+    --val: 5.5vw !important;
+    --max: 3rem !important;
   }
 
   .entry-header {
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0rem;
     padding-bottom: 1rem;
   }
 
