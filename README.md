@@ -3,7 +3,14 @@
  /!\dernière update = 9 juin/!\ <br>
  <br>
 
- + replace fichiers src/js/css pour dernière modifs style pour idlzm<br>
+ + remplacer fichiers src/js/css pour dernières modifs css diverses  <br>
+ => idlzm page 1 (titre + texte + écarts entre lignes affiches / pages user (groups/ activity/ posts/etc) / recherche (titres) / pop up boxes bookmarks (noms des groupes blanc => noir) <br>
+ 
+ + /!\ css pour page movies = sass "movies.scss" <br>
+ + contient le css pour les affiches responsives <br>
+ + donc container de cette page => movies-container <br>
+ + c'est la seule page de ce type qui avait été faite sans le plugin et qui a servi de modèle pour toutes les autres pages <br>
+ + /!\ container "events-container" = similaire mais version utilisée pour les pages qui contenaient le plugin <br>
  
 
  
