@@ -1,13 +1,23 @@
 .idlzm-container {
   margin-top: 6rem;
+  padding: 0rem 3rem;
+  .col-md-6 {
+    width: 100% !important;
+  }
   h4 {
     padding: 1rem;
     border: 0.25rem solid #d00019;
     text-align: center;
   }
-  .refimg {
-    /*width: 30%;*/
+  p {
+    text-align: center !important;
+    margin: 1rem !important;
   }
+  .app.slider {
+    padding: 0.5rem;
+    height: 22rem !important;
+  }
+
   .acf-field {
     margin: 2rem;
     .acf-input {
@@ -23,11 +33,10 @@
   }
 }
 
-@media screen and (min-width: 64rem) and (max-width: 90rem) and (orientation: portrait) {
+
+@media screen and (max-width: 47rem) {
   .idlzm-container {
-    .refimg {
-      /*width: 40%;*/
-    }
+    margin-top: 4rem;
+    padding: 0rem 2rem;
   }
 }
-

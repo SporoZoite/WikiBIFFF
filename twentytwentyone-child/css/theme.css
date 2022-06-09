@@ -16192,14 +16192,23 @@ article#post-3 h3, article#post-3 .h3 {
 }
 .idlzm-container {
   margin-top: 6rem;
+  padding: 0rem 3rem;
+}
+.idlzm-container .col-md-6 {
+  width: 100% !important;
 }
 .idlzm-container h4, .idlzm-container .h4 {
   padding: 1rem;
   border: 0.25rem solid #d00019;
   text-align: center;
 }
-.idlzm-container .refimg {
-  /*width: 30%;*/
+.idlzm-container p {
+  text-align: center !important;
+  margin: 1rem !important;
+}
+.idlzm-container .app.slider {
+  padding: 0.5rem;
+  height: 22rem !important;
 }
 .idlzm-container .acf-field {
   margin: 2rem;
@@ -16215,9 +16224,10 @@ article#post-3 h3, article#post-3 .h3 {
   font-family: "ROBOTOBOLD";
 }
 
-@media screen and (min-width: 64rem) and (max-width: 90rem) and (orientation: portrait) {
-  .idlzm-container .refimg {
-    /*width: 40%;*/
+@media screen and (max-width: 47rem) {
+  .idlzm-container {
+    margin-top: 4rem;
+    padding: 0rem 2rem;
   }
 }
 .page-id-1210 aside.widget-area {
