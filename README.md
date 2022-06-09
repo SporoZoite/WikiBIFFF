@@ -9,6 +9,7 @@
  + /!\ css pour page movies = sass "movies.scss" <br>
  + contient le css pour les affiches responsives <br>
  + donc container de cette page => movies-container <br>
+ + elle fonctionnait telle quelle avec le bon design et le infinite scrolling dans une précédente version <br>
  + c'est la seule page de ce type qui avait été faite sans le plugin et qui a servi de modèle pour toutes les autres pages <br>
  + /!\ container "events-container" = similaire mais version utilisée pour les pages qui contenaient le plugin <br>
  
