@@ -12,7 +12,7 @@
         <div class="quotes-quotes">
 
         <div class="quotes-video">
-        <iframe class="quote-video" width="840" height="475.5" src="https://www.youtube.com/embed/Roj19_E44hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="quote-video" width="840" height="475.5" src="https://youtu.be/Z4AaEnUpRCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <hr>
