@@ -1,10 +1,11 @@
  /!\LAST ADD/!\ <br>
  <br>
- /!\dernière update = 9 juin/!\ <br>
+ /!\dernière update = 10 juin/!\ <br>
  <br>
 
  + remplacer fichiers src/js/css pour dernières modifs css diverses  <br>
  => idlzm page 1 (titre + texte + écarts entre lignes affiches / pages user (groups/ activity/ posts/etc) / recherche (titres) / pop up boxes bookmarks (noms des groupes blanc => noir) <br>
+ + vidéo du audience quotes guide changée => remplacer "audience-quotes-guide.php"<br>
  
  + /!\ css pour page movies = sass "movies.scss" <br>
  + contient le css pour les affiches responsives <br>
